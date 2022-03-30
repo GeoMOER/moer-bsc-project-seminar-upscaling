@@ -1,0 +1,13 @@
+current directory: /home/dirk/GeoMoer/moer-mpg-data-analysis/docs/vendor/bundle/ruby/2.7.0/gems/json-2.2.0/ext/json
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20201116-24502-q6f6ki.rb extconf.rb
+creating Makefile
+
+current directory: /home/dirk/GeoMoer/moer-mpg-data-analysis/docs/vendor/bundle/ruby/2.7.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/dirk/GeoMoer/moer-mpg-data-analysis/docs/vendor/bundle/ruby/2.7.0/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Für das Ziel „all“ ist nichts zu tun.
+
+current directory: /home/dirk/GeoMoer/moer-mpg-data-analysis/docs/vendor/bundle/ruby/2.7.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

@@ -1,0 +1,536 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Example: Lapply-loops | Upscaling</title>
+<meta name="description" content="course course-materials geography remote-sensing marburg-open-educational-resource  physical-geography environmental-science nature-conservation r ">
+
+
+  <meta name="author" content="Dirk Zeuss">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Upscaling">
+<meta property="og:title" content="Example: Lapply-loops">
+<meta property="og:url" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/units/staging/unit02-06_lapply.html">
+
+
+  <meta property="og:description" content="course course-materials geography remote-sensing marburg-open-educational-resource  physical-geography environmental-science nature-conservation r ">
+
+
+
+
+
+  <meta name="twitter:site" content="@EnvIn_UMR">
+  <meta name="twitter:title" content="Example: Lapply-loops">
+  <meta name="twitter:description" content="course course-materials geography remote-sensing marburg-open-educational-resource  physical-geography environmental-science nature-conservation r ">
+  <meta name="twitter:url" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/units/staging/unit02-06_lapply.html">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/moer-bsc-project-seminar-upscaling/units/staging/unit02-06_lapply.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Lab of Environmental Informatics",
+      "url": "http://localhost:4000/moer-bsc-project-seminar-upscaling/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/moer-bsc-project-seminar-upscaling/feed.xml" type="application/atom+xml" rel="alternate" title="Upscaling Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/moer-bsc-project-seminar-upscaling/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+    	<a class="site-title" href="http://localhost:4000/moer-bsc-project-seminar-upscaling/" style="padding:0px"><img src="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/logos/logo_umr4.png" style="padding-right:15px">Upscaling</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/units.html" >Units</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit00/unit00-03_faq.html" >FAQ</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://geomoer.github.io/moer-info-page/" >Courses</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics" >Lab Home</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://geomoer.github.io/moer-base-r/" >Base R</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/about.html" >About</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <p>As examples for the apply family we shortly introduce <code class="highlighter-rouge">lapply</code>.</p>
+
+<h2 id="basic-structure">Basic structure</h2>
+<p>The <code class="highlighter-rouge">lapply</code> function can be your workhorse when it comes to loops over data 
+frames but it can also drive you mad if you do not understand its way of handling
+stuff.</p>
+
+<p>Remember: the function will always return a structured list with one return 
+statement per sub-entry and the function can never change a data frame or any
+other variable content defined outside the loop (no matter if it has the same
+name or not).</p>
+
+<p>Let’s have a look at an example for which we will use the following data frame:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B"</span><span class="p">,</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w"> </span><span class="s2">"A"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B"</span><span class="p">,</span><span class="w"> </span><span class="s2">"A"</span><span class="p">,</span><span class="w"> </span><span class="s2">"A"</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"X"</span><span class="p">,</span><span class="w"> </span><span class="s2">"X"</span><span class="p">,</span><span class="w"> </span><span class="s2">"X"</span><span class="p">,</span><span class="w"> </span><span class="s2">"X"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Y"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Y"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Y"</span><span class="p">)</span><span class="w">
+</span><span class="n">c</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">)</span><span class="w">
+</span><span class="n">d</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="m">40</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="m">60</span><span class="p">,</span><span class="w"> </span><span class="m">70</span><span class="p">)</span><span class="w">
+</span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">Cat1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">Cat2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">Val1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="n">Val2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>We now want to build a new data frame with the same columns but the characters
+of columns Cat1 and Cat2 should be converted to lower case and the values of
+Val1 and Val2 should become their square root. This is the same task as used
+in the for loop code examples.</p>
+
+<p>In order to solve this problem with an <code class="highlighter-rouge">lapply</code> call, we have to define an 
+appropriate functionwithin the () brackets of the <code class="highlighter-rouge">lapply</code> call structure. Since
+we want to iterrate over all (four) columns of the data frame, we define the 
+iteration sequence using the <code class="highlighter-rouge">ncol</code> function which in that specific case is the
+same as <code class="highlighter-rouge">seq(4)</code> since we have four columns:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">lapply</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="n">ncol</span><span class="p">(</span><span class="n">df</span><span class="p">)),</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span><span class="w">
+  </span><span class="n">act_column</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">df</span><span class="p">[,</span><span class="n">x</span><span class="p">]</span><span class="w">
+  </span><span class="k">if</span><span class="p">(</span><span class="n">is.factor</span><span class="p">(</span><span class="n">act_column</span><span class="p">)){</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">tolower</span><span class="p">(</span><span class="n">act_column</span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="nf">is.numeric</span><span class="p">(</span><span class="n">act_column</span><span class="p">)){</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">act_column</span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">})</span><span class="w">
+</span></code></pre></div></div>
+<p>As you can see, the function we want to apply is passed within the outer () 
+brackets and starts with the { bracket  in the first line. The actual body of 
+the function (i.e. what controls what is done within it) starts in the second 
+line and ends in line six. The function is closed in line seven with the 
+closing } bracket and the <code class="highlighter-rouge">lapply</code> function call is closed direclty afterwards
+with the closing ) bracket.</p>
+
+<p>Let’s have a look on what is returned, i.e. what is stored in the variable called
+result:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [[1]]
+## [1] "a" "b" "c" "a" "b" "a" "a"
+## 
+## [[2]]
+## [1] "x" "x" "x" "x" "y" "y" "y"
+## 
+## [[3]]
+## [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751
+## 
+## [[4]]
+## [1] 3.162278 4.472136 5.477226 6.324555 7.071068 7.745967 8.366600
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## List of 4
+##  $ : chr [1:7] "a" "b" "c" "a" ...
+##  $ : chr [1:7] "x" "x" "x" "x" ...
+##  $ : num [1:7] 1 1.41 1.73 2 2.24 ...
+##  $ : num [1:7] 3.16 4.47 5.48 6.32 7.07 ...
+</code></pre></div></div>
+<p>Obviously it is a list with four sub-elements and each element contains a vector
+which holds the modified content of one of the data frame rows. Since we 
+originally wanted a data frame, we have to convert this list to a data frame
+using:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result_df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span><span class="n">result_df</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   c..a....b....c....a....b....a....a..
+## 1                                    a
+## 2                                    b
+## 3                                    c
+## 4                                    a
+## 5                                    b
+## 6                                    a
+## 7                                    a
+##   c..x....x....x....x....y....y....y..
+## 1                                    x
+## 2                                    x
+## 3                                    x
+## 4                                    x
+## 5                                    y
+## 6                                    y
+## 7                                    y
+##   c.1..1.4142135623731..1.73205080756888..2..2.23606797749979..
+## 1                                                      1.000000
+## 2                                                      1.414214
+## 3                                                      1.732051
+## 4                                                      2.000000
+## 5                                                      2.236068
+## 6                                                      2.449490
+## 7                                                      2.645751
+##   c.3.16227766016838..4.47213595499958..5.47722557505166..6.32455532033676..
+## 1                                                                   3.162278
+## 2                                                                   4.472136
+## 3                                                                   5.477226
+## 4                                                                   6.324555
+## 5                                                                   7.071068
+## 6                                                                   7.745967
+## 7                                                                   8.366600
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span><span class="p">(</span><span class="n">result_df</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	7 obs. of  4 variables:
+##  $ c..a....b....c....a....b....a....a..                                      : Factor w/ 3 levels "a","b","c": 1 2 3 1 2 1 1
+##  $ c..x....x....x....x....y....y....y..                                      : Factor w/ 2 levels "x","y": 1 1 1 1 2 2 2
+##  $ c.1..1.4142135623731..1.73205080756888..2..2.23606797749979..             : num  1 1.41 1.73 2 2.24 ...
+##  $ c.3.16227766016838..4.47213595499958..5.47722557505166..6.32455532033676..: num  3.16 4.47 5.48 6.32 7.07 ...
+</code></pre></div></div>
+<p>Also it looks weird, it is a data frame but the column names are not nice. Let
+us fix this:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">colnames</span><span class="p">(</span><span class="n">result_df</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">colnames</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">result_df</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	7 obs. of  4 variables:
+##  $ Cat1: Factor w/ 3 levels "a","b","c": 1 2 3 1 2 1 1
+##  $ Cat2: Factor w/ 2 levels "x","y": 1 1 1 1 2 2 2
+##  $ Val1: num  1 1.41 1.73 2 2.24 ...
+##  $ Val2: num  3.16 4.47 5.48 6.32 7.07 ...
+</code></pre></div></div>
+<p>All problems solved.</p>
+
+<h2 id="using-variables-defined-outside-the-lapply-loop">Using variables defined outside the lapply loop</h2>
+<p>If one additionally wants to include other variables defined outside the loop
+into the lapply-loop, no problem. Since this type of function definition can not
+be resused outside the loop anyway, one can just pass any variable from outside
+the loop to the inside. Here is one example where we use a variable called 
+var_outside:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">var_outside</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">lapply</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="n">ncol</span><span class="p">(</span><span class="n">df</span><span class="p">)),</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span><span class="w">
+  </span><span class="n">act_column</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">df</span><span class="p">[,</span><span class="n">x</span><span class="p">]</span><span class="w">
+  </span><span class="k">if</span><span class="p">(</span><span class="n">is.factor</span><span class="p">(</span><span class="n">act_column</span><span class="p">)){</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">tolower</span><span class="p">(</span><span class="n">act_column</span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="nf">is.numeric</span><span class="p">(</span><span class="n">act_column</span><span class="p">)){</span><span class="w">
+    </span><span class="n">sqrt_mult</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sqrt</span><span class="p">(</span><span class="n">act_column</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">var_outside</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">sqrt_mult</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">})</span><span class="w">
+</span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">colnames</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w">
+</span><span class="n">result</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Cat1 Cat2     Val1     Val2
+## 1    a    x 10.00000 31.62278
+## 2    b    x 14.14214 44.72136
+## 3    c    x 17.32051 54.77226
+## 4    a    x 20.00000 63.24555
+## 5    b    y 22.36068 70.71068
+## 6    a    y 24.49490 77.45967
+## 7    a    y 26.45751 83.66600
+</code></pre></div></div>
+
+<p><strong>Watch out:</strong> Regarding the utilization of variables defined outside the loop 
+within the loop, one special case must be kept in mind: it is not possible to 
+change the content of any variable defined outside the loop with the apply
+function. Here is one example where we store the result of the <code class="highlighter-rouge">lowercase</code> 
+function in a variable called df before returning it. Remember that df is also
+the data frame we modify! We also include another variable called test which
+is used as intermediate storage for the <code class="highlighter-rouge">sqrt</code> return:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">lapply</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="n">ncol</span><span class="p">(</span><span class="n">df</span><span class="p">)),</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span><span class="w">
+  </span><span class="n">act_column</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">df</span><span class="p">[,</span><span class="n">x</span><span class="p">]</span><span class="w">
+  </span><span class="k">if</span><span class="p">(</span><span class="n">is.factor</span><span class="p">(</span><span class="n">act_column</span><span class="p">)){</span><span class="w">
+    </span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tolower</span><span class="p">(</span><span class="n">act_column</span><span class="p">)</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="nf">is.numeric</span><span class="p">(</span><span class="n">act_column</span><span class="p">)){</span><span class="w">
+    </span><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sqrt</span><span class="p">(</span><span class="n">act_column</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">var_outside</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">test</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">})</span><span class="w">
+</span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">colnames</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w">
+</span><span class="n">result</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Cat1 Cat2     Val1     Val2
+## 1    a    x 10.00000 31.62278
+## 2    b    x 14.14214 44.72136
+## 3    c    x 17.32051 54.77226
+## 4    a    x 20.00000 63.24555
+## 5    b    y 22.36068 70.71068
+## 6    a    y 24.49490 77.45967
+## 7    a    y 26.45751 83.66600
+</code></pre></div></div>
+<p>The result is obviously correct. Now have a look at df and test:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">test</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Cat1 Cat2 Val1 Val2
+## 1    A    X    1   10
+## 2    B    X    2   20
+## 3    C    X    3   30
+## 4    A    X    4   40
+## 5    B    Y    5   50
+## 6    A    Y    6   60
+## 7    A    Y    7   70
+</code></pre></div></div>
+<p>Although test is used as variable name for the lower case conversion and df
+is used for the numeric computation, the content of the variables outside the 
+loop has not changed.</p>
+
+<p>Hence, if you realy want to change the content of a variable defined outside
+the loop, use a <code class="highlighter-rouge">for</code> loop instead of <code class="highlighter-rouge">apply</code>.</p>
+
+<h2 id="returning-data-frames-within-the-lapply-loop">Returning data frames within the lapply loop</h2>
+<p>One last but important and heavily utilized procedure: In the above examples, the
+function used within <code class="highlighter-rouge">lapply</code> returns a vector which allows an easy conversion
+of the overall returned nested list from the <code class="highlighter-rouge">lapply</code> function by using
+the <code class="highlighter-rouge">as.data.frame</code> function. In many cases, your function will return a data 
+frame not a vector which makes the conversion a tiny bit more complicated.</p>
+
+<p>Here is an example. In this case we combine columns Cat1 and Cat2 as well as 
+Val1 and Val2 into new columns. Therefore it is feasable to change the 
+control statement of the <code class="highlighter-rouge">apply</code> function, too so it gives us the number of the
+individual rows (please note that this example can easily realized without any
+loop so take it just as an illustration):</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">lapply</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="n">nrow</span><span class="p">(</span><span class="n">df</span><span class="p">)),</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span><span class="w">
+  </span><span class="n">new_structure</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">Col1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">df</span><span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="m">2</span><span class="p">]),</span><span class="w">
+                              </span><span class="n">Col2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="m">3</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">df</span><span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="m">4</span><span class="p">])</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="n">new_structure</span><span class="p">)</span><span class="w">
+</span><span class="p">})</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## List of 7
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "A X": 1
+##   ..$ Col2: num 10
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "B X": 1
+##   ..$ Col2: num 40
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "C X": 1
+##   ..$ Col2: num 90
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "A X": 1
+##   ..$ Col2: num 160
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "B Y": 1
+##   ..$ Col2: num 250
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "A Y": 1
+##   ..$ Col2: num 360
+##  $ :'data.frame':	1 obs. of  2 variables:
+##   ..$ Col1: Factor w/ 1 level "A Y": 1
+##   ..$ Col2: num 490
+</code></pre></div></div>
+<p>The result is a structured list with a data frame within each list element. To
+build an overall data frame one basically just has to copy each row of the 
+individual data frames below each other. This is done by the following statement:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">do.call</span><span class="p">(</span><span class="s2">"rbind"</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="p">)</span><span class="w">
+</span><span class="n">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	7 obs. of  2 variables:
+##  $ Col1: Factor w/ 5 levels "A X","B X","C X",..: 1 2 3 1 4 5 5
+##  $ Col2: num  10 40 90 160 250 360 490
+</code></pre></div></div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="https://twitter.com/EnvIn_UMR"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="https://github.com/GeoMOER"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> &copy; 2022 Lab of Environmental Informatics
+. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://www.uni-marburg.de/fb19" rel="nofollow">Geography@Marburg University</a>.</div>
+
+
+
+      </footer>
+    </div>
+
+    
+  <script src="/moer-bsc-project-seminar-upscaling/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr.min.js"></script>
+<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr-store.js"></script>
+<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
