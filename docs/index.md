@@ -21,66 +21,72 @@ feature_row_ilos:
 
 {% include feature_row id="feature_row_intro" type="center" %}
 
-TO BE ADJUSTED...
+Understanding complex forest structures through field data collection have been increasingly being complemented with remote sensing methods. However, many remote sensing methods work best at a particular scale.
+For example, Sentinel data can capture information to a very high resolution of 10m in 2D while LiDAR (Light Detection and Ranging) can most accurately explain forest structure in 3D.
+Joint use of remote sensing data from multiple sensors can help us capture the complex vegetation structure at both local and regional levels. Such an understanding can be helpful for forest conservation and biodiversity management. 
+This course will use pre-collected data on species richness and many environmental parameters like temperature, soil, etc. collected at plot level to upscale biodiversity to a regional scale. 
 
-Data analysis is a key competence for professional geographers that requires profound knowledge in both (statistical) analysis methods and computer sciences. While the reason for the former is obvious, the latter is a direct result of a growing data deluge, induced by technological progress on both the fields of data collection and distribution. 
 
-Data analysis is based on a variety of skills related to organizing, handling, describing and understanding a diversity of datasets. 
-By using the programming environment R, this course will not just open the door to a cosmos of data analysis functionality but will moreover provide a domain specific and flexible tool for workflow automation.
+# What will be done in the course 
+In this course, we will use Airborne LiDAR and hyperspectral remote sensing data along with Sentinel data to upscale biodiversity measured at plot scales.
+The data used in this project is provided by the [Kilimanjaro-SES project](https://kili-ses.senckenberg.de/).
+
+
 
 # Intended learning outcomes
 At the end of this course you should be able to
   
-* organize a variety of datasets and (intermediate) analysis results in structured fashion,
-* document your workflow in an understandable and transparent manner, collaborate in teams and handle issues and task management using Git and GitHub as software management tool and platform,
-* implement data analysis workflows using tailored R scripts along with readily available functions from third-party R packages,
-* model relationships between data variables and calculate reliable error estimates, and to
-* critically evaluate your analysis.
+* Feel comfortable with the usage of R,
+* Know the basics of remote sensing theory and machine learning,
+* Handle LiDAR, hyperspectral and Sentinel data,
+* Use upscaling methods,
+* Include and process different types of remote sensing data in a single workflow, and
+* Apply all of the above to a real-world example.
+
 
 
 
 # Setting
 
-This course will take place in a hybrid setting with a digital classroom and additional students being present in person in the physical classroom (**F 14 | 00A12**).
-Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **online only on Tuesday 26.10.2021 at 9:15 am**.
-The link to the digital classroom of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2593121&client_id=UNIMR){:target="_blank"} (only accessible for members of the course who are logged-in into Ilias). 
+This course will take place in a hybrid setting (exept for the first session) with a digital classroom and additional students being present in person in the physical classroom (**F 14 | 00A19**).
+Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **in presence only on Wednesday 20.04.2022 at 10:15 am**.
+The link to the digital classroom of the first session is provided in the [Ilias course environment](xxxx){:target="_blank"} (only accessible for members of the course who are logged-in into Ilias). 
 Please also seriously check and follow the [Information on the Coronavirus](https://www.uni-marburg.de/de/universitaet/administration/sicherheit/coronavirus){:target="_blank"} of the University of Marburg.
 {: .notice--info}
 
 
 
+
 # Syllabus
 
-The course encompassed 13 sessions from 26.10.2021 to 15.02.2022 with a Christmas break between 20.12.2021 and 10.01.2022.
+The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Data basics** |
-| 01 | 26.10.2021 | First things first           | Data and information, R, R Studio, R markdown, GitHub, GitHub classroom |
-| 02 | 01.11.2021 | First things second          | Working environment, data sets, data types, data structures, logical operators, control structures |
-||| **Data exploration** |
-| 03 | 09.11.2021 | Look at your data            | Reading and writing (tabulated) data, visual data exploitation, descriptive statistics |
-| 04 | 16.11.2021 | Clean your data              | Tailoring data sets, fill values and NA, aggregating, merging or sub-setting data sets |
-||| **Data modelling** |
-| 05 | 23.11.2021 | Explain your data            | Linear regression modelling, confidence intervals, sample tests, variance analysis |
-| 06 | 30.11.2021 | Predict your data            | Cross-validation |
-| 07 | 07.12.2021 | Select your variables        | Multiple linear models, feature selection |
-| 08 | 14.12.2021 | Predict your non-linear data | Generalized additive models |
-| -- | Christmas break              | -- |
-| 09 | 11.01.2022 | Predict your temporal data   | Auto-correlation, AR and ARIMA models |
-| 10 | 18.01.2022 | Explain your temporal data   | Decomposing time series |
-| -- | 25.01.2022 | Build-in hold                | No course  |
-||| **Marburg Open Hackathon** |
-| 11 | 01.02.2022 | MOHA session                 | Marked assignment |
-||| **Visualization** |
-| 12 | 08.02.2022 | Visualize your data          | Publication quality graphics |
+| 01 | 20.04.2022 | First things first           | Data and information, R, R Studio, R markdown, GitHub, GitHub classroom |
+| 02 | 27.04.2022 | First things second          | Working environment, data sets, data types, data structures, logical operators, control structures |
+||| **Remote sensing basics** |
+| 03 | 04.05.2022 | Understanding remote sensing theory | Sensor types, spectral properties, satellites,data acquisition, temporal aspects |
+| 04 | 11.05.2022 | Going visible to beyond visible | Understanding Sentinel, LiDAR and Hyperspectral data |
+||| **Iteration 1: Starting simple** |
+| 05 | 18.05.2022 | Working with spatial data    | Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping and simple spatial statistics |
+| 06 | 25.05.2022 | Remote sensing in R          | Satellite data processing |
+| 07 | 01.06.2022 | Select your variables        | Working with Hyperspectral data |
+| 08 | 08.06.2022 | Predict your non-linear data | Working with LiDAR data |
+||| **Iteration 2: Getting a taste of reality** |
+| 09 | 15.06.2022 | Project Week      		 |  Add text here |
+| 10 | 22.06.2022 | Digitization                 | Workshop/ tutorial|
+| 11 | 29.06.2022 | Assignment                   | No course  |
+||| **Individual assignments** |
+| 12 | 06.07.2022 | Discussion                   | Individual assignmnet porblem solving session |
 ||| **Wrap up** |
-| 13 | 15.02.2022 | Wrap up                      | Time for questions and feedback, individual data analysis problems, goodbye |
+| 13 | 13.07.2022 | Wrap up                      | Time for questions and feedback, individual data analysis problems, goodbye |
 
 
 # Deliverables
 
-The graded course certificate will be based on an individual portfolio hosted as a personal repository on GitHub. The individual portfolio items are defined in the respective course assignments along with the information if they will be marked or not.
+The graded course certificate will be based on an individual portfolio hosted as a personal repository on GitHub. The individual portfolio items are defined in the respective course assignments. At the end of the course, a project work based on the individual assignments must be submitted, which will be marked.
 
 
 # Preparation and prerequisites
