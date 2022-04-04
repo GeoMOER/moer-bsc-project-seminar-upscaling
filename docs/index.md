@@ -5,8 +5,8 @@ date: '2018-02-06 13:00:00 +0100'
 header:
   overlay_color: "#000"
   overlay_filter: 0.6
-  overlay_image: "/assets/images/title/curve.png"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics)'
+  overlay_image: "/assets/images/title/Kilikarte_CC_Tanzania_72dpi-1800x1386_7-1.jpg"
+  caption: 'Image: [**Environmental Informatics Marburg**](https://kili-ses.senckenberg.de/wp-content/uploads/2021/03/Kilikarte_CC_Tanzania_72dpi-300x231.jpg)'
   cta_label: Go to course units
   cta_url: "/units.html"
 excerpt: xxx.
@@ -97,5 +97,11 @@ This course uses additionally provided material for teaching basic R skills,
 which can be found [here](https://geomoer.github.io/moer-base-r/){:target="_blank"}.
 {: .notice--success}
 
-# Instructor
-{% include author-profile.html %}
+## Team
+
+{% for author in site.data.authors %}
+  {% include author-profile.html %}
+ <br />
+{% endfor %}
+
+

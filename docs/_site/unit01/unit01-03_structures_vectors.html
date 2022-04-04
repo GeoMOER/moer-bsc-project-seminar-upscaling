@@ -13,46 +13,44 @@
 <meta name="description" content="Vectors are the basis for many data types in R.  Creating a vector A vector is created using the c function. Here are some examples:  my_vector_1 &lt;- c(1,2,3,4,5) print(my_vector_1)   ## [1] 1 2 3 4 5   my_vector_2 &lt;- c(1:10) print(my_vector_2)   ##  [1]  1  2  3  4  5  6  7  8  9 10   my_vector_3 &lt;- c(10:5) print(my_vector_3)   ## [1] 10  9  8  7  6  5   my_vector_4 &lt;- seq(from=0, to=30, by=10) print(my_vector_4)   ## [1]  0 10 20 30  You can skip the print function but just type the variable name if your  standard out is the console. We will assume that from now on.  Length of a vector To get the lenght of a vector, use the length function:  my_vector &lt;- c(1:10) length(my_vector)   ## [1] 10   Displaying and accessing the content of a vector In order to access the value(s) of a vector, you have to supply the  position of the element within the vector in square brackets. Please note that indexing starts with 1:  # get the value of the element(s) at the specified position(s) my_vector[1]   ## [1] 1   my_vector[1:3]   ## [1] 1 2 3   my_vector[c(1,3)]   ## [1] 1 3   Changing, adding or deleting an element of a vector To overwrite an element, you have to access it following the logic above. To add an element, you have to cut the existing  vector at the specified position and insert it. The result must be stored in a new variable (it will be new, even if you name it like the existing one).  The same structure applies for deleting an element what is the same as combining the part of the vector before and after the value which should be deleted:  # modify an element at position 3 my_vector[3] &lt;- 30  # add an element at position 4 my_added_vector &lt;- c(my_vector[1:3], 20, my_vector[4:length(my_vector)]) my_added_vector   ##  [1]  1  2 30 20  4  5  6  7  8  9 10   # delete an element at position 4 my_deleted_vector &lt;- c(my_vector[1:3], my_vector[5:length(my_vector)]) my_deleted_vector   ## [1]  1  2 30  5  6  7  8  9 10   Recycling of vectors If one combines a shorter with a longer vector in e.g. an arithmetic operation, the shorter vector is recycled until the length of the longer vector  is reached (i.e. the values are repeated over and over again)  my_short_vector &lt;- c(1,2,3) my_long_vector &lt;- c(10,20,30,40,50,60) my_sum_vector &lt;- my_short_vector + my_long_vector my_sum_vector   ## [1] 11 22 33 41 52 63  For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object.  Of course, looking into the package documentation or search the web is always a good idea, too. ">
 
 
-  <meta name="author" content="Dirk Zeuss">
-
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Upscaling">
 <meta property="og:title" content="Example: Vector Basics">
-<meta property="og:url" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit01/unit01-03_structures_vectors.html">
+<meta property="og:url" content="http://localhost:4000/moer-mpg-upscaling/unit01/unit01-03_structures_vectors.html">
 
 
   <meta property="og:description" content="Vectors are the basis for many data types in R.  Creating a vector A vector is created using the c function. Here are some examples:  my_vector_1 &lt;- c(1,2,3,4,5) print(my_vector_1)   ## [1] 1 2 3 4 5   my_vector_2 &lt;- c(1:10) print(my_vector_2)   ##  [1]  1  2  3  4  5  6  7  8  9 10   my_vector_3 &lt;- c(10:5) print(my_vector_3)   ## [1] 10  9  8  7  6  5   my_vector_4 &lt;- seq(from=0, to=30, by=10) print(my_vector_4)   ## [1]  0 10 20 30  You can skip the print function but just type the variable name if your  standard out is the console. We will assume that from now on.  Length of a vector To get the lenght of a vector, use the length function:  my_vector &lt;- c(1:10) length(my_vector)   ## [1] 10   Displaying and accessing the content of a vector In order to access the value(s) of a vector, you have to supply the  position of the element within the vector in square brackets. Please note that indexing starts with 1:  # get the value of the element(s) at the specified position(s) my_vector[1]   ## [1] 1   my_vector[1:3]   ## [1] 1 2 3   my_vector[c(1,3)]   ## [1] 1 3   Changing, adding or deleting an element of a vector To overwrite an element, you have to access it following the logic above. To add an element, you have to cut the existing  vector at the specified position and insert it. The result must be stored in a new variable (it will be new, even if you name it like the existing one).  The same structure applies for deleting an element what is the same as combining the part of the vector before and after the value which should be deleted:  # modify an element at position 3 my_vector[3] &lt;- 30  # add an element at position 4 my_added_vector &lt;- c(my_vector[1:3], 20, my_vector[4:length(my_vector)]) my_added_vector   ##  [1]  1  2 30 20  4  5  6  7  8  9 10   # delete an element at position 4 my_deleted_vector &lt;- c(my_vector[1:3], my_vector[5:length(my_vector)]) my_deleted_vector   ## [1]  1  2 30  5  6  7  8  9 10   Recycling of vectors If one combines a shorter with a longer vector in e.g. an arithmetic operation, the shorter vector is recycled until the length of the longer vector  is reached (i.e. the values are repeated over and over again)  my_short_vector &lt;- c(1,2,3) my_long_vector &lt;- c(10,20,30,40,50,60) my_sum_vector &lt;- my_short_vector + my_long_vector my_sum_vector   ## [1] 11 22 33 41 52 63  For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object.  Of course, looking into the package documentation or search the web is always a good idea, too. ">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/title/title_1600_500.jpg">
+  <meta property="og:image" content="http://localhost:4000/moer-mpg-upscaling/assets/images/title/title_1600_500.jpg">
 
 
 
   <meta name="twitter:site" content="@EnvIn_UMR">
   <meta name="twitter:title" content="Example: Vector Basics">
   <meta name="twitter:description" content="Vectors are the basis for many data types in R.  Creating a vector A vector is created using the c function. Here are some examples:  my_vector_1 &lt;- c(1,2,3,4,5) print(my_vector_1)   ## [1] 1 2 3 4 5   my_vector_2 &lt;- c(1:10) print(my_vector_2)   ##  [1]  1  2  3  4  5  6  7  8  9 10   my_vector_3 &lt;- c(10:5) print(my_vector_3)   ## [1] 10  9  8  7  6  5   my_vector_4 &lt;- seq(from=0, to=30, by=10) print(my_vector_4)   ## [1]  0 10 20 30  You can skip the print function but just type the variable name if your  standard out is the console. We will assume that from now on.  Length of a vector To get the lenght of a vector, use the length function:  my_vector &lt;- c(1:10) length(my_vector)   ## [1] 10   Displaying and accessing the content of a vector In order to access the value(s) of a vector, you have to supply the  position of the element within the vector in square brackets. Please note that indexing starts with 1:  # get the value of the element(s) at the specified position(s) my_vector[1]   ## [1] 1   my_vector[1:3]   ## [1] 1 2 3   my_vector[c(1,3)]   ## [1] 1 3   Changing, adding or deleting an element of a vector To overwrite an element, you have to access it following the logic above. To add an element, you have to cut the existing  vector at the specified position and insert it. The result must be stored in a new variable (it will be new, even if you name it like the existing one).  The same structure applies for deleting an element what is the same as combining the part of the vector before and after the value which should be deleted:  # modify an element at position 3 my_vector[3] &lt;- 30  # add an element at position 4 my_added_vector &lt;- c(my_vector[1:3], 20, my_vector[4:length(my_vector)]) my_added_vector   ##  [1]  1  2 30 20  4  5  6  7  8  9 10   # delete an element at position 4 my_deleted_vector &lt;- c(my_vector[1:3], my_vector[5:length(my_vector)]) my_deleted_vector   ## [1]  1  2 30  5  6  7  8  9 10   Recycling of vectors If one combines a shorter with a longer vector in e.g. an arithmetic operation, the shorter vector is recycled until the length of the longer vector  is reached (i.e. the values are repeated over and over again)  my_short_vector &lt;- c(1,2,3) my_long_vector &lt;- c(10,20,30,40,50,60) my_sum_vector &lt;- my_short_vector + my_long_vector my_sum_vector   ## [1] 11 22 33 41 52 63  For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object.  Of course, looking into the package documentation or search the web is always a good idea, too. ">
-  <meta name="twitter:url" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit01/unit01-03_structures_vectors.html">
+  <meta name="twitter:url" content="http://localhost:4000/moer-mpg-upscaling/unit01/unit01-03_structures_vectors.html">
 
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/title/title_1600_500.jpg">
+    <meta name="twitter:image" content="http://localhost:4000/moer-mpg-upscaling/assets/images/title/title_1600_500.jpg">
   
 
   
 
 
 
-  <meta property="article:published_time" content="2022-03-30T16:58:18+02:00">
+  <meta property="article:published_time" content="2022-04-04T14:21:19+02:00">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit01/unit01-03_structures_vectors.html">
+<link rel="canonical" href="http://localhost:4000/moer-mpg-upscaling/unit01/unit01-03_structures_vectors.html">
 
 
 
@@ -63,7 +61,7 @@
     
       "@type": "Person",
       "name": "Lab of Environmental Informatics",
-      "url": "http://localhost:4000/moer-bsc-project-seminar-upscaling/"
+      "url": "http://localhost:4000/moer-mpg-upscaling/"
     
   }
 </script>
@@ -76,7 +74,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/moer-bsc-project-seminar-upscaling/feed.xml" type="application/atom+xml" rel="alternate" title="Upscaling Feed">
+<link href="/moer-mpg-upscaling/feed.xml" type="application/atom+xml" rel="alternate" title="Upscaling Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,7 +84,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/moer-bsc-project-seminar-upscaling/assets/css/main.css">
+<link rel="stylesheet" href="/moer-mpg-upscaling/assets/css/main.css">
 
 <!--[if IE]>
   <style>
@@ -131,17 +129,17 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-    	<a class="site-title" href="http://localhost:4000/moer-bsc-project-seminar-upscaling/" style="padding:0px"><img src="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/logos/logo_umr4.png" style="padding-right:15px">Upscaling</a>
+    	<a class="site-title" href="http://localhost:4000/moer-mpg-upscaling/" style="padding:0px"><img src="http://localhost:4000/moer-mpg-upscaling/assets/images/logos/logo_umr4.png" style="padding-right:15px">Upscaling</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/units.html" >Units</a>
+              <a href="http://localhost:4000/moer-mpg-upscaling/units.html" >Units</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit00/unit00-03_faq.html" >FAQ</a>
+              <a href="http://localhost:4000/moer-mpg-upscaling/unit00/unit00-03_faq.html" >FAQ</a>
             </li>
           
             
@@ -161,7 +159,7 @@
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/about.html" >About</a>
+              <a href="http://localhost:4000/moer-mpg-upscaling/about.html" >About</a>
             </li>
           
         </ul>
@@ -197,7 +195,7 @@
   style=" background-image: url('');"
 >
   
-    <img src="/moer-bsc-project-seminar-upscaling/assets/images/title/title_1600_500.jpg" alt="Example: Vector Basics" class="page__hero-image">
+    <img src="/moer-mpg-upscaling/assets/images/title/title_1600_500.jpg" alt="Example: Vector Basics" class="page__hero-image">
   
   
     <span class="page__hero-caption">Image: <a href="https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics"><strong>Environmental Informatics Marburg</strong></a>
@@ -234,7 +232,7 @@
 
   <li>
       <span class="nav__sub-title">
-          <a href="/moer-bsc-project-seminar-upscaling/units.html" class="">Back to course units</a>
+          <a href="/moer-mpg-upscaling/units.html" class="">Back to course units</a>
     </span>
       </li>
 
@@ -255,48 +253,48 @@
           
           <li>
               <span class="nav__sub-title">
-		              <a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-01_first_things_first.html" class="">01 First Things First</a>
+		              <a href="/moer-mpg-upscaling/unit01/unit01-01_first_things_first.html" class="">01 First Things First</a>
 		          </span>
           <ul>
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-01_first_things_first.html" class="">First Things First</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-01_first_things_first.html" class="">First Things First</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-02_the_very_basics.html" class="">R and RStudio</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-02_the_very_basics.html" class="">R and RStudio</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-03_structures_vectors.html" class="active">Example: Vector Basics</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-03_structures_vectors.html" class="active">Example: Vector Basics</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-05_structures_data_frames.html" class="">Example: Data Frame Basics</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-05_structures_data_frames.html" class="">Example: Data Frame Basics</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-08_Rmd_html.html" class="">Example: R Markdown with html output</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-08_Rmd_html.html" class="">Example: R Markdown with html output</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-09_git_github.html" class="">Git and GitHub</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-09_git_github.html" class="">Git and GitHub</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-10_notes_on_assignments.html" class="">Assignments and GitHub</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-10_notes_on_assignments.html" class="">Assignments and GitHub</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-11_assignment.html" class="">Marked Assignment: Hello R, Hello GitHub</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-11_assignment.html" class="">Marked Assignment: Hello R, Hello GitHub</a></li>
 			        
           
           </ul>
@@ -320,7 +318,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Example: Vector Basics">
     <meta itemprop="description" content="Vectors are the basis for many data types in R.Creating a vectorA vector is created using the c function. Here are some examples:my_vector_1 &lt;- c(1,2,3,4,5)print(my_vector_1)## [1] 1 2 3 4 5my_vector_2 &lt;- c(1:10)print(my_vector_2)##  [1]  1  2  3  4  5  6  7  8  9 10my_vector_3 &lt;- c(10:5)print(my_vector_3)## [1] 10  9  8  7  6  5my_vector_4 &lt;- seq(from=0, to=30, by=10)print(my_vector_4)## [1]  0 10 20 30You can skip the print function but just type the variable name if your standard out is the console. We will assume that from now on.Length of a vectorTo get the lenght of a vector, use the length function:my_vector &lt;- c(1:10)length(my_vector)## [1] 10Displaying and accessing the content of a vectorIn order to access the value(s) of a vector, you have to supply the position of the element within the vector in square brackets. Please note thatindexing starts with 1:# get the value of the element(s) at the specified position(s)my_vector[1]## [1] 1my_vector[1:3]## [1] 1 2 3my_vector[c(1,3)]## [1] 1 3Changing, adding or deleting an element of a vectorTo overwrite an element, you have to accessit following the logic above. To add an element, you have to cut the existing vector at the specified position and insert it. The result must be stored ina new variable (it will be new, even if you name it like the existing one). The same structure applies for deleting an element what is the same as combiningthe part of the vector before and after the value which should be deleted:# modify an element at position 3my_vector[3] &lt;- 30# add an element at position 4my_added_vector &lt;- c(my_vector[1:3], 20, my_vector[4:length(my_vector)])my_added_vector##  [1]  1  2 30 20  4  5  6  7  8  9 10# delete an element at position 4my_deleted_vector &lt;- c(my_vector[1:3], my_vector[5:length(my_vector)])my_deleted_vector## [1]  1  2 30  5  6  7  8  9 10Recycling of vectorsIf one combines a shorter with a longer vector in e.g. an arithmeticoperation, the shorter vector is recycled until the length of the longer vector is reached (i.e. the values are repeated over and over again)my_short_vector &lt;- c(1,2,3)my_long_vector &lt;- c(10,20,30,40,50,60)my_sum_vector &lt;- my_short_vector + my_long_vectormy_sum_vector## [1] 11 22 33 41 52 63For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object. Of course, looking into the package documentation or search the web is always a good idea, too.">
-    <meta itemprop="datePublished" content="2022-03-30T16:58:18+02:00">
+    <meta itemprop="datePublished" content="2022-04-04T14:21:19+02:00">
     
 
     <div class="page__inner-wrap">
@@ -351,46 +349,46 @@
         <p>Vectors are the basis for many data types in R.</p>
 
 <h2 id="creating-a-vector">Creating a vector</h2>
-<p>A vector is created using the <code class="highlighter-rouge">c</code> function. Here are some examples:</p>
+<p>A vector is created using the <code class="language-plaintext highlighter-rouge">c</code> function. Here are some examples:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector_1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">5</span><span class="p">)</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">my_vector_1</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3 4 5
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3 4 5
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector_2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">my_vector_2</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  1  2  3  4  5  6  7  8  9 10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  1  2  3  4  5  6  7  8  9 10
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector_3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="o">:</span><span class="m">5</span><span class="p">)</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">my_vector_3</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 10  9  8  7  6  5
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 10  9  8  7  6  5
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector_4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="n">from</span><span class="o">=</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">to</span><span class="o">=</span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="o">=</span><span class="m">10</span><span class="p">)</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">my_vector_4</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1]  0 10 20 30
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1]  0 10 20 30
 </code></pre></div></div>
-<p>You can skip the <code class="highlighter-rouge">print</code> function but just type the variable name if your 
+<p>You can skip the <code class="language-plaintext highlighter-rouge">print</code> function but just type the variable name if your 
 standard out is the console. We will assume that from now on.</p>
 
 <h2 id="length-of-a-vector">Length of a vector</h2>
-<p>To get the lenght of a vector, use the <code class="highlighter-rouge">length</code> function:</p>
+<p>To get the lenght of a vector, use the <code class="language-plaintext highlighter-rouge">length</code> function:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span><span class="w">
 </span><span class="nf">length</span><span class="p">(</span><span class="n">my_vector</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 10
 </code></pre></div></div>
 
 <h2 id="displaying-and-accessing-the-content-of-a-vector">Displaying and accessing the content of a vector</h2>
@@ -402,19 +400,19 @@ indexing starts with 1:</p>
 </span><span class="n">my_vector</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">]</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 2 3
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_vector</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">)]</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 1 3
 </code></pre></div></div>
 
 <h2 id="changing-adding-or-deleting-an-element-of-a-vector">Changing, adding or deleting an element of a vector</h2>
@@ -433,7 +431,7 @@ the part of the vector before and after the value which should be deleted:</p>
 </span><span class="n">my_added_vector</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  1  2 30 20  4  5  6  7  8  9 10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##  [1]  1  2 30 20  4  5  6  7  8  9 10
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># delete an element at position 4</span><span class="w">
@@ -441,7 +439,7 @@ the part of the vector before and after the value which should be deleted:</p>
 </span><span class="n">my_deleted_vector</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1]  1  2 30  5  6  7  8  9 10
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1]  1  2 30  5  6  7  8  9 10
 </code></pre></div></div>
 
 <h2 id="recycling-of-vectors">Recycling of vectors</h2>
@@ -455,7 +453,7 @@ is reached (i.e. the values are repeated over and over again)</p>
 </span><span class="n">my_sum_vector</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 11 22 33 41 52 63
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 11 22 33 41 52 63
 </code></pre></div></div>
 <p>For more information have a look at e.g. the respective <a href="http://www.statmethods.net/input/datatypes.html" target="_blank">data type</a> site at Quick R. There you will also find an overview on how to get <a href="http://www.statmethods.net/input/contents.html" target="_blank">information about an object</a>. 
 Of course, looking into the package documentation or search the web is always a good idea, too.</p>
@@ -469,7 +467,7 @@ Of course, looking into the package documentation or search the web is always a 
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-03-30T16:58:18+02:00">March 30, 2022</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-04-04T14:21:19+02:00">April 4, 2022</time></p>
         
       </footer>
 
@@ -478,11 +476,11 @@ Of course, looking into the package documentation or search the web is always a 
       
   <nav class="pagination">
     
-      <a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-02_the_very_basics.html" class="pagination--pager" title="R and RStudio
+      <a href="/moer-mpg-upscaling/unit01/unit01-02_the_very_basics.html" class="pagination--pager" title="R and RStudio
 ">Previous</a>
     
     
-      <a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-05_structures_data_frames.html" class="pagination--pager" title="Example: Data Frame Basics
+      <a href="/moer-mpg-upscaling/unit01/unit01-05_structures_data_frames.html" class="pagination--pager" title="Example: Data Frame Basics
 ">Next</a>
     
   </nav>
@@ -524,11 +522,9 @@ Of course, looking into the package documentation or search the web is always a 
     
     
     
-      <li><a href="https://github.com/GeoMOER"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    
-    <li><a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://localhost:4000/moer-mpg-upscaling/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -541,15 +537,15 @@ Of course, looking into the package documentation or search the web is always a 
     </div>
 
     
-  <script src="/moer-bsc-project-seminar-upscaling/assets/js/main.min.js"></script>
+  <script src="/moer-mpg-upscaling/assets/js/main.min.js"></script>
   <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 
 
-<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr.min.js"></script>
-<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr-store.js"></script>
-<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr-en.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr.min.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr-store.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr-en.js"></script>
 
 
 

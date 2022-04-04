@@ -13,46 +13,44 @@
 <meta name="description" content="Data frames are one of the most heavily used data structures in R.  Creation of a data frame A data frame is created from scratch by supplying vectors to the data.frame function. Here are some examples:  x &lt;- c(2.5, 3.5, 3.4) y &lt;- c(5, 10, 1) my_df &lt;- data.frame(x, y) my_df   ##     x  y ## 1 2.5  5 ## 2 3.5 10 ## 3 3.4  1   colnames(my_df) &lt;- c(&quot;Floats&quot;, &quot;Integers&quot;)  my_other_df &lt;- data.frame(X = c(2, 3, 4), Y = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;)) my_other_df   ##   X Y ## 1 2 A ## 2 3 B ## 3 4 C  The colnames function allows to supply column names to an existing data frame. Alternatively, the column names can be set within the data.frame  function by assign the vector elements to a variable (capital X and Y in the example above).  Dimensions of a data frame To get the dimensions of a data frame, use the ncol (number of columns),  nrow (number of rows) or str (structure) function:  ncol(my_other_df)   ## [1] 2   nrow(my_other_df)   ## [1] 3   str(my_other_df)   ## &#39;data.frame&#39;:	3 obs. of  2 variables: ##  $ X: num  2 3 4 ##  $ Y: Factor w/ 3 levels &quot;A&quot;,&quot;B&quot;,&quot;C&quot;: 1 2 3   Displaying and accessing the content of a data frame  The content of a data frame is accessed by either a position information  given in square brackets (e.g. df[3,4]) or a column name given after a $ sign (e.g. df$columnName). Here is an example:  my_other_df[1,]  # Shows first row   ##   X Y ## 1 2 A   my_other_df[,2]  # Shows second column   ## [1] A B C ## Levels: A B C   my_other_df$Y  # Shows second column   ## [1] A B C ## Levels: A B C   If position information is used, the ordering matters. If you think of a data frame like a table, then the following applies:     In a 1-D data frame, the first dimension is the row   In a 2-D data frame, the first dimension is the row, the second the column   Higher dimensions follow the same logic.  Here are some possible combinations:     Single row, all columns: df[x,]                   Single column, all rows: df[,y]                   Single row and column: df[x,y]                    All except one row, all columns: df[-x,y]         Selected rows, all columns: df[c(x1, x2, x3),]    Continous rows, all columns: df[c(x1:x2),]        In summary, dimensions like rows or columns which should be selected have positive  numbers, dimensions that should be hidden have negative numbers, and if all entries of a dimension should be selected one just leaves the field empty. If more than one dimension should be shown or hidden, one has to supply these information with a  vector defined by the c function.  my_other_df[c(1,3),]  # Shows rows 1 and 3   ##   X Y ## 1 2 A ## 3 4 C   my_other_df[c(1,2),]  # Shows rows 1 to 2   ##   X Y ## 1 2 A ## 2 3 B   If you are interested in the first or last rows, you can also use the head or tail functions. The default number of lines to be displayed is five but this can be changed with the second argument. Let us have a look at the first two rows:  head(my_other_df, 2)   ##   X Y ## 1 2 A ## 2 3 B   And now on the last two rows:  tail(my_other_df, 2)   ##   X Y ## 2 3 B ## 3 4 C   Changing, adding or deleting an element of a data frame In order to change an element of a data frame (individual value or entire vectors like rows or columns), you have to access it following the logic above. To add or delete a column, you have to supply/remove a vector to the specified position.  Other more specific changes will be covered later.  # overwrite an element my_other_df$X[3] &lt;- 400  # same as my_other_df[3,1] &lt;- 400 my_other_df   ##     X Y ## 1   2 A ## 2   3 B ## 3 400 C   # change an entire dimension my_other_df[,1] &lt;- c(&quot;200&quot;, &quot;300&quot;, &quot;401&quot;)  # same as my_other_df$X &lt;- 400 my_other_df   ##     X Y ## 1 200 A ## 2 300 B ## 3 401 C   # add a new column my_other_df$z &lt;- c(255, 300, 100) my_other_df   ##     X Y   z ## 1 200 A 255 ## 2 300 B 300 ## 3 401 C 100   # delete a column my_other_df$z &lt;- NULL my_other_df   ##     X Y ## 1 200 A ## 2 300 B ## 3 401 C  As for lists, to actually delete an element, it has to be set to NULL.  For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object. Of course, looking into the package documentation or search the web is always a good idea, too. ">
 
 
-  <meta name="author" content="Dirk Zeuss">
-
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Upscaling">
 <meta property="og:title" content="Example: Data Frame Basics">
-<meta property="og:url" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit01/unit01-05_structures_data_frames.html">
+<meta property="og:url" content="http://localhost:4000/moer-mpg-upscaling/unit01/unit01-05_structures_data_frames.html">
 
 
   <meta property="og:description" content="Data frames are one of the most heavily used data structures in R.  Creation of a data frame A data frame is created from scratch by supplying vectors to the data.frame function. Here are some examples:  x &lt;- c(2.5, 3.5, 3.4) y &lt;- c(5, 10, 1) my_df &lt;- data.frame(x, y) my_df   ##     x  y ## 1 2.5  5 ## 2 3.5 10 ## 3 3.4  1   colnames(my_df) &lt;- c(&quot;Floats&quot;, &quot;Integers&quot;)  my_other_df &lt;- data.frame(X = c(2, 3, 4), Y = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;)) my_other_df   ##   X Y ## 1 2 A ## 2 3 B ## 3 4 C  The colnames function allows to supply column names to an existing data frame. Alternatively, the column names can be set within the data.frame  function by assign the vector elements to a variable (capital X and Y in the example above).  Dimensions of a data frame To get the dimensions of a data frame, use the ncol (number of columns),  nrow (number of rows) or str (structure) function:  ncol(my_other_df)   ## [1] 2   nrow(my_other_df)   ## [1] 3   str(my_other_df)   ## &#39;data.frame&#39;:	3 obs. of  2 variables: ##  $ X: num  2 3 4 ##  $ Y: Factor w/ 3 levels &quot;A&quot;,&quot;B&quot;,&quot;C&quot;: 1 2 3   Displaying and accessing the content of a data frame  The content of a data frame is accessed by either a position information  given in square brackets (e.g. df[3,4]) or a column name given after a $ sign (e.g. df$columnName). Here is an example:  my_other_df[1,]  # Shows first row   ##   X Y ## 1 2 A   my_other_df[,2]  # Shows second column   ## [1] A B C ## Levels: A B C   my_other_df$Y  # Shows second column   ## [1] A B C ## Levels: A B C   If position information is used, the ordering matters. If you think of a data frame like a table, then the following applies:     In a 1-D data frame, the first dimension is the row   In a 2-D data frame, the first dimension is the row, the second the column   Higher dimensions follow the same logic.  Here are some possible combinations:     Single row, all columns: df[x,]                   Single column, all rows: df[,y]                   Single row and column: df[x,y]                    All except one row, all columns: df[-x,y]         Selected rows, all columns: df[c(x1, x2, x3),]    Continous rows, all columns: df[c(x1:x2),]        In summary, dimensions like rows or columns which should be selected have positive  numbers, dimensions that should be hidden have negative numbers, and if all entries of a dimension should be selected one just leaves the field empty. If more than one dimension should be shown or hidden, one has to supply these information with a  vector defined by the c function.  my_other_df[c(1,3),]  # Shows rows 1 and 3   ##   X Y ## 1 2 A ## 3 4 C   my_other_df[c(1,2),]  # Shows rows 1 to 2   ##   X Y ## 1 2 A ## 2 3 B   If you are interested in the first or last rows, you can also use the head or tail functions. The default number of lines to be displayed is five but this can be changed with the second argument. Let us have a look at the first two rows:  head(my_other_df, 2)   ##   X Y ## 1 2 A ## 2 3 B   And now on the last two rows:  tail(my_other_df, 2)   ##   X Y ## 2 3 B ## 3 4 C   Changing, adding or deleting an element of a data frame In order to change an element of a data frame (individual value or entire vectors like rows or columns), you have to access it following the logic above. To add or delete a column, you have to supply/remove a vector to the specified position.  Other more specific changes will be covered later.  # overwrite an element my_other_df$X[3] &lt;- 400  # same as my_other_df[3,1] &lt;- 400 my_other_df   ##     X Y ## 1   2 A ## 2   3 B ## 3 400 C   # change an entire dimension my_other_df[,1] &lt;- c(&quot;200&quot;, &quot;300&quot;, &quot;401&quot;)  # same as my_other_df$X &lt;- 400 my_other_df   ##     X Y ## 1 200 A ## 2 300 B ## 3 401 C   # add a new column my_other_df$z &lt;- c(255, 300, 100) my_other_df   ##     X Y   z ## 1 200 A 255 ## 2 300 B 300 ## 3 401 C 100   # delete a column my_other_df$z &lt;- NULL my_other_df   ##     X Y ## 1 200 A ## 2 300 B ## 3 401 C  As for lists, to actually delete an element, it has to be set to NULL.  For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object. Of course, looking into the package documentation or search the web is always a good idea, too. ">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/title/title_1600_500.jpg">
+  <meta property="og:image" content="http://localhost:4000/moer-mpg-upscaling/assets/images/title/title_1600_500.jpg">
 
 
 
   <meta name="twitter:site" content="@EnvIn_UMR">
   <meta name="twitter:title" content="Example: Data Frame Basics">
   <meta name="twitter:description" content="Data frames are one of the most heavily used data structures in R.  Creation of a data frame A data frame is created from scratch by supplying vectors to the data.frame function. Here are some examples:  x &lt;- c(2.5, 3.5, 3.4) y &lt;- c(5, 10, 1) my_df &lt;- data.frame(x, y) my_df   ##     x  y ## 1 2.5  5 ## 2 3.5 10 ## 3 3.4  1   colnames(my_df) &lt;- c(&quot;Floats&quot;, &quot;Integers&quot;)  my_other_df &lt;- data.frame(X = c(2, 3, 4), Y = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;)) my_other_df   ##   X Y ## 1 2 A ## 2 3 B ## 3 4 C  The colnames function allows to supply column names to an existing data frame. Alternatively, the column names can be set within the data.frame  function by assign the vector elements to a variable (capital X and Y in the example above).  Dimensions of a data frame To get the dimensions of a data frame, use the ncol (number of columns),  nrow (number of rows) or str (structure) function:  ncol(my_other_df)   ## [1] 2   nrow(my_other_df)   ## [1] 3   str(my_other_df)   ## &#39;data.frame&#39;:	3 obs. of  2 variables: ##  $ X: num  2 3 4 ##  $ Y: Factor w/ 3 levels &quot;A&quot;,&quot;B&quot;,&quot;C&quot;: 1 2 3   Displaying and accessing the content of a data frame  The content of a data frame is accessed by either a position information  given in square brackets (e.g. df[3,4]) or a column name given after a $ sign (e.g. df$columnName). Here is an example:  my_other_df[1,]  # Shows first row   ##   X Y ## 1 2 A   my_other_df[,2]  # Shows second column   ## [1] A B C ## Levels: A B C   my_other_df$Y  # Shows second column   ## [1] A B C ## Levels: A B C   If position information is used, the ordering matters. If you think of a data frame like a table, then the following applies:     In a 1-D data frame, the first dimension is the row   In a 2-D data frame, the first dimension is the row, the second the column   Higher dimensions follow the same logic.  Here are some possible combinations:     Single row, all columns: df[x,]                   Single column, all rows: df[,y]                   Single row and column: df[x,y]                    All except one row, all columns: df[-x,y]         Selected rows, all columns: df[c(x1, x2, x3),]    Continous rows, all columns: df[c(x1:x2),]        In summary, dimensions like rows or columns which should be selected have positive  numbers, dimensions that should be hidden have negative numbers, and if all entries of a dimension should be selected one just leaves the field empty. If more than one dimension should be shown or hidden, one has to supply these information with a  vector defined by the c function.  my_other_df[c(1,3),]  # Shows rows 1 and 3   ##   X Y ## 1 2 A ## 3 4 C   my_other_df[c(1,2),]  # Shows rows 1 to 2   ##   X Y ## 1 2 A ## 2 3 B   If you are interested in the first or last rows, you can also use the head or tail functions. The default number of lines to be displayed is five but this can be changed with the second argument. Let us have a look at the first two rows:  head(my_other_df, 2)   ##   X Y ## 1 2 A ## 2 3 B   And now on the last two rows:  tail(my_other_df, 2)   ##   X Y ## 2 3 B ## 3 4 C   Changing, adding or deleting an element of a data frame In order to change an element of a data frame (individual value or entire vectors like rows or columns), you have to access it following the logic above. To add or delete a column, you have to supply/remove a vector to the specified position.  Other more specific changes will be covered later.  # overwrite an element my_other_df$X[3] &lt;- 400  # same as my_other_df[3,1] &lt;- 400 my_other_df   ##     X Y ## 1   2 A ## 2   3 B ## 3 400 C   # change an entire dimension my_other_df[,1] &lt;- c(&quot;200&quot;, &quot;300&quot;, &quot;401&quot;)  # same as my_other_df$X &lt;- 400 my_other_df   ##     X Y ## 1 200 A ## 2 300 B ## 3 401 C   # add a new column my_other_df$z &lt;- c(255, 300, 100) my_other_df   ##     X Y   z ## 1 200 A 255 ## 2 300 B 300 ## 3 401 C 100   # delete a column my_other_df$z &lt;- NULL my_other_df   ##     X Y ## 1 200 A ## 2 300 B ## 3 401 C  As for lists, to actually delete an element, it has to be set to NULL.  For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object. Of course, looking into the package documentation or search the web is always a good idea, too. ">
-  <meta name="twitter:url" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit01/unit01-05_structures_data_frames.html">
+  <meta name="twitter:url" content="http://localhost:4000/moer-mpg-upscaling/unit01/unit01-05_structures_data_frames.html">
 
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/title/title_1600_500.jpg">
+    <meta name="twitter:image" content="http://localhost:4000/moer-mpg-upscaling/assets/images/title/title_1600_500.jpg">
   
 
   
 
 
 
-  <meta property="article:published_time" content="2022-03-30T16:58:18+02:00">
+  <meta property="article:published_time" content="2022-04-04T14:21:19+02:00">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit01/unit01-05_structures_data_frames.html">
+<link rel="canonical" href="http://localhost:4000/moer-mpg-upscaling/unit01/unit01-05_structures_data_frames.html">
 
 
 
@@ -63,7 +61,7 @@
     
       "@type": "Person",
       "name": "Lab of Environmental Informatics",
-      "url": "http://localhost:4000/moer-bsc-project-seminar-upscaling/"
+      "url": "http://localhost:4000/moer-mpg-upscaling/"
     
   }
 </script>
@@ -76,7 +74,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/moer-bsc-project-seminar-upscaling/feed.xml" type="application/atom+xml" rel="alternate" title="Upscaling Feed">
+<link href="/moer-mpg-upscaling/feed.xml" type="application/atom+xml" rel="alternate" title="Upscaling Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,7 +84,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/moer-bsc-project-seminar-upscaling/assets/css/main.css">
+<link rel="stylesheet" href="/moer-mpg-upscaling/assets/css/main.css">
 
 <!--[if IE]>
   <style>
@@ -131,17 +129,17 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-    	<a class="site-title" href="http://localhost:4000/moer-bsc-project-seminar-upscaling/" style="padding:0px"><img src="http://localhost:4000/moer-bsc-project-seminar-upscaling/assets/images/logos/logo_umr4.png" style="padding-right:15px">Upscaling</a>
+    	<a class="site-title" href="http://localhost:4000/moer-mpg-upscaling/" style="padding:0px"><img src="http://localhost:4000/moer-mpg-upscaling/assets/images/logos/logo_umr4.png" style="padding-right:15px">Upscaling</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/units.html" >Units</a>
+              <a href="http://localhost:4000/moer-mpg-upscaling/units.html" >Units</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/unit00/unit00-03_faq.html" >FAQ</a>
+              <a href="http://localhost:4000/moer-mpg-upscaling/unit00/unit00-03_faq.html" >FAQ</a>
             </li>
           
             
@@ -161,7 +159,7 @@
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/about.html" >About</a>
+              <a href="http://localhost:4000/moer-mpg-upscaling/about.html" >About</a>
             </li>
           
         </ul>
@@ -197,7 +195,7 @@
   style=" background-image: url('');"
 >
   
-    <img src="/moer-bsc-project-seminar-upscaling/assets/images/title/title_1600_500.jpg" alt="Example: Data Frame Basics" class="page__hero-image">
+    <img src="/moer-mpg-upscaling/assets/images/title/title_1600_500.jpg" alt="Example: Data Frame Basics" class="page__hero-image">
   
   
     <span class="page__hero-caption">Image: <a href="https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics"><strong>Environmental Informatics Marburg</strong></a>
@@ -234,7 +232,7 @@
 
   <li>
       <span class="nav__sub-title">
-          <a href="/moer-bsc-project-seminar-upscaling/units.html" class="">Back to course units</a>
+          <a href="/moer-mpg-upscaling/units.html" class="">Back to course units</a>
     </span>
       </li>
 
@@ -255,48 +253,48 @@
           
           <li>
               <span class="nav__sub-title">
-		              <a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-01_first_things_first.html" class="">01 First Things First</a>
+		              <a href="/moer-mpg-upscaling/unit01/unit01-01_first_things_first.html" class="">01 First Things First</a>
 		          </span>
           <ul>
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-01_first_things_first.html" class="">First Things First</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-01_first_things_first.html" class="">First Things First</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-02_the_very_basics.html" class="">R and RStudio</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-02_the_very_basics.html" class="">R and RStudio</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-03_structures_vectors.html" class="">Example: Vector Basics</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-03_structures_vectors.html" class="">Example: Vector Basics</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-05_structures_data_frames.html" class="active">Example: Data Frame Basics</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-05_structures_data_frames.html" class="active">Example: Data Frame Basics</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-08_Rmd_html.html" class="">Example: R Markdown with html output</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-08_Rmd_html.html" class="">Example: R Markdown with html output</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-09_git_github.html" class="">Git and GitHub</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-09_git_github.html" class="">Git and GitHub</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-10_notes_on_assignments.html" class="">Assignments and GitHub</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-10_notes_on_assignments.html" class="">Assignments and GitHub</a></li>
 			        
           
               
 			        
-			            <li><a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-11_assignment.html" class="">Marked Assignment: Hello R, Hello GitHub</a></li>
+			            <li><a href="/moer-mpg-upscaling/unit01/unit01-11_assignment.html" class="">Marked Assignment: Hello R, Hello GitHub</a></li>
 			        
           
           </ul>
@@ -320,7 +318,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Example: Data Frame Basics">
     <meta itemprop="description" content="Data frames are one of the most heavily used data structures in R.Creation of a data frameA data frame is created from scratch by supplying vectors to the data.framefunction. Here are some examples:x &lt;- c(2.5, 3.5, 3.4)y &lt;- c(5, 10, 1)my_df &lt;- data.frame(x, y)my_df##     x  y## 1 2.5  5## 2 3.5 10## 3 3.4  1colnames(my_df) &lt;- c(&quot;Floats&quot;, &quot;Integers&quot;)my_other_df &lt;- data.frame(X = c(2, 3, 4), Y = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;))my_other_df##   X Y## 1 2 A## 2 3 B## 3 4 CThe colnames function allows to supply column names to an existing dataframe. Alternatively, the column names can be set within the data.frame function by assign the vector elements to a variable (capital X and Y in the example above).Dimensions of a data frameTo get the dimensions of a data frame, use the ncol (number of columns), nrow (number of rows) or str (structure) function:ncol(my_other_df)## [1] 2nrow(my_other_df)## [1] 3str(my_other_df)## &#39;data.frame&#39;:	3 obs. of  2 variables:##  $ X: num  2 3 4##  $ Y: Factor w/ 3 levels &quot;A&quot;,&quot;B&quot;,&quot;C&quot;: 1 2 3Displaying and accessing the content of a data frameThe content of a data frame is accessed by either a position information given in square brackets (e.g. df[3,4]) or a column name given after a $ sign(e.g. df$columnName). Here is an example:my_other_df[1,]  # Shows first row##   X Y## 1 2 Amy_other_df[,2]  # Shows second column## [1] A B C## Levels: A B Cmy_other_df$Y  # Shows second column## [1] A B C## Levels: A B CIf position information is used, the ordering matters. If you think of a dataframe like a table, then the following applies:  In a 1-D data frame, the first dimension is the row  In a 2-D data frame, the first dimension is the row, the second the columnHigher dimensions follow the same logic.Here are some possible combinations:  Single row, all columns: df[x,]                  Single column, all rows: df[,y]                  Single row and column: df[x,y]                   All except one row, all columns: df[-x,y]        Selected rows, all columns: df[c(x1, x2, x3),]   Continous rows, all columns: df[c(x1:x2),]     In summary, dimensions like rows or columns which should be selected have positive numbers, dimensions that should be hidden have negative numbers, and if all entries ofa dimension should be selected one just leaves the field empty. If more thanone dimension should be shown or hidden, one has to supply these information with a vector defined by the c function.my_other_df[c(1,3),]  # Shows rows 1 and 3##   X Y## 1 2 A## 3 4 Cmy_other_df[c(1,2),]  # Shows rows 1 to 2##   X Y## 1 2 A## 2 3 BIf you are interested in the first or last rows, you can also use the head ortail functions. The default number of lines to be displayed is five but this can be changed with thesecond argument. Let us have a look at the first two rows:head(my_other_df, 2)##   X Y## 1 2 A## 2 3 BAnd now on the last two rows:tail(my_other_df, 2)##   X Y## 2 3 B## 3 4 CChanging, adding or deleting an element of a data frameIn order to change an element of a data frame (individual value or entirevectors like rows or columns), you have to access it following the logic above.To add or delete a column, you have to supply/remove a vector to the specifiedposition.Other more specific changes will be covered later.# overwrite an elementmy_other_df$X[3] &lt;- 400  # same as my_other_df[3,1] &lt;- 400my_other_df##     X Y## 1   2 A## 2   3 B## 3 400 C# change an entire dimensionmy_other_df[,1] &lt;- c(&quot;200&quot;, &quot;300&quot;, &quot;401&quot;)  # same as my_other_df$X &lt;- 400my_other_df##     X Y## 1 200 A## 2 300 B## 3 401 C# add a new columnmy_other_df$z &lt;- c(255, 300, 100)my_other_df##     X Y   z## 1 200 A 255## 2 300 B 300## 3 401 C 100# delete a columnmy_other_df$z &lt;- NULLmy_other_df##     X Y## 1 200 A## 2 300 B## 3 401 CAs for lists, to actually delete an element, it has to be set to NULL.For more information have a look at e.g. the respective data type site at Quick R. There you will also find an overview on how to get information about an object. Of course, looking into the package documentation or search the web is always a good idea, too.">
-    <meta itemprop="datePublished" content="2022-03-30T16:58:18+02:00">
+    <meta itemprop="datePublished" content="2022-04-04T14:21:19+02:00">
     
 
     <div class="page__inner-wrap">
@@ -350,7 +348,7 @@
         <p>Data frames are one of the most heavily used data structures in R.</p>
 
 <h2 id="creation-of-a-data-frame">Creation of a data frame</h2>
-<p>A data frame is created from scratch by supplying vectors to the <code class="highlighter-rouge">data.frame</code>
+<p>A data frame is created from scratch by supplying vectors to the <code class="language-plaintext highlighter-rouge">data.frame</code>
 function. Here are some examples:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2.5</span><span class="p">,</span><span class="w"> </span><span class="m">3.5</span><span class="p">,</span><span class="w"> </span><span class="m">3.4</span><span class="p">)</span><span class="w">
@@ -359,7 +357,7 @@ function. Here are some examples:</p>
 </span><span class="n">my_df</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     x  y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     x  y
 ## 1 2.5  5
 ## 2 3.5 10
 ## 3 3.4  1
@@ -371,35 +369,35 @@ function. Here are some examples:</p>
 </span><span class="n">my_other_df</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
 ## 1 2 A
 ## 2 3 B
 ## 3 4 C
 </code></pre></div></div>
-<p>The <code class="highlighter-rouge">colnames</code> function allows to supply column names to an existing data
-frame. Alternatively, the column names can be set within the <code class="highlighter-rouge">data.frame</code> 
+<p>The <code class="language-plaintext highlighter-rouge">colnames</code> function allows to supply column names to an existing data
+frame. Alternatively, the column names can be set within the <code class="language-plaintext highlighter-rouge">data.frame</code> 
 function by assign the vector elements to a variable (capital X and Y in the example above).</p>
 
 <h2 id="dimensions-of-a-data-frame">Dimensions of a data frame</h2>
-<p>To get the dimensions of a data frame, use the <code class="highlighter-rouge">ncol</code> (number of columns), 
-<code class="highlighter-rouge">nrow</code> (number of rows) or <code class="highlighter-rouge">str</code> (structure) function:</p>
+<p>To get the dimensions of a data frame, use the <code class="language-plaintext highlighter-rouge">ncol</code> (number of columns), 
+<code class="language-plaintext highlighter-rouge">nrow</code> (number of rows) or <code class="language-plaintext highlighter-rouge">str</code> (structure) function:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ncol</span><span class="p">(</span><span class="n">my_other_df</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 2
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nrow</span><span class="p">(</span><span class="n">my_other_df</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 3
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span><span class="p">(</span><span class="n">my_other_df</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	3 obs. of  2 variables:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 'data.frame':	3 obs. of  2 variables:
 ##  $ X: num  2 3 4
 ##  $ Y: Factor w/ 3 levels "A","B","C": 1 2 3
 </code></pre></div></div>
@@ -407,27 +405,27 @@ function by assign the vector elements to a variable (capital X and Y in the exa
 <h2 id="displaying-and-accessing-the-content-of-a-data-frame">Displaying and accessing the content of a data frame</h2>
 
 <p>The content of a data frame is accessed by either a position information 
-given in square brackets (e.g. <code class="highlighter-rouge">df[3,4]</code>) or a column name given after a $ sign
-(e.g. <code class="highlighter-rouge">df$columnName</code>). Here is an example:</p>
+given in square brackets (e.g. <code class="language-plaintext highlighter-rouge">df[3,4]</code>) or a column name given after a $ sign
+(e.g. <code class="language-plaintext highlighter-rouge">df$columnName</code>). Here is an example:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_other_df</span><span class="p">[</span><span class="m">1</span><span class="p">,]</span><span class="w">  </span><span class="c1"># Shows first row</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
 ## 1 2 A
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_other_df</span><span class="p">[,</span><span class="m">2</span><span class="p">]</span><span class="w">  </span><span class="c1"># Shows second column</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] A B C
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] A B C
 ## Levels: A B C
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_other_df</span><span class="o">$</span><span class="n">Y</span><span class="w">  </span><span class="c1"># Shows second column</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] A B C
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] A B C
 ## Levels: A B C
 </code></pre></div></div>
 
@@ -444,24 +442,24 @@ frame like a table, then the following applies:</p>
 <p>Here are some possible combinations:</p>
 
 <ul>
-  <li>Single row, all columns: <code class="highlighter-rouge">df[x,]</code>                <!--with $x \in \text{number of rows}$ IMPLEMENT LATEX MATH TO JEKYLL --></li>
-  <li>Single column, all rows: <code class="highlighter-rouge">df[,y]</code>                <!--with $x \in \text{number of columns}$ --></li>
-  <li>Single row and column: <code class="highlighter-rouge">df[x,y]</code>                 <!--with $x, y \in \text{number of rows, columns}$ --></li>
-  <li>All except one row, all columns: <code class="highlighter-rouge">df[-x,y]</code>      <!--with $x \in \text{number of rows}$ --></li>
-  <li>Selected rows, all columns: <code class="highlighter-rouge">df[c(x1, x2, x3),]</code> <!--with $x1, x2, x3 \in \text{number of rows}$ --></li>
-  <li>Continous rows, all columns: <code class="highlighter-rouge">df[c(x1:x2),]</code>     <!--with $x1, x2 \in \text{number of rows}$ --></li>
+  <li>Single row, all columns: <code class="language-plaintext highlighter-rouge">df[x,]</code>                <!--with $x \in \text{number of rows}$ IMPLEMENT LATEX MATH TO JEKYLL --></li>
+  <li>Single column, all rows: <code class="language-plaintext highlighter-rouge">df[,y]</code>                <!--with $x \in \text{number of columns}$ --></li>
+  <li>Single row and column: <code class="language-plaintext highlighter-rouge">df[x,y]</code>                 <!--with $x, y \in \text{number of rows, columns}$ --></li>
+  <li>All except one row, all columns: <code class="language-plaintext highlighter-rouge">df[-x,y]</code>      <!--with $x \in \text{number of rows}$ --></li>
+  <li>Selected rows, all columns: <code class="language-plaintext highlighter-rouge">df[c(x1, x2, x3),]</code> <!--with $x1, x2, x3 \in \text{number of rows}$ --></li>
+  <li>Continous rows, all columns: <code class="language-plaintext highlighter-rouge">df[c(x1:x2),]</code>     <!--with $x1, x2 \in \text{number of rows}$ --></li>
 </ul>
 
 <p>In summary, dimensions like rows or columns which should be selected have positive 
 numbers, dimensions that should be hidden have negative numbers, and if all entries of
 a dimension should be selected one just leaves the field empty. If more than
 one dimension should be shown or hidden, one has to supply these information with a 
-vector defined by the <code class="highlighter-rouge">c</code> function.</p>
+vector defined by the <code class="language-plaintext highlighter-rouge">c</code> function.</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_other_df</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">),]</span><span class="w">  </span><span class="c1"># Shows rows 1 and 3</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
 ## 1 2 A
 ## 3 4 C
 </code></pre></div></div>
@@ -469,19 +467,19 @@ vector defined by the <code class="highlighter-rouge">c</code> function.</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_other_df</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">),]</span><span class="w">  </span><span class="c1"># Shows rows 1 to 2</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
 ## 1 2 A
 ## 2 3 B
 </code></pre></div></div>
 
-<p>If you are interested in the first or last rows, you can also use the <code class="highlighter-rouge">head</code> or
-<code class="highlighter-rouge">tail</code> functions. The default number of lines to be displayed is five but this can be changed with the
+<p>If you are interested in the first or last rows, you can also use the <code class="language-plaintext highlighter-rouge">head</code> or
+<code class="language-plaintext highlighter-rouge">tail</code> functions. The default number of lines to be displayed is five but this can be changed with the
 second argument. Let us have a look at the first two rows:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">head</span><span class="p">(</span><span class="n">my_other_df</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
 ## 1 2 A
 ## 2 3 B
 </code></pre></div></div>
@@ -491,7 +489,7 @@ second argument. Let us have a look at the first two rows:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tail</span><span class="p">(</span><span class="n">my_other_df</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   X Y
 ## 2 3 B
 ## 3 4 C
 </code></pre></div></div>
@@ -509,7 +507,7 @@ position.</p>
 </span><span class="n">my_other_df</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y
 ## 1   2 A
 ## 2   3 B
 ## 3 400 C
@@ -520,7 +518,7 @@ position.</p>
 </span><span class="n">my_other_df</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y
 ## 1 200 A
 ## 2 300 B
 ## 3 401 C
@@ -531,7 +529,7 @@ position.</p>
 </span><span class="n">my_other_df</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y   z
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y   z
 ## 1 200 A 255
 ## 2 300 B 300
 ## 3 401 C 100
@@ -542,12 +540,12 @@ position.</p>
 </span><span class="n">my_other_df</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     X Y
 ## 1 200 A
 ## 2 300 B
 ## 3 401 C
 </code></pre></div></div>
-<p>As for lists, to actually delete an element, it has to be set to <code class="highlighter-rouge">NULL</code>.</p>
+<p>As for lists, to actually delete an element, it has to be set to <code class="language-plaintext highlighter-rouge">NULL</code>.</p>
 
 <p>For more information have a look at e.g. the respective <a href="http://www.statmethods.net/input/datatypes.html" target="_blank">data type</a> site at Quick R. There you will also find an overview on how to get <a href="http://www.statmethods.net/input/contents.html" target="_blank">information about an object</a>. Of course, looking into the package documentation or search the web is always a good idea, too.</p>
 
@@ -560,7 +558,7 @@ position.</p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-03-30T16:58:18+02:00">March 30, 2022</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-04-04T14:21:19+02:00">April 4, 2022</time></p>
         
       </footer>
 
@@ -569,11 +567,11 @@ position.</p>
       
   <nav class="pagination">
     
-      <a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-03_structures_vectors.html" class="pagination--pager" title="Example: Vector Basics
+      <a href="/moer-mpg-upscaling/unit01/unit01-03_structures_vectors.html" class="pagination--pager" title="Example: Vector Basics
 ">Previous</a>
     
     
-      <a href="/moer-bsc-project-seminar-upscaling/unit01/unit01-08_Rmd_html.html" class="pagination--pager" title="Example: R Markdown with html output
+      <a href="/moer-mpg-upscaling/unit01/unit01-08_Rmd_html.html" class="pagination--pager" title="Example: R Markdown with html output
 ">Next</a>
     
   </nav>
@@ -615,11 +613,9 @@ position.</p>
     
     
     
-      <li><a href="https://github.com/GeoMOER"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    
-    <li><a href="http://localhost:4000/moer-bsc-project-seminar-upscaling/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://localhost:4000/moer-mpg-upscaling/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -632,15 +628,15 @@ position.</p>
     </div>
 
     
-  <script src="/moer-bsc-project-seminar-upscaling/assets/js/main.min.js"></script>
+  <script src="/moer-mpg-upscaling/assets/js/main.min.js"></script>
   <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 
 
-<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr.min.js"></script>
-<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr-store.js"></script>
-<script src="/moer-bsc-project-seminar-upscaling/assets/js/lunr/lunr-en.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr.min.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr-store.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr-en.js"></script>
 
 
 

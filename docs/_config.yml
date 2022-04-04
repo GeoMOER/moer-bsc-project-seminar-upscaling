@@ -39,20 +39,7 @@ twitter:
   username         : &twitter "EnvIn_UMR"
 
 ##### Lecturer settings #######################################################
-author:
-  name             : "Dirk Zeuss"
-  avatar           : "/assets/images/instructors/zeuss.jpg"
-  bio              : "University of Marburg"
-  location         : "Marburg, DE"
-  email            : "dirk.zeuss@uni-marburg.de"
-  uri              : "https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics"
-  home             : "https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics"
-  researchgate     : "https://www.researchgate.net/profile/Dirk_Zeuss/stats" # to be included some day
-#  flickr           : "https://www.flickr.com/environmentalinformatics-marburg/"
-  github           : "GeoMOER"
-#  twitter          : "https://twitter.com/geographie_umr"
-#  youtube          : "https://www.youtube.com/channel/UCGiwSv5KYjsNXl6-nZq0SDA"
-
+# see _data/authors.yml
 
 ##### Site configuration ######################################################
 search: true
