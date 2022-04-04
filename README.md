@@ -1,5 +1,7 @@
-# moer-bsc-project-seminar-upsacling
-Bachelor level course in Physical Geography at the University of Marburg.
+# moer-mpg-upsacling
+Master level course in Physical Geography at the University of Marburg.
+
+The HTML page of this repository can be found here: https://geomoer.github.io/moer-mpg-upscaling/
 
 This course is brought to you as part of the [Open Educational Resources](https://oer.uni-marburg.de) initiative of the [University of Marburg, Germany](https://www.uni-marburg.de/de) from the [Lab of Environmental Informatics](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics) at the [Department of Geography](https://www.uni-marburg.de/fb19).
 
