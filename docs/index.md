@@ -1,15 +1,15 @@
 ---
-title: Upscaling
+title: Upscaling biodiversity using LiDAR and hyperspectral remote sensing
 layout: splash
 date: '2018-02-06 13:00:00 +0100'
 header:
   overlay_color: "#000"
   overlay_filter: 0.6
-  overlay_image: "/assets/images/title/Kilikarte_CC_Tanzania_72dpi-1800x1386_7-1.jpg"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://kili-ses.senckenberg.de/wp-content/uploads/2021/03/Kilikarte_CC_Tanzania_72dpi-300x231.jpg)'
+  overlay_image: "/assets/images/title/land_use_map_Kili.png"
+  caption: 'Image: [Andreas Hemp (2006)](https://doi.org/10.1111/j.1365-2028.2006.00679.x)'
   cta_label: Go to course units
   cta_url: "/units.html"
-excerpt: xxx.
+excerpt: Use upscaling methods and multi-sensor data for predicting biodiversity.
 feature_row_intro:
 - excerpt: Master level course in [Physical Geography](https://www.uni-marburg.de/de/fb19/studium/studiengaenge/m-sc-physische-geographie/herzlich-willkommen-beim-master-physische-geographie){:target="_blank"} at Marburg University
 feature_row_ilos:
@@ -74,12 +74,12 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 | 06 | 25.05.2022 | Remote sensing in R          | Satellite data processing |
 | 07 | 01.06.2022 | Select your variables        | Working with Hyperspectral data |
 | 08 | 08.06.2022 | Predict your non-linear data | Working with LiDAR data |
-||| **Iteration 2: Getting a taste of reality** |
-| 09 | 15.06.2022 | Project Week      		 |  Add text here |
-| 10 | 22.06.2022 | Digitization                 | Workshop/ tutorial|
+||| **Iteration 2: Getting a taste of reality**  |
+| 09 | ~~15.06.2022~~ | Project Week      		 |  Session canceled |
+| 10 | 22.06.2022 | Digitization                 | Workshop / tutorial|
 | 11 | 29.06.2022 | Assignment                   | No course  |
 ||| **Individual assignments** |
-| 12 | 06.07.2022 | Discussion                   | Individual assignmnet porblem solving session |
+| 12 | 06.07.2022 | Discussion                   | Individual assignment problem solving session |
 ||| **Wrap up** |
 | 13 | 13.07.2022 | Wrap up                      | Time for questions and feedback, individual data analysis problems, goodbye |
 

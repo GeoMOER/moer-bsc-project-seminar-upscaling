@@ -113,7 +113,7 @@ defaults:
       path: ""
       type: unit00
     values:
-      category: "How-to Data Analysis"
+      category: "How-to Upscale"
       tags: "Unit 00"
       layout: single
       sidebar:

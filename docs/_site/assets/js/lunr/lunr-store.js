@@ -1,18 +1,18 @@
 var store = [{
         "title": "Learning Environment",
-        "excerpt":"This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too. Our first course session will be virtual. Details on the virtual classroom and how to get there are provided on the front page and were send by...","categories": ["How-to Data Analysis"],
+        "excerpt":"This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too. Our first course session will be virtual. Details on the virtual classroom and how to get there are provided on the front page and were send by...","categories": ["How-to Upscale"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html",
         "teaser": null
       },{
         "title": "Deliverables",
-        "excerpt":"Assignments We distinguish between unmarked and marked deliverables (“Studien- und Prüfungsleistung”). Both are required for passing the course but only the latter are marked. Students will need to deliver marked (4) and unmarked (6) assignments on a regular basis (“homework”) within one week. Details on the assignments and whether they...","categories": ["How-to Data Analysis"],
+        "excerpt":"Assignments We distinguish between unmarked and marked deliverables (“Studien- und Prüfungsleistung”). Both are required for passing the course but only the latter are marked. Students will need to deliver marked (4) and unmarked (6) assignments on a regular basis (“homework”) within one week. Details on the assignments and whether they...","categories": ["How-to Upscale"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-02_deliverables.html",
         "teaser": null
       },{
         "title": "Frequently Asked Questions",
-        "excerpt":"This is a continuously updated collection of frequently asked questions. Course requirements What is the expected workload for this course? This course gives 6 (ECTS) credit points, making up a total of 180 hours workload. 180 hours in total minus the time spend during the course sessions divided by the...","categories": ["How-to Data Analysis"],
+        "excerpt":"This is a continuously updated collection of frequently asked questions. Course requirements What is the expected workload for this course? This course gives 6 (ECTS) credit points, making up a total of 180 hours workload. 180 hours in total minus the time spend during the course sessions divided by the...","categories": ["How-to Upscale"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-03_faq.html",
         "teaser": null
