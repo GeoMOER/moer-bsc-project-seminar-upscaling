@@ -38,7 +38,7 @@ At the end of this course you should be able to
   
 * Feel comfortable with the usage of R,
 * Know the basics of remote sensing theory and machine learning,
-* Handle LiDAR, hyperspectral and Sentinel data,
+* Handle LiDAR, Hyperspectral and Sentinel data,
 * Use upscaling methods,
 * Include and process different types of remote sensing data in a single workflow, and
 * Apply all of the above to a real-world example.
@@ -67,16 +67,16 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 ||| **Data basics** |
 | 01 | 20.04.2022 | First things first           | Data and information, R, R Studio, R markdown, GitHub, GitHub classroom |
 | 02 | 27.04.2022 | First things second          | Working environment, data sets, data types, data structures, logical operators, control structures |
-||| **Remote sensing basics** |
+||| **Remote sensing 101 ** |
 | 03 | 04.05.2022 | Understanding remote sensing theory | Sensor types, spectral properties, satellites,data acquisition, temporal aspects |
-| 04 | 11.05.2022 | Going visible to beyond visible | Understanding Sentinel, LiDAR and Hyperspectral data |
+| 04 | 11.05.2022 | Working with spatial data    | Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping and simple spatial statistics|
 ||| **Iteration 1: Starting simple** |
-| 05 | 18.05.2022 | Working with spatial data    | Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping and simple spatial statistics |
-| 06 | 25.05.2022 | Remote sensing in R          | Satellite data processing |
-| 07 | 01.06.2022 | Select your variables        | Working with Hyperspectral data |
-| 08 | 08.06.2022 | Predict your non-linear data | Working with LiDAR data |
+| 05 | 18.05.2022 | Working with spatial data    | Understanding Sentinel, LiDAR and Hyperspectral data  |
+| 06 | 25.05.2022 | Multispectal remote sensing  | Satellite data processing  |
+| 07 | 01.06.2022 | LiDAR remote sensing	 | Working with LiDAR data |
+| 08 | 08.06.2022 | Hyperspectral remote sensing | Working with Hyperspectral data |
 ||| **Iteration 2: Getting a taste of reality**  |
-| 09 | ~~15.06.2022~~ | Project Week      		 |  Session canceled |
+| 09 | ~~15.06.2022~~ | Project Week             |  Session canceled |
 | 10 | 22.06.2022 | Digitization                 | Workshop / tutorial|
 | 11 | 29.06.2022 | Assignment                   | No course  |
 ||| **Individual assignments** |
