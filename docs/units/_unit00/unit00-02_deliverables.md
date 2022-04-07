@@ -6,17 +6,18 @@ header:
   caption: '[Environmental Informatics Marburg](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
 ---
 
+You need to deliver unmarked assignments ("Studienleistung") during the course 
+and at the end a marked project work as part of your overall course portfolio ("Prüfungsleistung").
+
 
 ## Assignments
-We distinguish between unmarked and marked deliverables ("Studien- und Prüfungsleistung"). 
-Both are required for passing the course but only the latter are marked.
-Students will need to deliver marked (4) and unmarked (6) assignments on a regular basis ("homework") within one week.
-Details on the assignments and whether they will be marked or not can be found in the respective units.
-The submissions generally encompass R or R markdown AND the compiled html files.
 
 
-### Overview
+The submissions generally encompass R or R markdown AND the compiled html files. 
+You need to submit your solutions to your personal repository in the GitHub classroom.
+More details soon..
 
+<!--
 
 | Assignment | Name and link                                                                                    | marked / unmarked  |
 |------------|--------------------------------------------------------------------------------------------------|--------------------|
@@ -41,32 +42,12 @@ It will be necessary to solve a lot of disturbing and time-consuming problems in
 So start early!!!
 {: .notice--warning}
 
+-->
 
 
-## MOHA
-Additionally, there will be a marked assignment, which needs to be submitted directly at the end of the respective session in the second half of the semester -- the MOHA (Marburg Open Hackathon).
-Tasks for the MOHA will be selected from all units.
+## Project work
 
-
-## Final grade
-Your final grade will consist of the marked assignments and the MOHA.
-You may use the following lines of code for calculating your final grade, for example:
-
-```r
-assignment_1 <- 5
-assignment_2 <- 6
-assignment_3 <- 7
-assignment_4 <- 8
-MOHA <- 9
-
-final_grade <- round(mean(c(assignment_1, assignment_2, assignment_3, assignment_4, rep(MOHA, 2))))
-final_grade
-```
-
-Note that you do not have to achieve five points in each assignment or the MOHA.
-However, passing the course requires at least five points in regard to your final grade and submitting the unmarked assignments in time.
-{: .notice--info}
-
+Details will follow soon...
 
 
 

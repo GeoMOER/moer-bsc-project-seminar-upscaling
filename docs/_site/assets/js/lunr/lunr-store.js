@@ -1,18 +1,18 @@
 var store = [{
         "title": "Learning Environment",
-        "excerpt":"This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too. Our first course session will be virtual. Details on the virtual classroom and how to get there are provided on the front page and were send by...","categories": ["How-to Upscale"],
+        "excerpt":"This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too. Our first course session will talk place in presence. Subsequent sessions will be in a hybrid format, meaning that parts of the students may attend the sessions...","categories": ["How-to Upscaling"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html",
         "teaser": null
       },{
         "title": "Deliverables",
-        "excerpt":"Assignments We distinguish between unmarked and marked deliverables (“Studien- und Prüfungsleistung”). Both are required for passing the course but only the latter are marked. Students will need to deliver marked (4) and unmarked (6) assignments on a regular basis (“homework”) within one week. Details on the assignments and whether they...","categories": ["How-to Upscale"],
+        "excerpt":"You need to deliver unmarked assignments (“Studienleistung”) during the course and at the end a marked project work as part of your overall course portfolio (“Prüfungsleistung”). Assignments The submissions generally encompass R or R markdown AND the compiled html files. You need to submit your solutions to your personal repository...","categories": ["How-to Upscaling"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-02_deliverables.html",
         "teaser": null
       },{
         "title": "Frequently Asked Questions",
-        "excerpt":"This is a continuously updated collection of frequently asked questions. Course requirements What is the expected workload for this course? This course gives 6 (ECTS) credit points, making up a total of 180 hours workload. 180 hours in total minus the time spend during the course sessions divided by the...","categories": ["How-to Upscale"],
+        "excerpt":"This is a continuously updated collection of frequently asked questions. Course requirements What is the expected workload for this course? This course gives 6 (ECTS) credit points, making up a total of 180 hours workload. 180 hours in total minus the time spend during the course sessions divided by the...","categories": ["How-to Upscaling"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-03_faq.html",
         "teaser": null
@@ -59,7 +59,7 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-10_notes_on_assignments.html",
         "teaser": null
       },{
-        "title": "Marked Assignment: Hello R, Hello GitHub",
+        "title": "Assignment: Hello R, Hello GitHub",
         "excerpt":"This worksheet introduces you to R, R scripts and R markdown. Your submission will be pushed to your class repository at GitHub. After completion you should have gained some experience in running R commands within scripts, R markdown for running code and documentation within one file and Git/GitHub. Things you...","categories": ["01 First Things First"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-11_assignment.html",

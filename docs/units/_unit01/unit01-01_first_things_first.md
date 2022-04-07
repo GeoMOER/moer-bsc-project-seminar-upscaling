@@ -1,8 +1,8 @@
 ---
 title: First Things First
 header:
-  image: "/assets/images/title/title_1600_500.jpg"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics)'
+  image: "/assets/images/teaser/Rteaser.jpeg"
+  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
 ---
 
 Go through a brute force introduction into R, R Markdown, the RStudio IDE, version management with Git and GitHub's classroom functionality to get ready for solving the upcoming assignment problems and submitting your solutions.
@@ -28,3 +28,6 @@ You can leave comments below if you have questions or remarks about any of the t
 Please copy the corresponding line into your comment to make it easier to answer your question.
 
 <script src="https://utteranc.es/client.js" repo="GeoMOER/moer-mpg-data-analysis" issue-term="moer-mpg-data-analysis_unit01" theme="github-light" crossorigin="anonymous" async> </script> 
+
+
+

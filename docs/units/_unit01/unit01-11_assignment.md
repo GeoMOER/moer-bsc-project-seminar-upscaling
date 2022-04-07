@@ -1,5 +1,5 @@
 ---
-title: "Marked Assignment: Hello R, Hello GitHub"
+title: "Assignment: Hello R, Hello GitHub"
 toc: true
 toc_label: In this worksheet
 header:
@@ -7,7 +7,9 @@ header:
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics)'
 ---
 
-This worksheet introduces you to R, R scripts and R markdown. Your submission will be pushed to your class repository at GitHub. After completion you should have gained some experience in running R commands within scripts, R markdown for running code and documentation within one file and Git/GitHub.
+This worksheet introduces you to R, R scripts and R markdown. 
+Your submission will be pushed to your class repository at GitHub. 
+After completion you should have gained some experience in running R commands within scripts, R markdown for running code and documentation within one file and Git/GitHub.
 
 ## Things you need for this worksheet
   * [R](https://cran.r-project.org/){:target="_blank"} — the interpreter can be installed on any operation system.
@@ -34,5 +36,4 @@ Save your Rmd file in your course repository, knitr it, update (i.e. commit) you
 As you might become aware by reading this assignment, there is a great chance that you have to gather considerable more information to actually solve the given assignment. More precisely, once you have solved the R programming task you are not be off the hook since you have to familiarize yourself with Git and GitHub to actually submit your solution.
 {: .notice--warning}
 
-This assignment will be marked.
-{: .notice--info}
+

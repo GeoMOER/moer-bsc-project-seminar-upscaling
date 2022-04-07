@@ -3,8 +3,8 @@ title: "Assignments and GitHub"
 toc: true
 toc_label: In this info
 header:
-  image: "/assets/images/title/title_1600_500.jpg"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics)'
+  image: "/assets/images/teaser/Rteaser.jpeg"
+  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
 ---
 
 ## A note on individual learning log assignments with GitHub
