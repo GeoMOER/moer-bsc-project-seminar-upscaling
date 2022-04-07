@@ -1,0 +1,40 @@
+have_library: checking for -lstdc++... -------------------- yes
+
+PATH=".;D:/Ruby31-x64/lib;D:\Ruby31-x64\bin;D:\Ruby31-x64\msys64\ucrt64\bin;D:\Ruby31-x64\msys64\usr\bin;C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\GnuPG\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Putty;C:\Program Files\R\bin;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;D:\Ruby31-x64\bin;C:\Users\bhandari\AppData\Local\Microsoft\WindowsApps;C:\Users\bhandari\AppData\Local\GitHubDesktop\bin;C:\Users\bhandari\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Git\cmd;D:\Git\mingw64\bin;D:\Git\usr\bin" "gcc -o conftest.exe -ID:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -ID:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -ID:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby31-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;D:/Ruby31-x64/lib;D:\Ruby31-x64\bin;D:\Ruby31-x64\msys64\ucrt64\bin;D:\Ruby31-x64\msys64\usr\bin;C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\GnuPG\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Putty;C:\Program Files\R\bin;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;D:\Ruby31-x64\bin;C:\Users\bhandari\AppData\Local\Microsoft\WindowsApps;C:\Users\bhandari\AppData\Local\GitHubDesktop\bin;C:\Users\bhandari\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Git\cmd;D:\Git\mingw64\bin;D:\Git\usr\bin" "gcc -o conftest.exe -ID:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -ID:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -ID:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby31-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310 -lstdc++  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
