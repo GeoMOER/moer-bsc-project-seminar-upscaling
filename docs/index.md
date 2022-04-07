@@ -67,7 +67,7 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 ||| **Data basics** |
 | 01 | 20.04.2022 | First things first           | Data and information, R, R Studio, R markdown, GitHub, GitHub classroom |
 | 02 | 27.04.2022 | First things second          | Working environment, data sets, data types, data structures, logical operators, control structures |
-||| **Remote sensing 101 ** |
+||| **Remote Sensing Basics**  |
 | 03 | 04.05.2022 | Understanding remote sensing theory | Sensor types, spectral properties, satellites,data acquisition, temporal aspects |
 | 04 | 11.05.2022 | Working with spatial data    | Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping and simple spatial statistics|
 ||| **Iteration 1: Starting simple** |
