@@ -1,0 +1,551 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Hyperspectral Remote Sensing | Upscaling Biodiversity</title>
+<meta name="description" content="In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data.  Introduction to Hyperspectral Remote Sensing  ">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Upscaling Biodiversity">
+<meta property="og:title" content="Hyperspectral Remote Sensing">
+<meta property="og:url" content="http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Hyperspectral_Remote_Sensing.html">
+
+
+  <meta property="og:description" content="In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data.  Introduction to Hyperspectral Remote Sensing  ">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/moer-mpg-upscaling/assets/images/teaser/hyp_crop.png">
+
+
+
+  <meta name="twitter:site" content="@EnvIn_UMR">
+  <meta name="twitter:title" content="Hyperspectral Remote Sensing">
+  <meta name="twitter:description" content="In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data.  Introduction to Hyperspectral Remote Sensing  ">
+  <meta name="twitter:url" content="http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Hyperspectral_Remote_Sensing.html">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/moer-mpg-upscaling/assets/images/teaser/hyp_crop.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2022-04-19T14:35:48+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Hyperspectral_Remote_Sensing.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Lab of Environmental Informatics",
+      "url": "http://localhost:4000/moer-mpg-upscaling/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/moer-mpg-upscaling/feed.xml" type="application/atom+xml" rel="alternate" title="Upscaling Biodiversity Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/moer-mpg-upscaling/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+    	<a class="site-title" href="http://localhost:4000/moer-mpg-upscaling/" style="padding:0px"><img src="http://localhost:4000/moer-mpg-upscaling/assets/images/logos/logo_umr4.png" style="padding-right:15px">Upscaling Biodiversity</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/moer-mpg-upscaling/units.html" >Units</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/moer-mpg-upscaling/unit00/unit00-03_faq.html" >FAQ</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://geomoer.github.io/moer-info-page/" >Courses</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics" >Lab Home</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://geomoer.github.io/moer-base-r/" >Base R</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/moer-mpg-upscaling/about.html" >About</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="/moer-mpg-upscaling/assets/images/teaser/hyp_crop.png" alt="Hyperspectral Remote Sensing" class="page__hero-image">
+  
+  
+    <span class="page__hero-caption">Image: <a href="https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php" target="_blank"><strong>NASA - Hyperion</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+  
+    
+      
+      
+      
+    
+    
+	      
+            <nav class="nav__list">
+
+  
+
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+
+  <ul class="nav__items">
+
+  <li>
+      <span class="nav__sub-title">
+          <a href="/moer-mpg-upscaling/units.html" class="">Back to course units</a>
+    </span>
+      </li>
+
+  
+      
+      
+  
+      
+      
+          
+          
+
+	    
+  
+      
+      
+          
+          
+
+	    
+  
+      
+      
+          
+          
+
+	    
+  
+      
+      
+          
+          
+
+	    
+  
+      
+      
+          
+          
+
+	    
+  
+      
+      
+          
+          
+
+	    
+  
+      
+      
+          
+          
+          <li>
+              <span class="nav__sub-title">
+		              <a href="/moer-mpg-upscaling/unit06/unit06-02_Working_with_Hyperspectral_data.html" class="">06 Hyperspectral Remote Sensing</a>
+		          </span>
+          <ul>
+          
+              
+			        
+			            <li><a href="/moer-mpg-upscaling/unit06/unit06-02_Working_with_Hyperspectral_data.html" class="">Working with hyperspectral data</a></li>
+			        
+          
+              
+			        
+			            <li><a href="/moer-mpg-upscaling/unit06/unit06-01_Hyperspectral_Remote_Sensing.html" class="active">Hyperspectral Remote Sensing</a></li>
+			        
+          
+          </ul>
+          </li>
+          
+
+	    
+  
+      
+      
+          
+          
+
+	    
+  
+
+  </ul>
+</nav>
+
+        
+    
+  
+  </div>
+
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Hyperspectral Remote Sensing">
+    <meta itemprop="description" content="In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data.Introduction to Hyperspectral Remote Sensing">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Hyperspectral Remote Sensing
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data.</p>
+
+<h2 id="introduction-to-hyperspectral-remote-sensing">Introduction to Hyperspectral Remote Sensing</h2>
+<!--more-->
+
+<h2 id="the-em-spectrum">The EM Spectrum</h2>
+
+<p>The EM spectrum consists of a range of all types of electromagnetic radiation. Surface reflectance at different parts of the spectrum or wavelengths are used for identification of properties of earth surface. This variation in the reflectances allows us to differentiate between different surfaces such as forest or water body. For optical remote sensing we generally use the wavelengths in the infrared to visible range. Optical sensors record the sun radiations reflected from different surfaces on earth along various wavlength intervals; some maybe wide some may be narrow thus defining its spectral resolution.</p>
+
+<p><img src="Electromagnetic_spectrum_-eng.svg.png" width="1280" height="755" align="centre" vspace="10" hspace="20" />
+Electromagnetic Wave Spectrum. Horst Frank / Phrood / Anony - Horst Frank, Jailbird and Phrood [CC BY-SA 4.0]  via 
+<a href="https://commons.wikimedia.org/w/index.php?curid=3726606#/media/File:Electromagnetic_spectrum_-eng.svg" target="_blank">wikimedia.org</a>.</p>
+
+<h2 id="what-is-hyperspectral-rs">What is Hyperspectral RS?</h2>
+
+<p>Imaging spectroscopy or hyperspectral remote sensing acquires images that contains several contiguous bands of narrow range acquired by airborne or spaceborne sensors, resulting in a continuous spectrum. So the wavelength range in such a spectrum can be as small as 5 nm as opposed to 30 nm in multispectral sensors like Landsat.
+Such a spectrum aids in the assessment, identification and quantification of differnt surfaces on earth.</p>
+
+<p><img src="spectrum.png" width="1104" height="359" align="centre" vspace="10" hspace="20" /></p>
+
+<p>Spectrum representation including (A) Multispectral example, with 5 wide bands; and (B) Hyperspectral example consisting of several narrow bands that, usually, extends to hundreds or thousands of them (image not drawn to scale).
+Image : <a href="https://www.mdpi.com/2072-4292/9/11/1110#" target="_blank">Adão et al 2017</a>.</p>
+
+<h2 id="understanding-a-spectra">Understanding a spectra</h2>
+
+<p>Hyperspectral imagers use instruments called imaging spectrometers which work on the pricniples of spectroscopy. The fundamental property we want to study is the spectral reflectance defined as the ratio of reflected energy to incident energy as a function of wavelength. 
+Different surfaces will thus have different reflectances depending on degree of how the incident radiations are absorbed and scattered. 
+Such differences become evident when we plot reflectance vs wavelengths, aka spectral reflectance curves. 
+Lets look at the example below to understand a plant spectra.</p>
+
+<p><img src="plant_spectrum.png" width="1104" height="359" align="centre" vspace="10" hspace="20" />
+Reflectance spectra of different types of green vegetation compared to a spectral signature for senescent leaves.
+Image : <a href="https://www.mdpi.com/2072-4292/9/11/1110#" target="_blank">Govender et al 2007</a>.</p>
+
+<h2 id="multispectral-vs-hyperspectral">Multispectral vs Hyperspectral</h2>
+
+<table>
+<tr>
+    <th style="background-color: lightgrey">Mutispectral </th>
+    <th style="background-color: lightgrey">Hyperspectral</th>
+</tr>
+  <tr>
+    <td>Many sensors including Landsat and MODIS</td>
+    <td>Very few satellite sensors are available, some are mission-specific sensors onboard ISS while many are airborne sensors onboard planes or UAVs.</td>
+  </tr>
+  <tr>
+    <td>A limited number of spectral bands are available</td>
+    <td>Multiple narrow bands which measure the characteristic of surface reflectance</td>
+  </tr>
+<tr>
+    <td>Temporal resolution is relatively high</td>
+    <td>Lower temporal resolution</td>
+  </tr>
+<tr>
+    <td>Gives a global extent</td>
+    <td>Lesser spatial coverage</td>
+  </tr>
+</table>
+
+<h2 id="applications-of-hyperspectral-rs">Applications of Hyperspectral RS</h2>
+
+<p>Hyperspectral RS has numerous applications in the field of agriculture, soil sciences, hydrology, marine sciences, biodiversity and conservation, hazard and risk assessment and natural resource management.</p>
+
+<p>Listen to an expert <a href="https://youtu.be/g6zSSjBK1Vk" target="_blank">here</a>.</p>
+
+<h2 id="some-examples-of-hyperspectral-imagers">Some examples of Hyperspectral imagers</h2>
+
+<h4 id="enmap">EnMAP</h4>
+
+<p>Environmental Mapping and Analysis Program (EnMap)  is the latest released  optical earth remote sensing mission in orbit by the DLR, Germany. 
+It aims to acquire high-quality hyperspectral image data with 230 spectral channels in the solar-reflectance range on a frequent basis with high geometric resolution. The satellite will measure, derive, and analyze different parameters related to agriculture, forestry, soil, and geological environments, as well as coastal zones and inland waters. Further, it will also provide a  status of different ecosystems and their response to natural or man-made changes in the environment. It has a spatial resolution of 30m</p>
+
+<p><img src="Enmap.jpg" width="570" height="313" align="centre" vspace="10" hspace="20" /></p>
+
+<p>EnMAP - the first German Hyperspectral sensor in space. Image : <a href="https://www.dlr.de/rd/desktopdefault.aspx/tabid-2440/3586_read-28911/" target="_blank">DLR</a>.</p>
+
+<p>Read more about the newly launched satellite <a href="https://www.enmap.org/">here</a> and watch an interesting video <a href="https://youtu.be/LQZNtLp3RfM">here</a>.</p>
+
+<h4 id="eo--1-hyperion">EO -1 Hyperion</h4>
+
+<p>The Earth Observing -1 satellite (EO-1) was launched in 2000, November 1 and chartered the Hyperion and the Advanced Land Imager sensor. The Hyperion collects 220 unique spectral channels in the range of 357 nm - 2567 nm having a bandwidth of 10 nm. It has a 30 m spatial resolution with 7.75 km swath.</p>
+
+<p><img src="hyperion.jpg" width="720" height="240" align="centre" vspace="10" hspace="20" />
+<img src="hyperion_2.jpg" width="720" height="240" align="centre" vspace="10" hspace="20" /></p>
+
+<p>Hyperion Images of outcrops near one of the largest mining operations in Jordan (Khirbat en-Nahas) With a natural-color image (top) the minerals appear uniformly dark, but different rock types can be identified with the many spectral bands in Hyperion (bottom).
+Image: <a href="https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php" target="_blank">NASA</a>.</p>
+
+<p>Read more about Hyperion <a href="https://directory.eoportal.org/web/eoportal/satellite-missions/e/eo-1" target="_blank">here</a>.</p>
+
+<h4 id="ecostress">ECOSTRESS</h4>
+<p>The ECOsystem Spaceborne Therman Radiometer Experiment on the ISS . It was launched on 29 June 2018. ECOSTRESS monitors the loss of water in plants via evapotranspiration. It has a spatial resolution of 70m with 6 bands between 160-1200 nm. The range of data is between 53.6° N latitude to 53.6° S latitude.</p>
+
+<p><img src="ECOSTRESS.PNG" width="720" height="240" align="centre" vspace="10" hspace="20" /></p>
+
+<p>This map shows the Evaporative Stress Index on May 24, 2020. This observation was obtained from NASA’s ECOSTRESS which measured small difference in the surface temperature of plants to establish the Evaporative Stress Index (ESI), an index used to measure water deficiency; in the Ganges river delta,India. In the regions with abundant water, ESI was low (green) compared to developed land (red) where ESI is around 90%. 
+Image: <a href="https://ecostress.jpl.nasa.gov/gallery/viewgalleryimage" target="_blank">NASA</a>.</p>
+
+<h4 id="aviris">AVIRIS</h4>
+
+<p>Airborne Visible/ Infrared Imaging Spectrometer delivers calibrated images of the upwelling spectral radiance in total of 224 contiguous spectral bands. The bands range between 400nm to 2500 nm. It was launched on January 1, 1993 and has been flown on 4 aircraft platforms : NASA’s high altitude ER-2 jet, Twin Otter International’s turboprop, Scaled Composites’ Proteus, and NASA’s WB-57.</p>
+
+<p>Read more about AVIRIS <a href="https://aviris.jpl.nasa.gov/" target="_blank">here</a>.</p>
+
+<h4 id="other-common-hyperspectral-imagers">Other common hyperspectral imagers</h4>
+<ul>
+  <li><a href="https://earth.esa.int/web/eoportal/satellite-missions/p/prisma-hyperspectral" target="_blank">PRISMA</a></li>
+  <li><a href="https://www.nasa.gov/mission_pages/station/research/benefits/hico/" target="_blank">HICO</a></li>
+  <li><a href="https://airbornescience.jpl.nasa.gov/campaign/coral" target="_blank">CORAL</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/moer-mpg-upscaling/unit06/unit06-02_Working_with_Hyperspectral_data.html" class="pagination--pager" title="Working with hyperspectral data
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="https://twitter.com/EnvIn_UMR"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/moer-mpg-upscaling/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> &copy; 2022 Lab of Environmental Informatics
+. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://www.uni-marburg.de/fb19" rel="nofollow">Geography@Marburg University</a>.</div>
+
+
+
+      </footer>
+    </div>
+
+    
+  <script src="/moer-mpg-upscaling/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr.min.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr-store.js"></script>
+<script src="/moer-mpg-upscaling/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

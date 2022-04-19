@@ -65,24 +65,23 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Data basics** |
-| 01 | 20.04.2022 | First things first           | Data and information, R, R Studio, R markdown, GitHub, GitHub classroom |
-| 02 | 27.04.2022 | First things second          | Working environment, data sets, data types, data structures, logical operators, control structures |
+| 01 | 20.04.2022 | First things first           | Data and information, R, R Studio, R markdown,data types, data objects, GitHub, GitHub classroom |
 ||| **Remote Sensing Basics**  |
-| 03 | 04.05.2022 | Understanding remote sensing theory | Sensor types, spectral properties, satellites,data acquisition, temporal aspects |
-| 04 | 11.05.2022 | Working with spatial data    | Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping and simple spatial statistics|
-||| **Iteration 1: Starting simple** |
-| 05 | 18.05.2022 | Working with spatial data    | Understanding Sentinel, LiDAR and Hyperspectral data  |
-| 06 | 25.05.2022 | Multispectal remote sensing  | Satellite data processing  |
-| 07 | 01.06.2022 | LiDAR remote sensing	 | Working with LiDAR data |
-| 08 | 08.06.2022 | Hyperspectral remote sensing | Working with Hyperspectral data |
+| 02 | 27.04.2022 | Understanding remote sensing theory | Introduction to Kili-SES, Remote sensing basics, Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping|
+| 03 | 04.05.2022 | Working with Sentinel data  | Introduction to Sentinel 2, data preparation and application |
+||| **Iteration 1: Starting simple** || 
+| 04 | 11.05.2022 | LiDAR remote sensing  |Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 05 | 18.05.2022 |  Hyperspectral remote sensing | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
 ||| **Iteration 2: Getting a taste of reality**  |
-| 09 | ~~15.06.2022~~ | Project Week             |  Session canceled |
-| 10 | 22.06.2022 | Digitization                 | Workshop / tutorial|
-| 11 | 29.06.2022 | Assignment                   | No course  |
-||| **Individual assignments** |
-| 12 | 06.07.2022 | Discussion                   | Individual assignment problem solving session |
+| 06 | 25.05.2022 | Machine learning | Basics of Machine learning, decision trees, cross validation  |
+| 07 | 01.06.2022 | Upscaling methodology -1	 | Why upscaling, framework, data preparation |
+| 08 | 08.06.2022 | Upscaling methodology-2	 | Upscaling model and prediction |
+| 10 | ~~15.06.2022~~ | Project Week             |  Session canceled |
+||| **Assignments** |
+| 11 | 22.06.2022 |Assignment| Defining project work   |
+| 12 | 06.07.2022 | Discussion | Individual assignment problem solving session |
 ||| **Wrap up** |
-| 13 | 13.07.2022 | Wrap up                      | Time for questions and feedback, individual data analysis problems, goodbye |
+| 13 | 13.07.2022 |     Wrap up | Time for questions and feedback, individual data analysis problems, goodbye |
 
 
 # Deliverables
