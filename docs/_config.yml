@@ -123,7 +123,7 @@ defaults:
       path: ""
       type: unit01
     values:
-      category: "01 First Things First"
+      category: "01 Getting started"
       tags: "Unit 01"
       layout: single
       sidebar:
@@ -133,7 +133,7 @@ defaults:
       path: ""
       type: unit02
     values:
-      category: "02 First Things Second"
+      category: "02 Kilimanjaro SES"
       tags: "Unit 02"
       layout: single
       sidebar:
@@ -143,7 +143,7 @@ defaults:
       path: ""
       type: unit03
     values:
-      category: "03 Kilimanjaro SES"
+      category: "03 Remote Sensing basics"
       tags: "Unit 03"
       layout: single
       sidebar:
@@ -153,7 +153,7 @@ defaults:
       path: ""
       type: unit04
     values:
-      category: "04 Remote Sensing basics"
+      category: "04 LiDAR Remote Sensing"
       tags: "Unit 04"
       layout: single
       sidebar:
@@ -163,7 +163,7 @@ defaults:
       path: ""
       type: unit05
     values:
-      category: "05 LiDAR Remote Sensing"
+      category: "05 Hyperspectral Remote Sensing"
       tags: "Unit 05"
       layout: single
       sidebar:
@@ -173,71 +173,11 @@ defaults:
       path: ""
       type: unit06
     values:
-      category: "06 Hyperspectral Remote Sensing"
+      category: "06 Upscaling methodology"
       tags: "Unit 06"
       layout: single
       sidebar:
-        nav: "course_unit" 
-  # unit07
-  - scope:
-      path: ""
-      type: unit07
-    values:
-      category: "07 Upscaling methodology"
-      tags: "Unit 07"
-      layout: single
-      sidebar:
-        nav: "course_unit" 
-  # unit08
-  - scope:
-      path: ""
-      type: unit08
-    values:
-      category: "08 Tune Your Models"
-      tags: "Unit 08"
-      layout: single
-      sidebar:
-        nav: "course_unit" 
-  # unit09
-  - scope:
-      path: ""
-      type: unit09
-    values:
-      category: "09 Predict Time Series"
-      tags: "Unit 09"
-      layout: single
-      sidebar:
-        nav: "course_unit"         
-  # unit10
-  - scope:
-      path: ""
-      type: unit10
-    values:
-      category: "10 Analyse Time Series"
-      tags: "Unit 10"
-      layout: single
-      sidebar:
-        nav: "course_unit"         
-  # unit11
-  - scope:
-      path: ""
-      type: unit11
-    values:
-      category: "11 MOHA"
-      tags: "Unit 11"
-      layout: single
-      sidebar:
-        nav: "course_unit"
-  # unit12
-  - scope:
-      path: ""
-      type: unit12
-    values:
-      category: "12 Graphics"
-      tags: "Unit 12"
-      layout: single
-      sidebar:
-        nav: "course_unit"             
+        nav: "course_unit"      
   # pages
   - scope:
       path: "_pages"

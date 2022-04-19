@@ -64,29 +64,31 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
-||| **Data basics** |
-| 01 | 20.04.2022 | First things first           | Data and information, R, R Studio, R markdown,data types, data objects, GitHub, GitHub classroom |
-||| **Remote Sensing Basics**  |
-| 02 | 27.04.2022 | Understanding remote sensing theory | Introduction to Kili-SES, Remote sensing basics, Raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping|
-| 03 | 04.05.2022 | Working with Sentinel data  | Introduction to Sentinel 2, data preparation and application |
+||| **Getting started** |
+| 01 | 20.04.2022 | First things first                  | Course introduction, R, R Studio, R Markdown, data types, object types, GitHub, GitHub classroom |
+||| **Project introduction and remote sensing basics**  |
+| 02 | 27.04.2022 | Understanding remote sensing theory | Introduction to Kili-SES, Remote sensing basics, raster data, vector data, coordinate reference systems, reading and writing spatial data, spatial operators, mapping|
+| 03 | 04.05.2022 | Working with Sentinel data          | Introduction to Sentinel 2, data preparation and application |
 ||| **Iteration 1: Starting simple** || 
-| 04 | 11.05.2022 | LiDAR remote sensing  |Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 05 | 18.05.2022 |  Hyperspectral remote sensing | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
-||| **Iteration 2: Getting a taste of reality**  |
-| 06 | 25.05.2022 | Machine learning | Basics of Machine learning, decision trees, cross validation  |
-| 07 | 01.06.2022 | Upscaling methodology -1	 | Why upscaling, framework, data preparation |
-| 08 | 08.06.2022 | Upscaling methodology-2	 | Upscaling model and prediction |
-| 10 | ~~15.06.2022~~ | Project Week             |  Session canceled |
-||| **Assignments** |
-| 11 | 22.06.2022 |Assignment| Defining project work   |
-| 12 | 06.07.2022 | Discussion | Individual assignment problem solving session |
+| 04 | 11.05.2022 | LiDAR remote sensing                | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 05 | 18.05.2022 |  Hyperspectral remote sensing       | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
+||| **Iteration 2: Getting a taste of reality**         |
+| 06 | 25.05.2022 | Machine learning                    | Basics of machine learning, decision trees, cross validation  |
+| 07 | 01.06.2022 | Upscaling methodology 1	            | Why upscaling, framework, data preparation |
+| 08 | 08.06.2022 | Upscaling methodology 2	            | Upscaling: models and predictions |
+| 10 | ~~15.06.2022~~ | Project Week                    |  Session canceled |
+||| **Project work** |
+| 11 | 22.06.2022 | Assignment | Defining project work  |
+| 12 | 06.07.2022 | Feedback | Feedback and individual assignment problem solving session |
 ||| **Wrap up** |
-| 13 | 13.07.2022 |     Wrap up | Time for questions and feedback, individual data analysis problems, goodbye |
+| 13 | 13.07.2022 | Wrap up | Time for questions and feedback, goodbye |
 
 
 # Deliverables
 
-The graded course certificate will be based on an individual portfolio hosted as a personal repository on GitHub. The individual portfolio items are defined in the respective course assignments. At the end of the course, a project work based on the individual assignments must be submitted, which will be marked.
+The graded course certificate will be based on an individual portfolio hosted as a personal repository on GitHub. 
+The individual portfolio items are defined in the respective course assignments. 
+At the end of the course, a project work based on the individual assignments must be submitted, which will be marked.
 
 
 # Preparation and prerequisites

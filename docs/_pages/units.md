@@ -2,8 +2,8 @@
 title: Course Units
 id: Units
 header:
-  image: "/assets/images/title/curve2.png"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics)'
+  image: "/assets/images/teaser/Kili_Hemp.jpg"
+  caption: 'Image: [**Andreas Hemp**](https://kili-ses.senckenberg.de/en/publications/literature/){:target="_blank"}'
 
 permalink: /units.html
 sidebar:
