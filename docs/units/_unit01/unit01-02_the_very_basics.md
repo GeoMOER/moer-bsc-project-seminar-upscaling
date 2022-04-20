@@ -6,7 +6,7 @@ header:
 ---
 
 Start to learn the essentials for working with R and RStudio.
-<!--more-->
+
 
 ## First steps in R and RStudio
 

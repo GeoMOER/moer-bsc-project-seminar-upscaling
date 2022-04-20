@@ -9,7 +9,7 @@ Get a brief introduction to the Kilimanjaro Socio-ecological Systems project fun
 <!--more-->
 
 
-## Research Project 
+## Research Project
 The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project [here](https://kili-ses.senckenberg.de/){:target="_blank"}.
 
 

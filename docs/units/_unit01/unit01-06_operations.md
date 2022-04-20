@@ -6,7 +6,6 @@ header:
 ---
 
 Learn how operators and control structures work in R.
-<!--more-->
 
 
 For a quick introduction to **operations** in R, i.e. different types of operators and control structures, 

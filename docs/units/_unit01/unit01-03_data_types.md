@@ -6,7 +6,7 @@ header:
 ---
 
 Learn how data is measured and organized from an R perspective.
-<!--more-->
+
 
 
 For a quick introduction to **data types** in R check out our own material in the accompanying 

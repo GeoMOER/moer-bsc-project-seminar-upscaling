@@ -6,7 +6,6 @@ header:
 ---
 
 Learn how to find, address, and change elements in R objects.
-<!--more-->
 
 For a quick introduction to **indexing** in R check out our own material in the accompanying 
 [Base R course](https://geomoer.github.io/moer-base-r/unit04/unit04-01_Intro.html){:target="_blank"}, 
