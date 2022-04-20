@@ -95,34 +95,28 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit02/unit02-03_Introduction_SP7.html",
         "teaser": null
       },{
-        "title": "Remote sensing basics",
-        "excerpt":"Learn the essentials of Remote Sensing and get a hands on experience in working with remote sensing data.    Introduction to Remote Sensing  The online resources for this unit can be found here.   ","categories": ["03 Remote Sensing basics"],
+        "title": "Overview",
+        "excerpt":"Learn the essentials of Remote Sensing and get a hands on experience in working with remote sensing data.    Learning objectives      Recall the basics in remote sensing   Know how to acquire Sentinel 2 data   Extend your experiences in working with Sentinel 2 data   ","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-01_Remopte_sensing_basics.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-01_overview.html",
         "teaser": null
       },{
-        "title": "Working with Spatial Data",
-        "excerpt":"Learn how to handle Spatial Data in R.    Working with Spatial Data  The online resources for this unit can be found here.   ","categories": ["03 Remote Sensing basics"],
+        "title": "LM | Remote sensing basics",
+        "excerpt":"Learn the essentials of Remote Sensing and get a hands on experience in working with remote sensing data. Introduction to Remote Sensing The online resources for this unit can be found here. Introduction to Sentinel 2 The online resources for this unit can be found here. Questions 1) What is...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-02_Working_with_spatial_data.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-02_Remote_sensing_basics.html",
         "teaser": null
       },{
-        "title": "Sentinel 2",
-        "excerpt":"Learn more about Sentinel 2 satellite.    Sentinel 2  The online resources for this unit can be found here.   ","categories": ["03 Remote Sensing basics"],
+        "title": "EX | Sentinel-2 Preparation",
+        "excerpt":"Things you need for this exercise a b c Data acquisition and first steps Download the shapefile for Kilimanjaro southern slope here todo . Download the Sentinel-2 scene for Kilimanjaro southern slope from 13 January 2022. Make sure you get the L2A dataset using sen2r package. sdfasdv Save the downloaded...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-03_Sentinel.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-03_Learn_by_doing_data_preparation.html",
         "teaser": null
       },{
-        "title": "Learn By Doing:Sentinel-2 Application",
-        "excerpt":"In this exercise we aim to calculate the Vegetation indices for our study area. As a start load your prepared Sentinel Data from the previous exercise. Vegetation indices Get familiar with different types of vegetation indices - NDVI, EVI etc. ** How are the different indices calculated ? Select any...","categories": ["03 Remote Sensing basics"],
+        "title": "EX | Sentinel-2 Application",
+        "excerpt":"In this exercise we aim to calculate the vegetation indices for our study area. As a start load your prepared Sentinel Data from the previous exercise. Vegetation indices Choose and calculate one vegetation index for the study area. Plot the vegetation index. Save the maps of the vegetation index as...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-04_Learn_by_doing_application.html",
-        "teaser": null
-      },{
-        "title": "Learn By Doing:Sentinel-2 Preparation",
-        "excerpt":"Data acquisition and first steps Download the shapefile for Kilimanjaro southern slope here . Download the Sentinel-2 scene for Kilimanjaro southern slope from 13 January 2022. Make sure you get the L2A dataset using sen2r package. Create a new R project or use your existing one for the course and...","categories": ["03 Remote Sensing basics"],
-        "tags": ["Unit","03"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-05_Learn_by_doing_data_preparation.html",
         "teaser": null
       },{
         "title": "LiDAR Remote Sensing",
