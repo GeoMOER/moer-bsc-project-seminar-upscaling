@@ -31,20 +31,20 @@ library(rgdal)
 aoi <- readOGR("data/lidarArea.gpkg")
 
 # load in the example point cloud file 
-point_cloud <- readLAS("data/fer1.las") #point cloud for Erica forest in Mt. Kilimanjaro
+point_cloud <- readLAS("data/flm1.las") #point cloud for Erica forest in Mt. Kilimanjaro
 
 # crop out study area
-fer1 <- lasclip(point_cloud,aoi)
+flm1 <- lasclip(point_cloud,aoi)
 
 #to clean up the RAM
 rm(point_cloud) #removes larger point cloud and frees up our space
 gc() #garbage collector for cleaning the RAM
 
 # 3D visualization
-plot(fer1) #plotting las files will open a new window , you can move the data in 360 degress to notice the vegetation structure
+plot(flm1) #plotting las files will open a new window , you can move the data in 360 degress to notice the vegetation structure
 
 #save the output
-writeLAS(fer1, "/data/fer1_clipped.las")
+writeLAS(flm1, "/data/flm1_clipped.las")
 
 ```
 

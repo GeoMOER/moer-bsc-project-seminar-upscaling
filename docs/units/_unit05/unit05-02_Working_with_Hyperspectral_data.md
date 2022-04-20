@@ -36,16 +36,16 @@ library(rgdal)
 aoi <- readOGR("data/hypArea.gpkg")
 
 # load in the example hyperspectral raster
-hy_raster <- raster("data/hy_fer1.tif")
+hy_raster <- raster("data/hy_flm1.tif")
 
 # crop out the study area
-fer1 <- raster::crop(hy_raster,aoi)
+flm1 <- raster::crop(hy_raster,aoi)
 
 # visualize your raster
-plot(fer1)
+plot(flm1)
 
 # save the output
-writeRaster(fer1, "hy_fer1_clipped.tif")
+writeRaster(flm1, "hy_flm1_clipped.tif")
 
 ```
 ## Speclibs
@@ -66,8 +66,8 @@ wavelength <- band_info$wavelength
 
 # creating speclib  
 
-speclib_fer1 <- speclib(brick(hy_fer1_clipped), wavelength)
-str(speclib_fer1)
+speclib_fer1 <- speclib(brick(hy_flm1_clipped), wavelength)
+str(speclib_flm1)
 
 ```
 ## Task 1
@@ -93,7 +93,7 @@ library(future)
 future::plan(multisession, workers = 2L)
 
 # calculate vegetation indices
-fer1_vi <- vegindex(speclib_fer1, index = vi)
+flm1_vi <- vegindex(speclib_fer1, index = vi)
 ```
 
 ## Task 2
@@ -104,5 +104,5 @@ fer1_vi <- vegindex(speclib_fer1, index = vi)
 
 ```r
 PlotID mean_NDVI sd_NDVI mean_SAVI sd_SAVI
-fer1	---	  ---      --- 	    ---
+flm1	---	  ---      --- 	    ---
 ```
