@@ -24,31 +24,31 @@ var store = [{
         "teaser": null
       },{
         "title": "R and RStudio",
-        "excerpt":"Start to learn the essentials for working with R and RStudio.    First steps in R and RStudio   The online resources for this unit can be found here.   ","categories": ["01 Getting started"],
+        "excerpt":"Start to learn the essentials for working with R and RStudio.   First steps in R and RStudio   The online resources for this unit can be found here.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-02_the_very_basics.html",
         "teaser": null
       },{
         "title": "Recall: Data Types",
-        "excerpt":"Learn how data is measured and organized from an R perspective.    For a quick introduction to data types in R check out our own material in the accompanying  Base R course, this video by DataCamp  or a more textual description from Quick-R.  ","categories": ["01 Getting started"],
+        "excerpt":"Learn how data is measured and organized from an R perspective.   For a quick introduction to data types in R check out our own material in the accompanying  Base R course, this video by DataCamp  or a more textual description from Quick-R.  ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-03_data_types.html",
         "teaser": null
       },{
         "title": "Recall: Object Types",
-        "excerpt":"Learn how data types are structured within different object types in R.    For a quick introduction to object types (aka data structures) in R check out our own material in the accompanying  Base R course,  a brief description at RSpatial or a more detailed explanation by  Hadley Wickham.   ","categories": ["01 Getting started"],
+        "excerpt":"Learn how data types are structured within different object types in R.   For a quick introduction to object types (aka data structures) in R check out our own material in the accompanying  Base R course,  a brief description at RSpatial or a more detailed explanation by  Hadley Wickham.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-04_object_types.html",
         "teaser": null
       },{
         "title": "Recall: Indexing",
-        "excerpt":"Learn how to find, address, and change elements in R objects.    For a quick introduction to indexing in R check out our own material in the accompanying  Base R course,  a brief description at RSpatial or some Youtube video.   ","categories": ["01 Getting started"],
+        "excerpt":"Learn how to find, address, and change elements in R objects.   For a quick introduction to indexing in R check out our own material in the accompanying  Base R course,  a brief description at RSpatial or some Youtube video.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-05_indexing.html",
         "teaser": null
       },{
         "title": "Recall: Operations",
-        "excerpt":"Learn how operators and control structures work in R.    For a quick introduction to operations in R, i.e. different types of operators and control structures,  check out our own material in the accompanying Base R course and e.g. the Quick-R page  or this video from DataCamp.   ","categories": ["01 Getting started"],
+        "excerpt":"Learn how operators and control structures work in R.   For a quick introduction to operations in R, i.e. different types of operators and control structures,  check out our own material in the accompanying Base R course and e.g. the Quick-R page  or this video from DataCamp.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-06_operations.html",
         "teaser": null
@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Git and GitHub",
-        "excerpt":"Learn the essentials for working with Git and GitHub.    Git and GitHub  The online resources for this unit can be found here.   ","categories": ["01 Getting started"],
+        "excerpt":"Learn the essentials for working with Git and GitHub.   Git and GitHub  The online resources for this unit can be found here.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-09_git_github.html",
         "teaser": null

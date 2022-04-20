@@ -6,7 +6,7 @@ header:
 ---
 
 Learn how data types are structured within different object types in R.
-<!--more-->
+
 
 For a quick introduction to **object types** (aka data structures) in R check out our own material in the accompanying 
 [Base R course](https://geomoer.github.io/moer-base-r/unit03/unit03-01_Intro.html){:target="_blank"}, 

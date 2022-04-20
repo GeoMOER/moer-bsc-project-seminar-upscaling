@@ -6,7 +6,6 @@ header:
 ---
 
 Learn the essentials for working with Git and GitHub.
-<!--more-->
 
 
 ## Git and GitHub
