@@ -108,7 +108,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Sentinel-2 Preparation",
-        "excerpt":"Things you need for this exercise Shapefile of the study area Knowing your Sentinel 2 tiles - 37MCS and 37MBS Parameters to download Sentinel 2 data Data acquisition and first steps Download the shapefile for Kilimanjaro southern slope here. Download the Sentinel-2 scene for Kilimanjaro southern slope from 13 January...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Things you need for this exercise A shapefile of the study area (see below) The names of the required Sentinel 2 tiles - 37MCS and 37MBS Parameters to download Sentinel 2 data (see below) Data acquisition and first steps Download the shapefile for Kilimanjaro southern slope here. Download the Sentinel-2...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-03_Learn_by_doing_data_preparation.html",
         "teaser": null

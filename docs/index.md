@@ -65,23 +65,25 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | 20.04.2022 | First things first                  | Course introduction, R, R Studio, R Markdown, data types, object types, GitHub, GitHub classroom,Introduction to Kili-SES |
-||| ** Remote sensing basics**  |
-| 02 | 27.04.2022 | Recalling remote sensing basics and working with Sentinel 2 data | Remote sensing basics, Introduction to Sentinel 2, data preparation and application |
-||| **Iteration 1: Starting simple** || 
-| 03 | 04.05.2022 | LiDAR remote sensing          	| Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 04 | 11.05.2022 | Hyperspectral remote sensing        |Introduction to hyperspectral data, speclibs and deriving vegetation indices |
-| 05 | 18.05.2022 | Project week        		| Defining project work, research questions and discussing deadlines |
-||| **Iteration 2: Getting a taste of reality**         |
-| 06 | 25.05.2022 | Machine learning                    | Basics of machine learning, decision trees, cross validation  |
-| 07 | 01.06.2022 | Upscaling methodology 1	            | Why upscaling, framework, data preparation |
-| 08 | 08.06.2022 | Upscaling methodology 2	            | Upscaling: models and predictions |
-| 09 | ~~15.06.2022~~ | Project Week                    |  Session canceled |
-||| **Project work** |
-| 10 | 22.06.2022 | Buit in hold| Time for working on projects  |
-| 11 | 06.07.2022 | Feedback | Individual assignment problem solving session |
+| 01 | 20.04.2022   | First things first                                     | Course introduction, R Basics, GitHub, GitHub classroom, Introduction to Kili-SES |
+||| **Remote sensing basics and data**  |
+| 02 | 27.04.2022   | Remote sensing basics and working with Sentinel 2 data | Remote sensing basics, Sentinel 2 data preparation and application |
+| 03 | 04.05.2022   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 04 | 11.05.2022   | Hyperspectral remote sensing                           | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
+||| **Start research project**  |
+| 05 | 18.05.2022   | Set up your research project      		     | Defining project work, research questions and discussing deadlines |
+||| **Upscaling Methodology**                              |
+| 06 | 25.05.2022   | Machine learning                                       | Basics of machine learning, decision trees, cross validation  |
+| 07 | 01.06.2022   | Upscaling methodology 1	                             | Why upscaling, framework, data preparation |
+| 08 | 08.06.2022   | Upscaling methodology 2	                             | Upscaling: models and predictions |
+||| **Break**                              |
+|  | ~~15.06.2022~~ | Project week of the department                         | Session canceled |
+||| **Assisted working phase** |
+| 09 | 22.06.2022   | Work on projects | Time for working on projects             |
+| 10 | 29.06.2022   | Work on projects | Time for working on projects             |
+| 11 | 06.07.2022   | Work on projects | Time for working on projects             |
 ||| **Wrap up** |
-| 12 | 13.07.2022 | Wrap up | Time for questions and feedback, goodbye |
+| 12 | 13.07.2022   | Wrap up, Evaluation, and Feedback                      | Time for questions and feedback, goodbye |
 
 
 # Deliverables

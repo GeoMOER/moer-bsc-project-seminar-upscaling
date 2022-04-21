@@ -51,16 +51,16 @@ The link to the Ilias space for this course can be found [here](https://ilias.un
 Note that you have to log in with your student account. 
 There is also a forum in Ilias, which you can use for getting in touch with your fellow students.
 
-## Strato server
-
-Starto is storage space provided by the University of Marburg. 
-We will be using Strato to download the needed data as we move along the course.
-The link for the server can be found [here](http://85.214.102.111/kili_data/){:target="_blank"}.
-Note that you will be provided with the username and password during the course. 
-<b>Important note - please do not share the data outside this course.</b>
 
 ## GitHub Classroom
 
 You will use GitHub Classroom for uploading your assignments and for getting familiar with git.
 The link for joining our GitHub Classroom can be found in Ilias.
 Please add your full name or your student account name to your GitHub profile.
+
+## Strato server
+
+We will be using a Strato server for providing data as we move along the course.
+The link for the server can be found [here](http://85.214.102.111/kili_data/){:target="_blank"}.
+Note that you will be provided with the username and password during the course. 
+<b>Important note - please do not share the data outside this course.</b>
