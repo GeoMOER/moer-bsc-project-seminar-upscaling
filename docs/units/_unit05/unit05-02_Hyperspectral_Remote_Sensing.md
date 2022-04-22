@@ -1,5 +1,5 @@
 ---
-title: Hyperspectral Remote Sensing
+title: "LM | Hyperspectral Remote Sensing"
 header:
   image: "/assets/images/teaser/hyp_crop.png"
   caption: 'Image: [**NASA - Hyperion**](https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php){:target="_blank"}'

@@ -119,37 +119,55 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-04_Learn_by_doing_application.html",
         "teaser": null
       },{
-        "title": "LiDAR Remote Sensing",
+        "title": "Overview",
+        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method. With its 3d approach we can measure canopy height and density along with many environmental parameters. In remote areas as well as areas with steep slopes, Airborne LiDAR has proved very effective in monitoring vegetation structure (Getzin...","categories": ["04 LiDAR Remote Sensing"],
+        "tags": ["Unit","04"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-01_overview.html",
+        "teaser": null
+      },{
+        "title": "LM | LiDAR Remote Sensing",
         "excerpt":"In this unit you get introduced to LiDAR remote sensing. You will get to know how the LiDAR data is useful in understanding forest structure. You will also work with point cloud data to derive important LiDAR metrics. Dive into the world of 3D spatial data The online resources for...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-01_LiDAR_Remote_Sensing.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-02_LiDAR_Remote_Sensing.html",
         "teaser": null
       },{
-        "title": "Working with LiDAR data",
-        "excerpt":"Example: LiDAR point clouds I/O and clipping Since the LiDAR data can be quite large and needs higher processing power, only a small example is taken here. We will be using point cloud data and derive usable lidar metrics using the lidR package. Please refer here to get a detailed...","categories": ["04 LiDAR Remote Sensing"],
-        "tags": ["Unit","04"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-02_Working_with_LiDAR_data.html",
-        "teaser": null
-      },{
-        "title": "Deriving LiDAR products",
+        "title": "EX | Deriving LiDAR products",
         "excerpt":"Exercise: LiDAR products In this exercise we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model). source: https://www.earthdatascience.org/images/courses/earth-analytics/lidar-raster-data-r Rasterizing the point cloud Since the point clouds are 3D , to get a DTM , DSM and CHM we...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-03_LiDAR_metrics.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-04_LiDAR_metrics.html",
         "teaser": null
       },{
-        "title": "Hyperspectral Remote Sensing",
+        "title": "EX | Working with LiDAR data",
+        "excerpt":"Example: LiDAR point clouds I/O and clipping Since the LiDAR data can be quite large and needs higher processing power, only a small example is taken here. We will be using point cloud data and derive usable lidar metrics using the lidR package. Please refer here to get a detailed...","categories": ["04 LiDAR Remote Sensing"],
+        "tags": ["Unit","04"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-05_Working_with_LiDAR_data.html",
+        "teaser": null
+      },{
+        "title": "Overview",
+        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method. With its 3d approach we can measure canopy height and density along with many environmental parameters. In remote areas as well as areas with steep slopes, Airborne LiDAR has proved very effective in monitoring vegetation structure (Getzin...","categories": ["05 Hyperspectral Remote Sensing"],
+        "tags": ["Unit","05"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-01_overview.html",
+        "teaser": null
+      },{
+        "title": "LM | Hyperspectral Remote Sensing",
         "excerpt":"In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data. Introduction to Hyperspectral Remote Sensing The EM Spectrum The EM spectrum consists of a range of all types of electromagnetic radiation. Surface reflectance at different parts of the spectrum or...","categories": ["05 Hyperspectral Remote Sensing"],
         "tags": ["Unit","05"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-01_Hyperspectral_Remote_Sensing.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-02_Hyperspectral_Remote_Sensing.html",
         "teaser": null
       },{
-        "title": "Working with hyperspectral data",
+        "title": "EX | Working with hyperspectral data",
         "excerpt":"In this exercise we use hyperspectral rasters to calculate different vegetation indices Example : Calculating vegetation indices We will be using processed hyperspectral data and the hsdar R package to get two different vegetation indices. Since the data and processing takes time, we show here only a small example. Please...","categories": ["05 Hyperspectral Remote Sensing"],
         "tags": ["Unit","05"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-02_Working_with_Hyperspectral_data.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-03_Working_with_Hyperspectral_data.html",
         "teaser": null
       },{
-        "title": "Introduction to upscaling",
+        "title": "Overview",
+        "excerpt":" To do     ","categories": ["06 Upscaling methodology"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Overview.html",
+        "teaser": null
+      },{
+        "title": "LM | Introduction to upscaling",
         "excerpt":"Why upscaling? Why upscale? Mapping biodiversity at large scales is essential for environmental monitoring and conservation. However, it is time and labor intensive to monitor biodiversity at ground level. Using upscaled data can further help in accounting for different Nature’s Contributions to People (NCPs) by transferring “local” information to “regional”...","categories": ["06 Upscaling methodology"],
         "tags": ["Unit","06"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Upscaling_introduction.html",

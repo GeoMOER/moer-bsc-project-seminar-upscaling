@@ -1,5 +1,5 @@
 ---
-title: LiDAR Remote Sensing
+title: "LM | LiDAR Remote Sensing"
 header:
   image: "/assets/images/teaser/lidar_coffee.jpg"
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
@@ -14,4 +14,4 @@ The online resources for this unit can be found [here](https://geomoer.github.io
 
 ## Additional reference for reading
 
-[Zieger et al (2021)](https://www.mdpi.com/2072-4292/14/3/786){:target="_blank"}
+[Ziegler et al (2021)](https://www.mdpi.com/2072-4292/14/3/786){:target="_blank"}
