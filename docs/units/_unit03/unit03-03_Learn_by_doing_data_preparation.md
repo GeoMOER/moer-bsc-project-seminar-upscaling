@@ -85,17 +85,10 @@ A new window appears in your R studio, now add the following parameters as you m
 * Create a raster stack of the bands with 10 m resolution. 
 * Which bands are these and what colors do they represent?
 * Print out the names of these bands.
-* Change the names according to the represented color.
 
-## Data preparation 2: Tile merging and cropping
-
-* Merge the Sentinel tiles 37MCS and 37MBS
-* Set the correct projection UTM 37S
-* Crop/Mask the Sentinel data for the given shapefile
-* To see if everything worked fine, plot the first layer of your stack.
-* Save the cropped stack as a tif file.
 
 ## Have a look
 
 * Plot a True Color Composite
 * Plot a False Color Composite
+

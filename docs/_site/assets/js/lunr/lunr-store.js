@@ -114,7 +114,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Sentinel-2 Application",
-        "excerpt":"In this exercise we aim to calculate the vegetation indices for our study area. As a start load your prepared Sentinel Data from the previous exercise. Vegetation indices Choose and calculate one vegetation index for the study area. Plot the vegetation index. Save the maps of the vegetation index as...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"In this exercise we aim to calculate the vegetation indices for our study area. As a start load your prepared Sentinel Data from the previous exercise. Vegetation indices Choose and calculate one vegetation index for the study area. Note - the data comes in two Sentinel tiles so you need...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-04_Learn_by_doing_application.html",
         "teaser": null
