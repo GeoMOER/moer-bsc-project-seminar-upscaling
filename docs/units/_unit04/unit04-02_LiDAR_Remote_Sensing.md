@@ -14,4 +14,4 @@ The online resources for this unit can be found [here](https://geomoer.github.io
 
 ## Additional reference for reading
 
-[Ziegler et al (2021)](https://www.mdpi.com/2072-4292/14/3/786){:target="_blank"}
+[Ziegler et al 2022](https://www.mdpi.com/2072-4292/14/3/786){:target="_blank"}

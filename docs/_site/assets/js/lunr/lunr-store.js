@@ -119,6 +119,12 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-04_Learn_by_doing_application.html",
         "teaser": null
       },{
+        "title": "AS | Assignment",
+        "excerpt":"Read the following article by Ziegler et al 2022 (also available on ILIAS) and answer the following questions What is the research question that the article is based on? How can LiDAR derived vegetation structure be used as a surrogate to species richness of different taxa? Based on the model...","categories": ["03 Remote Sensing basics"],
+        "tags": ["Unit","03"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-05_Assignmnet.html",
+        "teaser": null
+      },{
         "title": "Overview",
         "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method. With its 3d approach we can measure canopy height and density along with many environmental parameters. In remote areas as well as areas with steep slopes, Airborne LiDAR has proved very effective in monitoring vegetation structure (Getzin...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],

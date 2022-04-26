@@ -59,6 +59,6 @@ plot(Index_layer)
 * How easy or difficult is to separate "agricultural" vs "forest" regions just by visualization?
 
 ## Further reading resources 
-[Fortunata and Zeuss 2020](https://link.springer.com/chapter/10.1007/978-3-030-76374-9_3){:target="_blank"}
+[Fortunata and Zeuss 2020](https://link.springer.com/chapter/10.1007/978-3-030-76374-9_3){:target="_blank"} (also available on ILIAS)
 
  
