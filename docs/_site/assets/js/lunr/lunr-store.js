@@ -126,13 +126,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method. With its 3d approach we can measure canopy height and density along with many environmental parameters. In remote areas as well as areas with steep slopes, Airborne LiDAR has proved very effective in monitoring vegetation structure (Getzin...","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method that uses lasers to record distances which when combined with complimentary data can be used to generated 3D models of a surface. With its 3d approach we can measure canopy height and density along with many environmental...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-01_overview.html",
         "teaser": null
       },{
         "title": "LM | LiDAR Remote Sensing",
-        "excerpt":"In this unit you get introduced to LiDAR remote sensing. You will get to know how the LiDAR data is useful in understanding forest structure. You will also work with point cloud data to derive important LiDAR metrics. Dive into the world of 3D spatial data The online resources for...","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"Dive into the world of 3D spatial data LiDAR or Light Detection and Ranging is an active remote sensing technique that uses laser to produce and emit pulses of light and then measures the time of return of this pulse reflected back from the surface. In general, a LiDAR system...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-02_LiDAR_Remote_Sensing.html",
         "teaser": null
@@ -147,6 +147,12 @@ var store = [{
         "excerpt":"Example: LiDAR point clouds I/O and clipping Since the LiDAR data can be quite large and needs higher processing power, only a small example is taken here. We will be using point cloud data and derive usable lidar metrics using the lidR package. Please refer here to get a detailed...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-05_Working_with_LiDAR_data.html",
+        "teaser": null
+      },{
+        "title": "AS | Assignment",
+        "excerpt":"   Read the Introduction to Hyperspectral in Unit 5.   ","categories": ["04 LiDAR Remote Sensing"],
+        "tags": ["Unit","04"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-06_Assignment.html",
         "teaser": null
       },{
         "title": "Overview",

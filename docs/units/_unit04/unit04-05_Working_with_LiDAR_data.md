@@ -27,7 +27,7 @@ library(lidR)
 library(sp)
 library(rgdal)
 
-# laod in the example study area
+# load in the example study area
 aoi <- readOGR("data/lidarArea.gpkg")
 
 # load in the example point cloud file 
@@ -35,6 +35,18 @@ point_cloud <- readLAS("data/flm1.las") #point cloud for Erica forest in Mt. Kil
 
 # crop out study area
 flm1 <- lasclip(point_cloud,aoi)
+
+# have a look at Lidar data structure
+head(flm1)
+#  X        Y        Z      gpstime   Intensity ReturnNumber NumberOfReturns ScanDirectionFlag EdgeOfFlightline Classification Synthetic_flag Keypoint_flag Withheld_flag ScanAngleRank UserData PointSourceID
+# 303983.1 9649715 1903.273 394208.4         0            3               3                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
+# 303983.1 9649715 1903.401 394208.4         0            6               6                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
+
+# have a look at the range of intensity
+range(flm1@data$Intensity)
+
+# unique classification 
+unique(flm1@data$Classification)
 
 #to clean up the RAM
 rm(point_cloud) #removes larger point cloud and frees up our space
@@ -52,9 +64,9 @@ writeLAS(flm1, "/data/flm1_clipped.las")
 
 * Plot the LiDAR data again, but experiment with different columns for the coloring of the points
 * What information could you gain from these plots?
-* Filter the LiDAR data. Only keep points above an intensity value of 300
+* Filter the LiDAR data. Only keep points above an intensity value of 300. (Hint- use `lidR::filter_poi`)
 * Plot them. What points are these? What could you do with those points?
-* Filter the LiDAR data. Only keep points which belong to the classification “2”
+* Filter the LiDAR data. Only keep the first returns. (Hint- use `lidR::filter_poi`)
 * Plot them. What points are these? What could you do with those points?
 
 

@@ -19,15 +19,15 @@ Since the point clouds are 3D , to get a DTM , DSM and CHM we need some sort of 
 Of course lidR provides the functions for these tasks. Have a look at grid_terrain(), grid_canopy() or the more flexible grid_metrics().
 
 ## Task 1
-
-* Calculate DTM, DSM and CHM with 1m resolution.
+* load the flm1_clipped.las file that you save earlier.
+* Calculate DTM, DSM and CHM with 10m resolution.
 * Save your rasters as a tif file. 
 
 ## Task 2 
 
 We want to calculate what is the mean vegetation height of our forest plot?
 
-* Load the cropped Sentinel 2 scene from the previou exercise
+* Load the cropped Sentinel 2 scene from the previous session
 * Crop the scene for our forest plot
 * Calculate a DEM with the Sentinel tile as a grid template with grid_metrics()
 * Normalize the pointcloud with lasnormalize(). What happened?

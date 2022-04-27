@@ -5,13 +5,28 @@ header:
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
 ---
 
-In this unit you get introduced to LiDAR remote sensing. You will get to know how the LiDAR data is useful in understanding forest structure. You will also work with point cloud data to derive important LiDAR metrics.
-<!--more-->
-
-
 ## Dive into the world of 3D spatial data
-The online resources for this unit can be found [here](https://geomoer.github.io/moer-bsc-project-seminar-remote-sensing//unit05/unit05-01_lidar_remote_sensing.html){:target="_blank"}.
+
+LiDAR or Light Detection and Ranging is an active remote sensing technique that uses laser to produce and emit pulses of light and then measures the time of return of this pulse reflected back from the surface.
+In general, a LiDAR system consits of a laser-emitter-reciever-scanner along with GPS (Global Positioning Unit) and an IMU (Inertial Measurement Unit). These three devices are mounted and carried on fixed wing aircraft (for Airborne Laser Scanning or ALS).
+Terrestrial Laser Scanning (TLS) system is the ground based counterpart of ALS while Satellite Laser Scanning is the spaceborne counterpart of ALS. 
+
+## How is LiDAR data collected 
+
+Let's watch a short animated video that will give you a comprehensive idea on how Lasers are used to measure data.
+<iframe width="810" height="458" src="https://www.youtube.com/embed/EYbhNSUnIdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Video source : [NEON](https://www.neonscience.org/data-collection/lidar){:target="_blank"}
+
+We will look at the data structure of LiDAR data in the next section but lets first talk about applications of LiDAR.
+
+## LiDAR Applications
+
+* It can be used in analysing landcover, Topography and Hydrology.
+* It has numerous applications in ecology, forestry and conservation science.
+* Agriculture has used LiDAR for crop mapping, crop variability crop categorization etc.
+* LiDAR has been to MARS!! NASA Phoenix Lander used LiDAR to map the topography of the red planet.
+* Further applications areass include atmospheric sciences, natural hazard management, oceanography, green energy, geology, etc. 
 
 ## Additional reference for reading
 
-[Ziegler et al 2022](https://www.mdpi.com/2072-4292/14/3/786){:target="_blank"}
+[LiDAR for ecology and conservation](https://www.wwf.org.uk/sites/default/files/2019-04/Lidar-WWF-guidelines.pdf){:target="_blank"}
