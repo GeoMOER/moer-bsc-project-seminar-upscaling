@@ -1,21 +1,21 @@
 ---
 title: Overview
 header:
-  image: "/assets/images/teaser/ndvi.jpg"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
+  image: "/assets/images/teaser/hyp_crop.png"
+  caption: 'Image: [**NASA - Hyperion**](https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php){:target="_blank"}'
 ---
 
-LiDAR or Light Detection And Ranging, is a very promising remote sensing method.  
-With its 3d approach we can measure canopy height and density along with many environmental parameters. 
-In remote areas as well as areas with steep slopes, Airborne LiDAR has proved very effective in monitoring vegetation structure (Getzin et al 2017).
-In this unit we explore the potential of Airborne LiDAR data in understanding the forest structure and derive different LiDAR metrics useful for upscaling. 
+Latest advances in remote sensing has led the way to the development of hyperspectral sensors which has multiple applications in the field of forestry, geology, agriculture etc.
+Hyperspectral remote sensing combines the principles of remote sensing and spectroscopy to generate images consisting of several contiguous bands with relatively narrow bandwidths (5-10 nm).
+These narrow bands help scientists and researchers to investigate different properties of materials on the ground.
+ 
 
 <!--more-->
 
 
 ## Learning objectives
 
-* Learn the applications of LiDAR data 
-* Work with point cloud data
-* Derive useful LiDAR metrics
+* Learn the applications of Hyperspectral data 
+* Work with Hyperspectral rasters
+* Derive useful vegetation indices
 

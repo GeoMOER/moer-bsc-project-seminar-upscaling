@@ -150,7 +150,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method. With its 3d approach we can measure canopy height and density along with many environmental parameters. In remote areas as well as areas with steep slopes, Airborne LiDAR has proved very effective in monitoring vegetation structure (Getzin...","categories": ["05 Hyperspectral Remote Sensing"],
+        "excerpt":"Latest advances in remote sensing has led the way to the development of hyperspectral sensors which has multiple applications in the field of forestry, geology, agriculture etc. Hyperspectral remote sensing combines the principles of remote sensing and spectroscopy to generate images consisting of several contiguous bands with relatively narrow bandwidths...","categories": ["05 Hyperspectral Remote Sensing"],
         "tags": ["Unit","05"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-01_overview.html",
         "teaser": null
