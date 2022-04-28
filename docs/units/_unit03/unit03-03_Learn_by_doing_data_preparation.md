@@ -17,7 +17,7 @@ toc: true
 ## Data acquisition and first steps
 
 1. Download the shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}. 
-2. Download the Sentinel-2 scene for Kilimanjaro southern slope from 13 January 2022. Make sure you get the L2A dataset using the sen2r package.
+2. Download the Sentinel-2 scene for Kilimanjaro southern slope from 03 January 2022. Make sure you get the L2A dataset using the sen2r package.
    (Parameters see below)	
 3. Save the downloaded files in the raw data folder of your working environment.
 
