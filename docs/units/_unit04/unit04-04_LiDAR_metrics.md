@@ -18,7 +18,7 @@ In this exercise we want to derive the most common LiDAR products DTM (Digital T
 Since the point clouds are 3D , to get a DTM , DSM and CHM we need some sort of grid to rasterize this point cloud.
 Of course lidR provides the functions for these tasks. Have a look at rasterize_terrain(), rasterize_canopy() or the more flexible pixel_metrics().
 
-<b> Note- </b> The function `grid_metrics()` has been now updated to three new functions `cloud_metrics()`, `pixel_metrics()`, and `crown_metrics()` and the function `grid_terrain()` have been updated to 'rasterize_terrain()`. 
+<b> Note- </b> The function `grid_metrics()` has been now updated to three new functions `cloud_metrics()`, `pixel_metrics()`, and `crown_metrics()` and the function `grid_terrain()` have been updated to `rasterize_terrain()`. 
 
 ## Task 1
 * load the flm1_clipped.las file that you save earlier.
