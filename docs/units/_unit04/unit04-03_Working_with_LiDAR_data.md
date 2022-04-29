@@ -26,27 +26,30 @@ This following code shows you a simple input/output command and lidR::lasclip wh
 library(lidR)
 library(sp)
 library(rgdal)
+library(terra) # the new lidR updates depend on terra functions
 
 # load in the example study area
 aoi <- readOGR("data/lidarArea.gpkg")
 
 # load in the example point cloud file 
-point_cloud <- readLAS("data/flm1.las") #point cloud for Erica forest in Mt. Kilimanjaro
+point_cloud <- readLAS("data/flm1.las") #point cloud for Lower Montane forest in Mt. Kilimanjaro
 
 # crop out study area
-flm1 <- lasclip(point_cloud,aoi)
+flm1 <- clip_roi(point_cloud,aoi) #function 'lasclip' has been deprecated
 
 # have a look at Lidar data structure
 head(flm1)
-#  X        Y        Z      gpstime   Intensity ReturnNumber NumberOfReturns ScanDirectionFlag EdgeOfFlightline Classification Synthetic_flag Keypoint_flag Withheld_flag ScanAngleRank UserData PointSourceID
-# 303983.1 9649715 1903.273 394208.4         0            3               3                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
-# 303983.1 9649715 1903.401 394208.4         0            6               6                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
-
+       X       Y        Z    Intensity ReturnNumber NumberOfReturns ScanDirectionFlag EdgeOfFlightline Classification Synthetic_flag Keypoint_flag Withheld_flag ScanAngleRank UserData PointSourceID
+# 303983.1 9649715 1903.269         0            3               3                 0                0              2          FALSE         FALSE         FALSE            -5        0             0
+# 303983.1 9649715 1903.400         0            6               6                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
+> 
 # have a look at the range of intensity
 range(flm1@data$Intensity)
+# 0 34930
 
 # unique classification 
-unique(flm1@data$Classification)
+unique(flm1@data$Classification) # ground data is class 2, 0 is unidentified
+# 2 0
 
 #to clean up the RAM
 rm(point_cloud) #removes larger point cloud and frees up our space
@@ -56,7 +59,7 @@ gc() #garbage collector for cleaning the RAM
 plot(flm1) #plotting las files will open a new window , you can move the data in 360 degress to notice the vegetation structure
 
 #save the output
-writeLAS(flm1, "/data/flm1_clipped.las")
+writeLAS(flm1, "./data/flm1_clipped.las")
 
 ```
 

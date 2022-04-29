@@ -126,7 +126,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method that uses lasers to record distances which when combined with complimentary data can be used to generated 3D models of a surface. With its 3d approach we can measure canopy height and density along with many environmental...","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method that uses lasers to record distances which when combined with complimentary data can be used to generated 3D models of a surface. With its 3D approach we can measure canopy height and density along with many environmental...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-01_overview.html",
         "teaser": null
@@ -137,22 +137,22 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-02_LiDAR_Remote_Sensing.html",
         "teaser": null
       },{
+        "title": "EX | Working with LiDAR data",
+        "excerpt":"Example: LiDAR point clouds I/O and clipping Since the LiDAR data can be quite large and needs higher processing power, only a small example is taken here. We will be using point cloud data and derive usable lidar metrics using the lidR package. Please refer here to get a detailed...","categories": ["04 LiDAR Remote Sensing"],
+        "tags": ["Unit","04"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-03_Working_with_LiDAR_data.html",
+        "teaser": null
+      },{
         "title": "EX | Deriving LiDAR products",
         "excerpt":"Exercise: LiDAR products In this exercise we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model). source: https://www.earthdatascience.org/images/courses/earth-analytics/lidar-raster-data-r Rasterizing the point cloud Since the point clouds are 3D , to get a DTM , DSM and CHM we...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-04_LiDAR_metrics.html",
         "teaser": null
       },{
-        "title": "EX | Working with LiDAR data",
-        "excerpt":"Example: LiDAR point clouds I/O and clipping Since the LiDAR data can be quite large and needs higher processing power, only a small example is taken here. We will be using point cloud data and derive usable lidar metrics using the lidR package. Please refer here to get a detailed...","categories": ["04 LiDAR Remote Sensing"],
-        "tags": ["Unit","04"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-05_Working_with_LiDAR_data.html",
-        "teaser": null
-      },{
         "title": "AS | Assignment",
         "excerpt":"   Read the Introduction to Hyperspectral in Unit 5.   ","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-06_Assignment.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-05_Assignment.html",
         "teaser": null
       },{
         "title": "Overview",

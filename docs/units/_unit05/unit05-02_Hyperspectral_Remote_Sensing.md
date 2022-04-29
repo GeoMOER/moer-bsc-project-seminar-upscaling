@@ -72,7 +72,8 @@ Image : [Govender et al 2007](https://www.mdpi.com/2072-4292/9/11/1110#){:target
 
 Hyperspectral RS has numerous applications in the field of agriculture, soil sciences, hydrology, marine sciences, biodiversity and conservation, hazard and risk assessment and natural resource management. 
 
-Listen to an expert [here](https://youtu.be/g6zSSjBK1Vk){:target="_blank"}.
+Listen to an expert!
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/g6zSSjBK1Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Some examples of Hyperspectral imagers
 
