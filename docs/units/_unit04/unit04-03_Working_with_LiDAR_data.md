@@ -27,6 +27,7 @@ library(lidR)
 library(sp)
 library(rgdal)
 library(terra) # the new lidR updates depend on terra functions
+library(gstat)
 
 # load in the example study area
 aoi <- readOGR("data/lidarArea.gpkg")
