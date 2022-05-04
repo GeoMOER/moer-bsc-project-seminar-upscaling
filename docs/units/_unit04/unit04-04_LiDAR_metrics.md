@@ -40,11 +40,11 @@ plot(flm1_clipped, color = "Classification", size = 3, bg = "white")
 
 # DTM can be created using different algorithms
 #1. Kriging
-dtm_kriging <- rasterize_terrain(flm1_clipped, algorithm = kriging(k = 40))
+dtm_kriging <- rasterize_terrain(flm1_clipped, res = 10, algorithm = kriging(k = 40))
 plot_dtm3d(dtm_kriging, bg = "white") 
 
 #2. Invert distance weighing
-dtm_idw <- rasterize_terrain(flm1_clipped, algorithm = knnidw(k = 10L, p = 2))
+dtm_idw <- rasterize_terrain(flm1_clipped, res = 10, algorithm = knnidw(k = 10L, p = 2))
 plot_dtm3d(dtm_idw, bg = "white") 
 
 ### DSM 
