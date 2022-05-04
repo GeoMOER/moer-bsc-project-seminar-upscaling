@@ -19,3 +19,14 @@ In this unit we explore the potential of Airborne LiDAR data in understanding th
 * Work with point cloud data
 * Derive useful LiDAR metrics
 
+## Comments 
+
+You can leave comments below if you have questions or remarks about any of the text or code in this unit. Please copy the corresponding line into your comment to make it easier to answer your question.
+
+<script src="https://utteranc.es/client.js" 
+        repo="GeoMOER/moer-mpg-upscaling"
+        issue-term="moer-mpg-upscaling_unit04_unit04-01_overview" 
+        theme="github-light" 
+        crossorigin="anonymous" 
+        async> 
+</script> 
