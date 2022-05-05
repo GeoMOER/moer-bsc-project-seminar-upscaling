@@ -105,7 +105,7 @@ Read more about Hyperion [here](https://directory.eoportal.org/web/eoportal/sate
 #### ECOSTRESS
 The ECOsystem Spaceborne Therman Radiometer Experiment on the ISS . It was launched on 29 June 2018. ECOSTRESS monitors the loss of water in plants via evapotranspiration. It has a spatial resolution of 70m with 6 bands between 160-1200 nm. The range of data is between 53.6° N latitude to 53.6° S latitude.
 
-<img src="ECOSTRESS.PNG" width="720" height="240" align="centre" vspace="10" hspace="20">
+<img src="ECOSTRESS.png" width="720" height="240" align="centre" vspace="10" hspace="20">
 
 This map shows the Evaporative Stress Index on May 24, 2020. This observation was obtained from NASA’s ECOSTRESS which measured small difference in the surface temperature of plants to establish the Evaporative Stress Index (ESI), an index used to measure water deficiency; in the Ganges river delta,India. In the regions with abundant water, ESI was low (green) compared to developed land (red) where ESI is around 90%. 
 Image: [NASA](https://ecostress.jpl.nasa.gov/gallery/viewgalleryimage){:target="_blank"}.
