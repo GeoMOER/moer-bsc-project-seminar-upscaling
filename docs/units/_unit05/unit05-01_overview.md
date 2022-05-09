@@ -19,3 +19,14 @@ These narrow bands help scientists and researchers to investigate different prop
 * Work with Hyperspectral rasters
 * Derive useful vegetation indices
 
+## Comments
+
+You can leave comments under this Issue if you have questions or remarks about the task/assignment. 
+
+<script src="https://utteranc.es/client.js"
+        repo="GeoMOER/moer-mpg-upscaling"
+        issue-term="moer-mpg-upscaling-unit05-Hyperspectral"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

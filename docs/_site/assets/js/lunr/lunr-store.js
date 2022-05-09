@@ -174,14 +174,26 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":" To do     ","categories": ["06 Upscaling methodology"],
+        "excerpt":"This unit is all about your final research project. Think about your research question and create a project outline as basis for your project. To finish this course it is mandatory to submit the final project. Learning objectives develop a research question plan and realize a research project from scratch,...","categories": ["06 Set up your research project"],
         "tags": ["Unit","06"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Overview.html",
         "teaser": null
       },{
-        "title": "LM | Introduction to upscaling",
-        "excerpt":"Why upscaling? Why upscale? Mapping biodiversity at large scales is essential for environmental monitoring and conservation. However, it is time and labor intensive to monitor biodiversity at ground level. Using upscaled data can further help in accounting for different Nature’s Contributions to People (NCPs) by transferring “local” information to “regional”...","categories": ["06 Upscaling methodology"],
+        "title": "Research question and project",
+        "excerpt":"Now it is your turn to decide for a self-chosen research question to work on in your final team project. Designing your research question Mount Kilimanjaro is a biodiversity rich region. One can find common as well as endemic species in this region. Quantifying and mapping biodiversity as well as...","categories": ["06 Set up your research project"],
         "tags": ["Unit","06"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Upscaling_introduction.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-02_Research_question_and_project_work.html",
+        "teaser": null
+      },{
+        "title": "Project outline",
+        "excerpt":"Learn more about the requirements for creating a project outline and for the structure, content, and format of your research project. Content and structure The project outline should include a title, of course, the authors, an introduction outlining the state of the art, research need and relevance of the expected...","categories": ["06 Set up your research project"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-03_Project_outline.html",
+        "teaser": null
+      },{
+        "title": "Final project",
+        "excerpt":"After you have written your project outline and have received feedback on it, it will be your task to realize a full research project on the basis of your project outline and individual feedback. Content and structure The content and structure of your research project follows your project outline, with...","categories": ["06 Set up your research project"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-04_Final_project.html",
         "teaser": null
       },]

@@ -173,7 +173,7 @@ defaults:
       path: ""
       type: unit06
     values:
-      category: "06 Upscaling methodology"
+      category: "06 Set up your research project"
       tags: "Unit 06"
       layout: single
       sidebar:
