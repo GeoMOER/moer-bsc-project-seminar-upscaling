@@ -57,7 +57,7 @@ In this part, we use our hyperspectral raster and band information on to create 
 help(hsdar) # to see different functions in hsdar library
 
 # read in the band information file 
-band_info <- read.csv("band_info_2016.csv")
+band_info <- read.csv("band_info_2015.csv")
 
 str(band_info) #gives a view of how the data looks
 
