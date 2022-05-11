@@ -66,7 +66,7 @@ wavelength <- band_info$wavelength
 
 # creating speclib  
 
-speclib_fer1 <- speclib(brick(hy_flm1_clipped), wavelength)
+speclib_flm1 <- speclib(brick(hy_flm1_clipped), wavelength)
 str(speclib_flm1)
 
 ```
