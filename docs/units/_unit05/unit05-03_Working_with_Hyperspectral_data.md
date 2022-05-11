@@ -93,7 +93,7 @@ library(future)
 future::plan(multisession, workers = 2L)
 
 # calculate vegetation indices
-flm1_vi <- vegindex(speclib_fer1, index = vi)
+flm1_vi <- vegindex(speclib_flm1, index = vi)
 ```
 
 ## Task 2
