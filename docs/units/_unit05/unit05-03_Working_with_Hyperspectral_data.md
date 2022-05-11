@@ -36,7 +36,7 @@ library(rgdal)
 aoi <- readOGR("data/hypArea.gpkg")
 
 # load in the example hyperspectral raster
-hy_raster <- raster("data/hy_flm1.tif")
+hy_raster <- raster::stack("data/hy_flm1.tif")
 
 # crop out the study area
 flm1 <- raster::crop(hy_raster,aoi)
