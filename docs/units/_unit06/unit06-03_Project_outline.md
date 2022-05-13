@@ -40,6 +40,7 @@ You can use them to relate your selected species data with structural and spectr
 ## Published datasets of Kilimanjaro region
 
 [GFBio](https://www.gfbio.org/) and [Pangea](https://www.pangaea.de/) is an excellent source to search what studies have been done in the Kilimanjaro region and accees different datasets. 
+Use 'KiLi: Kilimanjaro Research Group' as a search term to get an overview of all published datasets.
 
 ## Other sources
 
