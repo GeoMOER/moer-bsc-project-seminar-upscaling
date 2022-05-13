@@ -27,8 +27,8 @@ The content and structure of your research project follows your project outline,
 
 Bring it to an end. Therefore
 1. implement the feedback to your outline, 
-2. realize your team project, and
-3. upload your pdf until 20 July 2022 23:59 on ILIAS.
+2. realize your (team) project, and
+3. upload your pdf until 26 July 2022 23:59 on ILIAS.
 {: .notice--info}
 
 ## Remarks

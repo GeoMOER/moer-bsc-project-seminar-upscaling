@@ -47,3 +47,9 @@ Use 'KiLi: Kilimanjaro Research Group' as a search term to get an overview of al
 If you wish to understand the influence of other environmental variables you can of course freely search other data sources like e.g. [OpenStreetMap](https://www.openstreetmap.org/), [SoilGrids](https://soilgrids.org/).
 
 
+## Assignment
+Write your outline, therefore
+1. identify your research topic, 
+2. follow the steps mentioned above, and
+3. upload your pdf until 17 June 2022 23:59 on ILIAS.
+{: .notice--info}
