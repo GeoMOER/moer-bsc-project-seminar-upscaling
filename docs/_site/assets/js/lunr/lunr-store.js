@@ -196,4 +196,16 @@ var store = [{
         "tags": ["Unit","06"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-04_Final_project.html",
         "teaser": null
-      },]
+      },{
+        "title": "Overview",
+        "excerpt":"This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit we will explore such models and understand the different steps for machine learning.S Learning objectives understanding the basics of machine...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-01_Overview.html",
+        "teaser": null
+      },{
+        "title": "Overview",
+        "excerpt":"This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit we will explore such models and understand the different steps for machine learning.S Learning objectives understanding the basics of machine...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-02_Basics_of_ML.html",
+        "teaser": null
+      }]
