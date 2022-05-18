@@ -23,7 +23,7 @@ You project can take data from the following data
 * Bats
 * Insects 
 * Mammals
-* Functional diversity (traits of species)
+* Functional diversity (traits of species for e.g. body mass, beak size, leaf area index, etc.)
 * Any other important NCPs like carbon storage
 
 
