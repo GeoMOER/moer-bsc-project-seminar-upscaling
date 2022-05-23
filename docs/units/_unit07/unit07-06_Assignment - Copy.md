@@ -1,0 +1,34 @@
+---
+title: "Assignment"
+header:
+  image: "/assets/images/teaser/unit7.jpg"
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+---
+
+## How to proceed 
+
+In this unit we have learnt how to upscale plant species richness data.
+Now its your turn
+
+* Start gathering all the datasets 
+* Make them analaysis ready
+* Try out the shown workflow, see if it works for you
+* Start to modify the workflow based on your chosen research project
+
+## Additional reading
+To understand how the upscaled data becomes useful for designing policies and decision making, and to understand what are the different caveats in global modelling, I recommend reading this interesting paper.
+[Global modeling of nature’s contributions to people, Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372).
+The pdf version for the paper has been also added in ILLIAS. 
+
+## Try to answer the following
+
+* What trends are seen in Fig 2. of the paper?
+
+<img src="366_255_f2.jpeg" width="1500" height="500" align="centre" vspace="10" hspace="20">
+Source : [Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372)
+
+* What are the future scenarios discussed and what are they based on?
+* Which parts of the world are shown as the most disadvantaged across all scenarios and why? 
+
+
+

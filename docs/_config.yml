@@ -178,6 +178,16 @@ defaults:
       layout: single
       sidebar:
         nav: "course_unit"      
+# unit07
+  - scope:
+      path: ""
+      type: unit07
+    values:
+      category: "07 Machine learning"
+      tags: "Unit 07"
+      layout: single
+      sidebar:
+        nav: "course_unit"    
   # pages
   - scope:
       path: "_pages"

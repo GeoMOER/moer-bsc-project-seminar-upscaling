@@ -1,12 +1,12 @@
 ---
 title: Overview
 header:
-  image: "/assets/images/teaser/writing-a-research-plan.jpg"
-  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan)'
+  image: "/assets/images/teaser/unit7.jpg"
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
 ---
 
 This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. 
-In this unit we will explore such models and understand the different steps for machine learning.S
+In this unit we will explore such models and understand the different steps for machine learning.
 
 <!--more-->
 

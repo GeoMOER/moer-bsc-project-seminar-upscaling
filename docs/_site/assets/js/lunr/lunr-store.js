@@ -198,14 +198,38 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit we will explore such models and understand the different steps for machine learning.S Learning objectives understanding the basics of machine...","categories": [],
-        "tags": [],
+        "excerpt":"This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit we will explore such models and understand the different steps for machine learning. Learning objectives understanding the basics of machine...","categories": ["07 Machine learning"],
+        "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-01_Overview.html",
         "teaser": null
       },{
-        "title": "Overview",
-        "excerpt":"This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit we will explore such models and understand the different steps for machine learning.S Learning objectives understanding the basics of machine...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-02_Basics_of_ML.html",
+        "title": "LM | Upascaling workflow",
+        "excerpt":"Upscaling workflow The key concept of upscaling is making area wide predictions with a given set of environmental variables that serve as the drivers of the response variable. Machine learning algorithms such as randomForest have proven to be very useful in making such area wide predictions. In our course ,...","categories": ["07 Machine learning"],
+        "tags": ["Unit","07"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-02_LM_workflow.html",
+        "teaser": null
+      },{
+        "title": "LM | Data preparation",
+        "excerpt":"Data preparation In this part you will use your previously acquired skills to prepare data for designing a suitable model for predicting plant species richness. To predict plant species richness, we need a set of predictors. An important note to keep in mind that we will use these predictors for...","categories": ["07 Machine learning"],
+        "tags": ["Unit","07"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-03_LM_data_preparation.html",
+        "teaser": null
+      },{
+        "title": "LM | Basics of Machine learning",
+        "excerpt":"What is machine learning? Source: https://www.meme-arsenal.com/en/create/meme/2779341 Machine learning is a branch of artificial intelligence which makes use of data and algorithms to mimic the human way of learning, by slowly improving its accuracy! To put it in a simple way, machine learning is an important component of data science used...","categories": ["07 Machine learning"],
+        "tags": ["Unit","07"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-04_ML_Basics.html",
+        "teaser": null
+      },{
+        "title": "EX | Data preparation",
+        "excerpt":"In order to model and upscale plant richness, we will need plot level information for each of our predictors. Getting plot locations # load the following libraries library(lidR) # for lidar data # last updated 4 may, please get latest version library(hsdar) # for hyperspectral data library(terra) library(here) library(sf) library(dplyr)...","categories": ["07 Machine learning"],
+        "tags": ["Unit","07"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-05_data_prepration.html",
+        "teaser": null
+      },{
+        "title": "Assignment",
+        "excerpt":"How to proceed In this unit we have learnt how to upscale plant species richness data. Now its your turn Start gathering all the datasets Make them analaysis ready Try out the shown workflow, see if it works for you Start to modify the workflow based on your chosen research...","categories": ["07 Machine learning"],
+        "tags": ["Unit","07"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-06_Assignment-Copy.html",
         "teaser": null
       }]
