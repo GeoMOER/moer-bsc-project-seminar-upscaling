@@ -73,9 +73,9 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 ||| **Start research project**  |
 | 05 | 18.05.2022   | Set up your research project      		     | Defining project work, research questions and discussing deadlines |
 ||| **Upscaling Methodology**                              |
-| 06 | 25.05.2022   | Machine learning                                       | Basics of machine learning, decision trees, cross validation  |
-| 07 | 01.06.2022   | Upscaling methodology 1	                             | Why upscaling, framework, data preparation |
-| 08 | 08.06.2022   | Upscaling methodology 2	                             | Upscaling: models and predictions |
+| 06 | 25.05.2022   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 07 | 01.06.2022   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+| 08 | 08.06.2022   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Break**                              |
 |  | ~~15.06.2022~~ | Project week of the department                         | Session canceled |
 ||| **Assisted working phase** |

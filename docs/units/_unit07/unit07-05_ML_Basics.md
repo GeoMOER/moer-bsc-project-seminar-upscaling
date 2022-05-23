@@ -1,5 +1,5 @@
 ---
-title: "LM | Basics of Machine learning"
+title: "LM | Machine learning models"
 header:
   image: "/assets/images/teaser/unit7.jpg"
   caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
@@ -8,9 +8,8 @@ header:
 
 ## What is machine learning?
 
-<img src="ml_1.jpg" width="1500" height="500" align="centre" vspace="10" hspace="20">
-
-Source: https://www.meme-arsenal.com/en/create/meme/2779341 
+<img src="ml.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+Source : Netra Bhandari
 
 Machine learning is a branch of artificial intelligence which makes use of data and algorithms to mimic the human way of learning, by slowly improving its accuracy!
 To put it in a simple way, machine learning is an important component of data science used for making classifications or predictions. Many industries are derive their decisions based on insights derived from such classifications/predictions.
@@ -35,3 +34,6 @@ You can find all the videos [here](https://geomoer.github.io/moer-bsc-project-se
 * [Perspectives in machine learning for wildlife conservation](https://www.nature.com/articles/s41467-022-27980-y){:target="_blank"}.
 * [AI empowers conservation biology](https://www.nature.com/articles/d41586-019-00746-1){:target="_blank"}.
 
+<img src="ml_1.jpg" width="1500" height="500" align="centre" vspace="10" hspace="20">
+
+Source: https://www.meme-arsenal.com/en/create/meme/2779341 

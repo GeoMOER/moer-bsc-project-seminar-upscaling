@@ -5,14 +5,15 @@ header:
   caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
 ---
 
-This unit is about learning the essentials of Machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. 
-In this unit we will explore such models and understand the different steps for machine learning.
+This unit is about learning the essentials of Upscaling using machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. 
+In this unit we will explore such models and understand the different steps for upscaling.
 
 <!--more-->
 
 ## Learning objectives
 
-* understanding the basics of machine learning
+* understanding the basics of upscaling workflow
+* revise basics of machine learning
 * preparing data for the model
 * train the model
 * make predictions

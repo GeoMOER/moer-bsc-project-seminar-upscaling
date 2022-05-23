@@ -183,7 +183,7 @@ defaults:
       path: ""
       type: unit07
     values:
-      category: "07 Machine learning"
+      category: "07 Upscaling workflow"
       tags: "Unit 07"
       layout: single
       sidebar:

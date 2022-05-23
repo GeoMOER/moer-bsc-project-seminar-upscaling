@@ -31,4 +31,6 @@ Source : [Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372
 * Which parts of the world are shown as the most disadvantaged across all scenarios and why? 
 
 
+## Preparation for next session
 
+* Select a video on machine learning from [here](https://geomoer.github.io/moer-bsc-project-seminar-remote-sensing//unit06/unit06-01_machine_learning.html){:target="_blank"}, and explain in your words to others about what you understood from it. 

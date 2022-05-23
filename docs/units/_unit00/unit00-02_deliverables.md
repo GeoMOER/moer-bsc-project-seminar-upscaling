@@ -15,7 +15,7 @@ and at the end a marked project work as part of your overall course portfolio ("
 
 The submissions generally encompass R or R markdown AND the compiled html files. 
 You need to submit your solutions to your personal repository in the GitHub classroom.
-More details soon..
+
 
 <!--
 
@@ -47,7 +47,8 @@ So start early!!!
 
 ## Project work
 
-Details will follow soon...
+The page with the description of the project work can be found [here](/moer-mpg-upscaling/unit06/unit06-03_Project_outline.html). The deadline to deliver the project outline is 17 June 2022, 23:00.
+The deadline to deliver the final project work is 26 July 2022, 23:00.
 
 
 
