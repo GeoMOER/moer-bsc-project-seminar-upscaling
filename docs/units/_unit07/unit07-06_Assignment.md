@@ -24,7 +24,7 @@ The pdf version for the paper has been also added in ILLIAS.
 
 * What trends are seen in Fig 2. of the paper?
 
-<img src="366_255_f2.jpeg" width="1500" height="500" align="centre" vspace="10" hspace="20">
+<img src="https://www.science.org/doi/10.1126/science.aaw3372#" width="1500" height="500" align="centre" vspace="10" hspace="20">
 Source : [Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372)
 
 * What are the future scenarios discussed and what are they based on?
