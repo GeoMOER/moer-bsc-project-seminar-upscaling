@@ -45,14 +45,11 @@ plots <- sf::st_read("./upscaling_data/vectors/BPolygon.shp")
 
 ## lets plot and see our aoi and plots
 
-plot(shp_kili, col = shp_kili$grid_code, add = TRUE) # improve this
-plot(plots, pch = 4, cex = 0.5, add = TRUE, col = "red") #maybe add labels
-
-
 mapview::mapview(shp_kili)+
   mapview::mapview(plots, col.regions = "yellow")
 
 ```
+<img src="kili_shp_plots.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 
 ## LiDAR data
 
@@ -74,7 +71,10 @@ head (list_las_files, n = 5) #5 file paths
 # read in las catalog
 las_ctg <- readLAScatalog(list_las_files) # around 569.8kb , 67 tiles
 plot(las_ctg) ## notice that some tiles are overlapping
+```
+<img src="catalog.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 
+```r
 # we clip based on our plots 
 dir.create(path = paste0(path,"/output_dir")) #make a new dir for saving your clipped files
 aoi_path <- paste0(path,"/output_dir")
@@ -101,7 +101,7 @@ opt_output_files(ctg) <- paste0(dtm_path, "/{*}_dtm")
 dtm <- rasterize_terrain(ctg, res = 10, algorithm = knnidw(k = 10L, p = 2)) 
 
 crs(dtm) <- crs(vect(shp_kili)) #add crs to dtm
-plot(dtm)
+#plot(dtm)
 
 # aspect and slope
 aspect <-  terra::terrain(dtm, v="aspect")
@@ -144,6 +144,7 @@ flight_2_plot_list <- c("fed1","fed2","fed3","fed4","fed5","fer0","fer2","fer3",
 hy_fls_2015 <- hy_fls[grepl(pattern = paste(flight_1_plot_list, collapse = "|"), hy_fls)] # mai5 is missing
 
 hy_fls_2016 <- hy_fls[grepl(pattern = paste(flight_2_plot_list, collapse = "|"), hy_fls)]
+
 
 
 list_hy_fls1 <- pbapply::pblapply(seq_along(hy_fls_2015),
@@ -228,6 +229,7 @@ hy_names_2016 <- substr(hy_fls_2016, 76,79) #29 total
 vi = "NDVI"
 
 #lets calculate vegetation indices by making a speclib
+library(future)
 future::plan(multisession, workers = 2L) #makes processing faster!
 
 vi_stats_2015 <- lapply(seq(length(hy_fls_2015)), function(i){
@@ -243,10 +245,10 @@ vi_stats_2015 <- lapply(seq(length(hy_fls_2015)), function(i){
   vi_sd_2015 <- as.data.frame(t(cellStats(hy_indices_2015, stat = "sd", na.rm = TRUE)))
   
   vi_mean <- data.frame(PlotID = hy_names_2015[i], vi_means_2015)
-  names(vi_mean)[2] <- paste(names(vi_mean[2]), "_mean", sep = "")
+  names(vi_mean)[2] <- paste( vi,"_mean", sep = "")
   
   vi_sd <- data.frame(PlotID = hy_names_2015[i], vi_sd_2015)
-  names(vi_sd)[2] <- paste(names(vi_sd[2]), "_sd", sep = "")
+  names(vi_sd)[2] <- paste(vi, "_sd", sep = "")
   
   vi_table <-  left_join(vi_mean, vi_sd, by = "PlotID")
   
@@ -261,7 +263,7 @@ vi <- "NDVI"
 future::plan(multisession, workers = 2L)
 
 
-# repeat the same for 2016
+
 vi_stats_2016 <- lapply(seq(length(list_ext_intersection_lidar_hs2)), function(i){
   
   hy_2016 <- speclib(raster::brick(list_ext_intersection_lidar_hs2[[i]]), wavelength_2016)
@@ -275,10 +277,10 @@ vi_stats_2016 <- lapply(seq(length(list_ext_intersection_lidar_hs2)), function(i
   vi_sd_2016 <- as.data.frame(t(cellStats(hy_indices_2016, stat = "sd", na.rm = TRUE)))
   
   vi_mean <- data.frame(PlotID = hy_names_2016[i], vi_means_2016)
-  names(vi_mean)[2] <- paste(names(vi_mean[2]), "_mean", sep = "")
+  names(vi_mean)[2] <- paste( vi,"_mean", sep = "")
   
   vi_sd <- data.frame(PlotID = hy_names_2016[i], vi_sd_2016)
-  names(vi_sd)[2] <- paste(names(vi_sd[2]), "_sd", sep = "")
+  names(vi_sd)[2] <- paste(vi, "_sd", sep = "")
   
   vi_table <-  left_join(vi_mean, vi_sd, by = "PlotID")
   
@@ -289,6 +291,7 @@ vi_stats_2016 <- lapply(seq(length(list_ext_intersection_lidar_hs2)), function(i
 vi_table_2016 <- do.call(rbind, vi_stats_2016)
 
 vi_table <- rbind(vi_table_2015, vi_table_2016)
+
 ```
 
 ## Mean minimum temperature
@@ -302,7 +305,11 @@ vi_table <- rbind(vi_table_2015, vi_table_2016)
 mmt <- read.csv("./upscaling_data/plot_data/temp_kili_stations_averaged.csv", row.names = 1)
 colnames(mmt)
 mmt <- mmt[,c(1,15)]
-head(mmt)
+head(mmt, n = 2)
+# PlotID  mean_mmt
+#1   cof1 19.443259
+#2   cof2 19.759052
+
 ```
 
 ## pH
@@ -320,6 +327,7 @@ ph_df <- terra::extract(pH,vect(plots), fun = mean, na.rm =T)
 ph_df$ID <- plots$PlotID
 names(ph_df)[1] <- "PlotID"
 ```
+<img src="ph_plots.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 
 ## All things together
 * Gather all the derived plot level information in a single dataframe.
@@ -343,6 +351,10 @@ plantsSR <- plantsSR[,c(1,2,17)]
 names(plantsSR)[1] <- "PlotID"
 
 model_data <- purrr::reduce(list(predictors,plantsSR), dplyr::left_join, by = 'PlotID')
+head(model_data, n = 2)
+#PlotID mean_dtm mean_aspect mean_slope mean_mmt pH_predicted_mean_0_20_cm pH_predicted_mean_20_50_cm pH_standard_deviation_0_20_cm pH_standard_deviation_20_50_cm   V1_mean     V1_sd cat SRallplants
+#1   cof1 1282.446    150.7041   6.639121 19.44326                  5.735425                   5.735425                           0.2                      0.2144840 0.8543281 0.1302960 cof          59
+#2   cof2 1323.983    209.7581   2.697647 19.75905                  5.978076                   5.915743                           0.2                      0.1520235 0.7731032 0.1623179 cof          44
 
 ```
 
