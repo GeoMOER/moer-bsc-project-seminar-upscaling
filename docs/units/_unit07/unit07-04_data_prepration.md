@@ -203,6 +203,11 @@ list_ext_intersection_lidar_hs1 <- pbapply::pblapply(seq_along(hy_fls_2015),
                                                             terra::ext(vect(list_ext_intersection_lidar_hs1[[x]])))
                                                      })
 
+list_ext_intersection_lidar_hs2 <- pbapply::pblapply(seq_along(hy_fls_2016),
+                                                     function(x){
+                                                       crop(rast(hy_fls_2016[[x]]),
+                                                            terra::ext(vect(list_ext_intersection_lidar_hs2[[x]])))
+                                                     })
 
 # getting the band info 
 # careful we have two band_info files - 2015 and 2016
@@ -291,7 +296,7 @@ vi_stats_2016 <- lapply(seq(length(list_ext_intersection_lidar_hs2)), function(i
 vi_table_2016 <- do.call(rbind, vi_stats_2016)
 
 vi_table <- rbind(vi_table_2015, vi_table_2016)
-
+write.csv(vi_table, "./vi_table.csv")
 ```
 
 ## Mean minimum temperature
@@ -355,7 +360,7 @@ head(model_data, n = 2)
 #PlotID mean_dtm mean_aspect mean_slope mean_mmt pH_predicted_mean_0_20_cm pH_predicted_mean_20_50_cm pH_standard_deviation_0_20_cm pH_standard_deviation_20_50_cm   V1_mean     V1_sd cat SRallplants
 #1   cof1 1282.446    150.7041   6.639121 19.44326                  5.735425                   5.735425                           0.2                      0.2144840 0.8543281 0.1302960 cof          59
 #2   cof2 1323.983    209.7581   2.697647 19.75905                  5.978076                   5.915743                           0.2                      0.1520235 0.7731032 0.1623179 cof          44
-
+write.csv(model_data, "./model_data.csv")
 ```
 
 
