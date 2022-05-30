@@ -85,8 +85,26 @@ ctg_clip <- clip_roi(las_ctg,plots, radius = 100,) # this step will take time be
 #remove noise
 ctg_aoi <- readLAScatalog(list.files(aoi_path, full.names = T))
 
-opt_output_files(ctg_aoi) <- paste0(aoi_path,"/{*}_denoise")
-ctg_aoi <-  filter_poi(classify_noise(ctg_aoi, sor(15,7)), Classification != 18) #using two functions - classify_noise, filter_poi 
+#function
+filter_poi_noise = function(las)
+{
+  # The function is automatically fed with LAScluster objects
+  # Here the input 'las' will a LAScluster
+  
+  las <- readLAS(las)                          # Read the LAScluster
+  if (is.empty(las)) return(NULL)              # Exit early (see documentation)
+  
+  las <- filter_poi(las, Classification != 18)          
+  return(las)                                  # Return the filtered point cloud
+}
+
+
+opt_output_files(ctg_aoi) <- paste0(aoi_path,"/{*}_noise")
+ctg_aoi <- classify_noise(ctg_aoi, sor(15,7))
+
+#denoise using function filter_poi_noise
+opt_output_files(ctg_aoi) <- paste0(aoi_path, "/{*}_denoise")
+ctg_aoi <- catalog_apply(ctg_aoi, filter_poi_noise)
 
 #work with denoised data from here on
 ctg_aoi <- readLAScatalog(list.files(aoi_path, pattern = "_denoise.las", full.names = T))
