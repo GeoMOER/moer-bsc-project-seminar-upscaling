@@ -229,9 +229,6 @@ Comparing our models
 
 ```r
 ## putting all summaries together for comparison
-model_names <-  c("rf","ffs","rf_st_folds","ffs_st_folds")
-model_summaries <- as.data.frame(cbind(model_names,rbind(model$results,
-                                           ffsmodel$results, model_LLO$results, ffsmodel_LLO$results)))
 
 model_summaries
 model_names <-  c("rf","ffs","rf_st_folds","ffs_st_folds")
