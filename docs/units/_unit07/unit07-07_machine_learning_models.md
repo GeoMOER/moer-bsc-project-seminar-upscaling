@@ -212,7 +212,7 @@ ffsmodel_LLO <- ffs(featuresTrain[,predictors],featuresTrain$SRallplants,metric=
                     trControl=trainControl(method="cv",
                                            index = indices$index))
 ffsmodel_LLO
-saveRDS(model_LLO, "./model_ffs_st_folds.RDS")
+saveRDS(ffsmodel_LLO, "./model_ffs_st_folds.RDS")
 ```
 Comparing our models
 
