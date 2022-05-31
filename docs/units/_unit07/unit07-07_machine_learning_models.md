@@ -90,7 +90,7 @@ tunegrid <- expand.grid(mtry=mtry)
 model <- train(featuresTrain[,predictors],featuresTrain$SRallplants,
                method="rf",tuneGrid=tunegrid, #data.frame("mtry"=2),
                importance=TRUE,ntree = 200,
-               trControl=trainControl(method="cv"), metric = "Rsquared") #"RMSE"
+               trControl=trainControl(method="cv"), metric = "RMSE") #"Rsquared"
 
 model
 
@@ -116,23 +116,23 @@ model
 # 9    17.24285  0.4860350  14.12553
 # 10    17.25696  0.4271547  14.24301
 # 
-# Rsquared was used to select the optimal model using the largest value.
-# The final value used for the model was mtry = 5.
+# RMSE was used to select the optimal model using the smallest value.
+# The final value used for the model was mtry = 8.
 
 varImp(model)
 
 # rf variable importance
 # 
 # Overall
-# mmt             100.000
-# slope            68.012
-# NDVI_mean        63.575
-# aspect           48.679
-# DEM              42.630
-# ph_sd_0_20cm     31.647
-# ph_sd_20_50cm     6.015
-# ph_mean_0_20cm    1.418
-# ph_mean_20_50cm   0.000
+# DEM              100.00
+# mmt               73.32
+# slope             61.23
+# NDVI_mean         51.66
+# aspect            47.35
+# ph_mean_0_20cm    22.28
+# ph_mean_20_50cm   17.77
+# ph_sd_0_20cm      11.49
+# ph_sd_20_50cm      0.00
 
 plot(varImp(model))
 
@@ -140,10 +140,11 @@ plot(varImp(model))
 # we will use `predict()` function
 featuresTest$pred <- stats::predict(object = model, featuresTest)
 
-postResample(pred = featuresTest$pred, obs = featuresTest$SRallplants)
+rf <- postResample(pred = featuresTest$pred, obs = featuresTest$SRallplants)
+
 #The function postResample can be used to estimate the root mean squared error (RMSE), simple R2, and the mean absolute error (MAE) for numeric outcomes. 
-# RMSE   Rsquared        MAE 
-# 14.1012391  0.5320242 10.6120167 
+#RMSE   Rsquared        MAE 
+#13.3277972  0.5884588  9.7646222 
 
 ```
 <img src="varimp_rf.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
@@ -162,7 +163,7 @@ library(CAST)
 
 set.seed(10)
 
-ffsmodel <- ffs(featuresTrain[,predictors],featuresTrain$SRallplants,metric="Rsquared",
+ffsmodel <- ffs(featuresTrain[,predictors],featuresTrain$SRallplants,metric="RMSE",
                     method="rf", tuneGrid=tunegrid,
                     verbose=FALSE,ntree=200,
                     trControl=trainControl(method="cv", number = 10))
@@ -172,6 +173,10 @@ ffsmodel
 plot_ffs(ffsmodel) #shown below
 
 View(ffsmodel[["perf_all"]]) #to understand the figure use this
+
+featuresTest$pred_ffs <- stats::predict(object = ffsmodel, featuresTest)
+
+ffs <- postResample(pred = featuresTest$pred_ffs, obs = featuresTest$SRallplants)
 
 saveRDS(ffsmodel, "./model_ffs.RDS")
 
@@ -192,10 +197,13 @@ indices <- CreateSpacetimeFolds(featuresTrain,spacevar = "cat",
                                 k=12) # 12 unique categories
 set.seed(10)
 model_LLO <- train(featuresTrain[,predictors],featuresTrain$SRallplants,
-                   method="rf",tuneGrid=tunegrid, importance=TRUE,metric="Rsquared",ntree = 200,
+                   method="rf",tuneGrid=tunegrid, importance=TRUE,metric="RMSE",ntree = 200,
                    trControl=trainControl(method="cv",
                                           index = indices$index, number = 10))
 model_LLO
+featuresTest$pred_rf_st <- stats::predict(object = model_LLO, featuresTest)
+
+rf_st <- postResample(pred = featuresTest$pred_rf_st, obs = featuresTest$SRallplants)
 
 saveRDS(model_LLO, "./model_rf_st_folds.RDS")
 #############################################################
@@ -206,13 +214,16 @@ set.seed(10)
 indices <- CreateSpacetimeFolds(featuresTrain,spacevar = "cat",
                                 k=12) 
 set.seed(10)
-ffsmodel_LLO <- ffs(featuresTrain[,predictors],featuresTrain$SRallplants,metric="Rsquared",
+ffsmodel_LLO <- ffs(featuresTrain[,predictors],featuresTrain$SRallplants,metric="RMSE",
                     method="rf", tuneGrid=tunegrid,
                     verbose=FALSE,ntree=200,
                     trControl=trainControl(method="cv",
                                            index = indices$index))
 ffsmodel_LLO
-saveRDS(model_LLO, "./model_ffs_st_folds.RDS")
+featuresTest$pred_ffs_st <- stats::predict(object = ffsmodel_LLO, featuresTest)
+ffs_st<- postResample(pred = featuresTest$pred_ffs_st, obs = featuresTest$SRallplants)
+
+saveRDS(ffsmodel_LLO, "./model_ffs_st_folds.RDS")
 ```
 Comparing our models
 
@@ -228,13 +239,23 @@ model_summaries <- as.data.frame(cbind(model_names,rbind(model$results[5,],
                                            ffsmodel$results[9,], model_LLO$results[9,], ffsmodel_LLO$results[6,])))
 
 
-# model_names mtry     RMSE  Rsquared      MAE    RMSESD RsquaredSD     MAESD
-# 5            rf    5 17.22446 0.5172236 14.14014  6.881299  0.3318532  5.654379
-# 9           ffs    9 15.99191 0.6872892 12.78091  6.072818  0.3295572  4.128790
-# 91  rf_st_folds    9 20.38643 0.4854518 17.97130  8.206759  0.4025853  7.790628
-# 6  ffs_st_folds    6 23.34073 0.7302329 21.31464 12.879699  0.2325953 12.834397
+# model_names mtry     RMSE  Rsquared      MAE   RMSESD RsquaredSD    MAESD
+#8           rf    8 17.05172 0.4301227 14.04786 6.862758  0.2755347 5.530501
+#1          ffs    1 14.53376 0.5664010 12.32632 6.792629  0.3248850 6.087828
+#5  rf_st_folds    5 20.02721 0.4373678 17.74703 7.991558  0.4161603 7.589124
+#6 ffs_st_folds    6 15.77536 0.4266943 13.21720 7.494142  0.4446283 5.902614
 
 #you can also use `compare_models` and `resamples` to compare models.
+
+# testing summaries all put together
+model_testing <- as.data.frame(cbind(model_names,rbind(rf,ffs,rf_st,ffs_st)))
+model_testing
+#         model_names             RMSE          Rsquared              MAE
+# rf               rf 13.3277971631557 0.588458778529778 9.76462222222222
+# ffs             ffs 16.2722460374293 0.366458565708552 13.1061235153735
+# rf_st   rf_st_folds 13.9625100610064  0.55850323407685 10.2802222222222
+# ffs_st ffs_st_folds 10.8375262618546 0.705876058818294 7.81542777777778                                                        
+#
 ```
 ## Additional models
 caret package's `train()` supports many other [models](http://topepo.github.io/caret/available-models.html).
