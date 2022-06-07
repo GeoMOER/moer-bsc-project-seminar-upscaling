@@ -14,6 +14,8 @@ Now its your turn
 * Make them analaysis ready
 * Try out the shown workflow, see if it works for you
 * Start to modify the workflow based on your chosen research project
+<img src="phd090718s.gif" width="1500" height="500" align="centre" vspace="10" hspace="20">
+Source: 'Piled Higher and Deeper' by Jorge Cham www.phdcomics.com
 
 ## Additional reading
 To understand how the upscaled data becomes useful for designing policies and decision making, and to understand what are the different caveats in global modelling, I recommend reading this interesting paper.
