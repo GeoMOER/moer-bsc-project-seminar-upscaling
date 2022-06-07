@@ -227,21 +227,21 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-05_ML_Basics.html",
         "teaser": null
       },{
-        "title": "Assignment",
-        "excerpt":"How to proceed In this unit we have learnt how to upscale plant species richness data. Now its your turn Start gathering all the datasets Make them analaysis ready Try out the shown workflow, see if it works for you Start to modify the workflow based on your chosen research...","categories": ["07 Upscaling workflow"],
-        "tags": ["Unit","07"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-06_Assignment.html",
-        "teaser": null
-      },{
         "title": "EX | Machine learning models",
         "excerpt":"In this part of the course , we will use three models based on randomForest algorithms. The three models include: the default randomForest model using the caret package (short for Classification And REgression Training) developed by Max Kuhn (2008) using random K fold cross validation. randomForest with feature forward selection...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-07_machine_learning_models.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-06_machine_learning_models.html",
         "teaser": null
       },{
         "title": "EX | Upscaling",
         "excerpt":"Source : Netra Bhandari In this section of the upscaling workflow, we carry out our last step i.e., area wide predictions. For this we follow two steps Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to and, using the previously designed...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-08_model_predictions.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-07_model_predictions.html",
+        "teaser": null
+      },{
+        "title": "Assignment",
+        "excerpt":"How to proceed In this unit we have learnt how to upscale plant species richness data. Now its your turn Start gathering all the datasets Make them analaysis ready Try out the shown workflow, see if it works for you Start to modify the workflow based on your chosen research...","categories": ["07 Upscaling workflow"],
+        "tags": ["Unit","07"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-08_Assignment.html",
         "teaser": null
       }]
