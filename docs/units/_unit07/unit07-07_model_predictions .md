@@ -128,7 +128,8 @@ mapview::mapview(prediction_ffs_st,col.regions=brewer.pal(9, "YlGn"))
 
 #Note - you can also use predict function using terra package
 ```
-<img src="prediction_flm.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+{% include media url="/assets/misc/ffs_st_prediction.html" %}
+[Full-screen version of the map]({{ site.baseurl }}/assets/misc/ffs_st_prediction.html){:target="_blank"}
 
 # Testing the area of applicability
 ```r
@@ -158,7 +159,7 @@ spplot(prediction_ffs_st,main="prediction for the AOA \n(spatial CV error applie
   spplot(AOA$AOA,col.regions=c("grey","transparent"))
 
 ```
-<img src="prediction_aoa_cv.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+<img src="final_map.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 ## Additional reading
 [Meyer and Pebesma 2021](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13650)
 
