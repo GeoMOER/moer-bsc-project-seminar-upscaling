@@ -79,7 +79,7 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 ||| **Break**                              |
 |  | ~~15.06.2022~~ | Project week of the department                         | Session canceled |
 ||| **Assisted working phase** |
-| 09 | 22.06.2022   | Work on projects | Time for working on projects             |
+| 09 | 22.06.2022   | Feedback on project outline and Work on projects | Discussion on project outlines and time for working on projects             |
 | 10 | 29.06.2022   | Work on projects | Time for working on projects             |
 | 11 | 06.07.2022   | Work on projects | Time for working on projects             |
 ||| **Wrap up** |
