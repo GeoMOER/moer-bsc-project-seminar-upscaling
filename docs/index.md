@@ -49,7 +49,7 @@ At the end of this course you should be able to
 # Setting
 
 This course will take place in a hybrid setting (exept for the first session) with a digital classroom and additional students being present in person in the physical classroom (**F 14 | 00A19**).
-Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **in presence only on Wednesday 20.04.2022 at 10:15 am**.
+Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **in presence only on Wednesday xx.04.2023 at 10:15 am**.
 The link to the digital classroom of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"}
  (only accessible for members of the course who are logged-in into Ilias). 
 Please also seriously check and follow the [Information on the Coronavirus](https://www.uni-marburg.de/de/universitaet/administration/sicherheit/coronavirus){:target="_blank"} of the University of Marburg.
@@ -65,25 +65,25 @@ The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | 20.04.2022   | First things first                                     | Course introduction, R Basics, GitHub, GitHub classroom, Introduction to Kili-SES |
+| 01 | xx.04.2023   | First things first                                     | Course introduction, R Basics, GitHub, GitHub classroom, Introduction to Kili-SES project |
 ||| **Remote sensing basics and data**  |
-| 02 | 27.04.2022   | Remote sensing basics and working with Sentinel 2 data | Remote sensing basics, Sentinel 2 data preparation and application |
-| 03 | 04.05.2022   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 04 | 11.05.2022   | Hyperspectral remote sensing                           | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
+| 02 | xx.04.2023   | Remote sensing basics and working with Sentinel 2 data | Remote sensing basics, Introduction to FORCE, Sentinel 2 data preparation and application |
+| 03 | xx.05.2023   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 04 | xx.05.2023   | Hyperspectral remote sensing                           | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
 ||| **Start research project**  |
-| 05 | 18.05.2022   | Set up your research project      		     | Defining project work, research questions and discussing deadlines |
+| 05 | xx.05.2023   | Set up your research project      		     | Defining project work, research questions and discussing deadlines |
 ||| **Upscaling Methodology**                              |
-| 06 | 25.05.2022   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 07 | 01.06.2022   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-| 08 | 08.06.2022   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+| 06 | xx.05.2023   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 07 | xx.06.2023   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+| 08 | xx.06.2023   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Break**                              |
-|  | ~~15.06.2022~~ | Project week of the department                         | Session canceled |
+|  | ~~xx.06.2023~~ | Project week of the department                         | Session canceled |
 ||| **Assisted working phase** |
-| 09 | 22.06.2022   | Feedback on project outline and Work on projects | Discussion on project outlines and time for working on projects             |
-| 10 | 29.06.2022   | Work on projects | Time for working on projects             |
-| 11 | 06.07.2022   | Work on projects | Time for working on projects             |
+| 09 | xx.06.2023   | Feedback on project outline and Work on projects | Discussion on project outlines and time for working on projects             |
+| 10 | xx.06.2023   | Work on projects | Time for working on projects             |
+| 11 | xx.07.2023   | Work on projects | Time for working on projects             |
 ||| **Wrap up** |
-| 12 | 13.07.2022   | Wrap up, Evaluation, and Feedback                      | Time for questions and feedback, goodbye |
+| 12 | xx.07.2023   | Wrap up, Evaluation, and Feedback                      | Time for questions and feedback, goodbye |
 
 
 # Deliverables
