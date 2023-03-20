@@ -60,30 +60,33 @@ Please also seriously check and follow the [Information on the Coronavirus](http
 
 # Syllabus
 
-The course encompassed 12 sessions from 20.04.2022 to 13.07.2022.
+The course encompassed 12 sessions from 12.04.2023 to 12.07.2023.
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | xx.04.2023   | First things first                                     | Course introduction, R Basics, GitHub, GitHub classroom, Introduction to Kili-SES project |
+| 01 | 12.04.2023   | First things first                                     | Course introduction, R Basics, GitHub, GitHub classroom, Introduction to Kili-SES project |
 ||| **Remote sensing basics and data**  |
-| 02 | xx.04.2023   | Remote sensing basics and working with Sentinel 2 data | Remote sensing basics, Introduction to FORCE, Sentinel 2 data preparation and application |
-| 03 | xx.05.2023   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 04 | xx.05.2023   | Hyperspectral remote sensing                           | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
+| 02 | 19.04.2023   | Remote sensing basics and working with Sentinel 2 data | Remote sensing basics, Introduction to FORCE, Sentinel 2 data preparation and application |
+| 03 | 26.04.2023   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 04 | 03.05.2023   | Hyperspectral remote sensing                           | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
 ||| **Start research project**  |
-| 05 | xx.05.2023   | Set up your research project      		     | Defining project work, research questions and discussing deadlines |
+| 05 | 10.05.2023   | Set up your research project      		     | Defining project work, research questions and discussing deadlines |
 ||| **Upscaling Methodology**                              |
-| 06 | xx.05.2023   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 07 | xx.06.2023   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-| 08 | xx.06.2023   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+| 06 | 17.05.2023   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
 ||| **Break**                              |
-|  | ~~xx.06.2023~~ | Project week of the department                         | Session canceled |
+|    | ~~24.05.2023~~ | Sport                        				 | Session canceled |
+| 07 | 31.05.2023   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+||| **Break**                              |
+|    | ~~07.06.2023~~ | Project week of the department                        	 | Session canceled |
+| 08 |  14.06.2023  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+
 ||| **Assisted working phase** |
-| 09 | xx.06.2023   | Feedback on project outline and Work on projects | Discussion on project outlines and time for working on projects             |
-| 10 | xx.06.2023   | Work on projects | Time for working on projects             |
-| 11 | xx.07.2023   | Work on projects | Time for working on projects             |
+| 09 | 21.06.2023   | Feedback on project outline and Work on projects | Discussion on project outlines and time for working on projects             |
+| 10 | 28.06.2023   | Work on projects | Time for working on projects             |
+| 11 | 05.07.2023   | Work on projects | Time for working on projects             |
 ||| **Wrap up** |
-| 12 | xx.07.2023   | Wrap up, Evaluation, and Feedback                      | Time for questions and feedback, goodbye |
+| 12 | 12.07.2023   | Wrap up, Evaluation, and Feedback                      | Time for questions and feedback, goodbye |
 
 
 # Deliverables
