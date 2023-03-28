@@ -67,7 +67,7 @@ The course encompassed 12 sessions from 12.04.2023 to 12.07.2023.
 ||| **Getting started** |
 | 01 | 12.04.2023   | First things first                                     | Course introduction, R Basics, GitHub, GitHub classroom, Introduction to Kili-SES project |
 ||| **Remote sensing basics and data**  |
-| 02 | 19.04.2023   | Remote sensing basics and LiDAR remote sensing  | Remote sensing basics, Introduction to LiDAR, working with point clouds and deriving LiDAR products,|
+| 02 | 19.04.2023   | Remote sensing basics and LiDAR remote sensing  | Remote sensing basics, Introduction to LiDAR, working with point clouds and deriving LiDAR products|
 | 03 | 26.04.2023   | Hyperspectral remote sensing          	                     |Introduction to hyperspectral data, speclibs and deriving vegetation indices|
 | 04 | 03.05.2023   | Working with Sentinel 2 data       			     |Introduction to FORCE, Sentinel 2 data preparation and application  |
 ||| **Start research project**  |
