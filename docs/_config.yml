@@ -191,10 +191,10 @@ defaults:
 # unit08
   - scope:
       path: ""
-      type: unit07
+      type: unit08
     values:
-      category: "07 Upscaling workflow"
-      tags: "Unit 07"
+      category: "08 Upscaling workflow"
+      tags: "Unit 08"
       layout: single
       sidebar:
         nav: "course_unit"
