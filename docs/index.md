@@ -49,7 +49,7 @@ At the end of this course you should be able to
 # Setting
 
 This course will take place in a hybrid setting (exept for the first session) with a digital classroom and additional students being present in person in the physical classroom (**F 14 | 00A19**).
-Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **in presence only on Wednesday 12.04.2023 at 10:15 am**.
+Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **in presence only on Wednesday 12.04.2023 at 09:15 am**.
 The link to the digital classroom of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"}
  (only accessible for members of the course who are logged-in into Ilias). 
 Please also seriously check and follow the [Information on the Coronavirus](https://www.uni-marburg.de/de/universitaet/administration/sicherheit/coronavirus){:target="_blank"} of the University of Marburg.
