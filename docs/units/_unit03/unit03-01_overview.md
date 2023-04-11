@@ -21,7 +21,7 @@ You can leave comments below if you have questions or remarks about any of the t
 
 <script src="https://utteranc.es/client.js" 
         repo="GeoMOER/moer-mpg-upscaling"
-        issue-term="moer_mpg_upscaling_unit04_Overview" 
+        issue-term="moer_mpg_upscaling_unit03_RS_basics" 
         theme="github-light" 
         crossorigin="anonymous" 
         async> 

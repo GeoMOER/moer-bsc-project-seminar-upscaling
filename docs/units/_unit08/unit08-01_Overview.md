@@ -27,7 +27,7 @@ You can leave comments under this Issue if you have questions or remarks about t
 
 <script src="https://utteranc.es/client.js"
         repo="GeoMOER/moer-mpg-upscaling"
-        issue-term="moer-mpg-upscaling-unit04-Lidar"
+        issue-term="moer-mpg-upscaling-unit08-upscaling"
         theme="github-light"
         crossorigin="anonymous"
         async>
