@@ -1,4 +1,3 @@
-<!--
 ---
 title: "EX | Sentinel-2 Preparation"
 header:
@@ -91,4 +90,4 @@ A new window appears in your R studio, now add the following parameters as you m
 
 * Plot a True Color Composite
 * Plot a False Color Composite
--->
+
