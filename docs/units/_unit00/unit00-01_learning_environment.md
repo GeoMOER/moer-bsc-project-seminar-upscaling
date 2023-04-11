@@ -34,7 +34,7 @@ but the deadlines for submitting your solutions must be met.
 For details see the [Deliverables](/moer-mpg-upscaling/unit00/unit00-02_deliverables.html) section.
 {: .notice--info}
 
-<--!
+<!--
 ## Virtual meeting rooms
 
 We will use [Big Blue Button](https://www.uni-marburg.de/en/hrz/services/web-conferences/web-conferencing-with-bigbluebutton){:target="_blank"} as main virtual classroom 
