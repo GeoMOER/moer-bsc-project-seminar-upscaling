@@ -99,8 +99,5 @@ _site/
 .jekyll-metadata
 *.lock
 
-#old sentinel content
-/units/_unit03/unit03-03_Learn_by_doing_data_preparation.md
-/units/_unit03/unit03-04_Learn_by_doing_application.md
-/units/_unit03/unit03-05_Assignmnet.md
-/units/_unit03/unit03-06_FORCE.md
+#old sentinel text
+/docs/old_sentinel_text/
