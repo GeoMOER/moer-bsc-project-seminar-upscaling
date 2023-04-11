@@ -15,3 +15,14 @@ Learn and recall the essentials of Remote Sensing.
 * Know how to acquire Sentinel 2 data
 * Extend your experiences in working with Sentinel 2 data 
 
+## Comments 
+
+You can leave comments below if you have questions or remarks about any of the text or code in this unit. Please copy the corresponding line into your comment to make it easier to answer your questions.
+
+<script src="https://utteranc.es/client.js" 
+        repo="GeoMOER/moer-mpg-upscaling"
+        issue-term="moer_mpg_upscaling_unit04_Overview" 
+        theme="github-light" 
+        crossorigin="anonymous" 
+        async> 
+</script> 

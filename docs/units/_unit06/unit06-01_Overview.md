@@ -1,29 +1,26 @@
 ---
 title: Overview
 header:
-  image: "/assets/images/teaser/writing-a-research-plan.jpg"
-  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan)'
+  image: "/assets/images/teaser/ndvi.jpg"
+  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
 ---
 
-This unit is all about your final research project. Think about your research question and create a project outline as basis for your project.
-To finish this course it is mandatory to submit the final project.
-
-<!--more-->
+We now learn how to access Sentinel-2 data using an open source software FORCE. 
 
 ## Learning objectives
 
-* develop a research question
-* plan and realize a research project from scratch, and
-* present your project in an appropriate format.
+* Learning the basics of Sentinel-2 data
+* Downloading, processing and coregisteration of Sentinel-2 data using FORCE
+* Generation of spectral indices
 
-## Comments
+## Comments 
 
-You can leave comments under this Issue if you have questions or remarks about the task/assignment. 
+You can leave comments below if you have questions or remarks about any of the text or code in this unit. Please copy the corresponding line into your comment to make it easier to answer your questions.
 
-<script src="https://utteranc.es/client.js"
+<script src="https://utteranc.es/client.js" 
         repo="GeoMOER/moer-mpg-upscaling"
-        issue-term="moer-mpg-upscaling-unit04-Lidar"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+        issue-term="moer_mpg_upscaling_unit04_Overview" 
+        theme="github-light" 
+        crossorigin="anonymous" 
+        async> 
+</script> 
