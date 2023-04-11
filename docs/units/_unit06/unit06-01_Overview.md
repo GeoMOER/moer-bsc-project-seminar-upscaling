@@ -7,8 +7,6 @@ header:
 
 We now learn how to access Sentinel-2 data using an open source software FORCE. 
 
-<!--more-->
-
 ## Learning objectives
 
 * Learning the basics of Sentinel-2 data
