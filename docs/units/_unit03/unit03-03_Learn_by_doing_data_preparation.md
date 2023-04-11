@@ -1,3 +1,4 @@
+<!--
 ---
 title: "EX | Sentinel-2 Preparation"
 header:
@@ -5,7 +6,6 @@ header:
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
 toc: true  
 ---
-
 
 ## Things you need for this exercise
 * A shapefile of the study area (see below)
@@ -91,4 +91,4 @@ A new window appears in your R studio, now add the following parameters as you m
 
 * Plot a True Color Composite
 * Plot a False Color Composite
-
+-->
