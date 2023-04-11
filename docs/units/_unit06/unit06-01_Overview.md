@@ -1,8 +1,8 @@
 ---
 title: Overview
 header:
-  image: "/assets/images/teaser/ndvi.jpg"
-  caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
+  image: "/assets/images/teaser/allbands.png"
+  caption: 'Image: [**Netra Bhandari**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
 ---
 
 We now learn how to access Sentinel-2 data using an open source software FORCE. 
