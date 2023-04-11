@@ -178,7 +178,7 @@ defaults:
       layout: single
       sidebar:
         nav: "course_unit"      
-# unit07
+  # unit07
   - scope:
       path: ""
       type: unit07
@@ -188,7 +188,7 @@ defaults:
       layout: single
       sidebar:
         nav: "course_unit"    
-# unit08
+  # unit08
   - scope:
       path: ""
       type: unit08
