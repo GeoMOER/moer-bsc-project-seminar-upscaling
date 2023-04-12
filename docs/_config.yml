@@ -173,7 +173,7 @@ defaults:
       path: ""
       type: unit06
     values:
-      category: "06 Working with Sentinel 2 data"
+      category: "06 Set up your research project"
       tags: "Unit 06"
       layout: single
       sidebar:
@@ -183,7 +183,7 @@ defaults:
       path: ""
       type: unit07
     values:
-      category: "07 Set up your research project"
+      category: "07 Upscaling workflow"
       tags: "Unit 07"
       layout: single
       sidebar:
