@@ -16,5 +16,5 @@ and answer the following questions
 # Task for next session
 
 Please download the complete LIDAR data for the next session. The data is available on the [strato server](http://85.214.102.111/kili_data/){:target="_blank"}. The username and password are provided on the ILLIAS platform.
-The download is roughly is around 3GB.
+The download is roughly around 3GB.
 
