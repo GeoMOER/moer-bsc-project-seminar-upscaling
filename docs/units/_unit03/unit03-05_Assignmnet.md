@@ -12,3 +12,9 @@ and answer the following questions
 3. How can LiDAR derived vegetation structure be used as a surrogate to species richness of different taxa? 
 4. Based on the model results, how are the different feeding guilds related to the vegetation structure?
 5. What are the different limitations highlighted by the study?
+
+# Task for next session
+
+Please download the complete LIDAR data for the next session. The data is available on the [strato server](http://85.214.102.111/kili_data/){:target="_blank"}. The username and password are provided on the ILLIAS platform.
+The download is roughly is around 3GB.
+
