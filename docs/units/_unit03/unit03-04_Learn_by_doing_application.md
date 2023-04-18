@@ -16,7 +16,7 @@ As a start load your prepared Sentinel Data from the previous exercise.
 * Plot the vegetation index.
 * Save the maps of the vegetation index as TIFF file.
 * Make a histogram of the derived vegetation index and see how is the data distributed. What does it mean in terms of vegetation?
-* Using `raster::cellstats()` calculate the mean and sd of the chosen vegetation index. 
+* Using `terra::global()` calculate the mean and sd of the chosen vegetation index. 
 
 ## Visualization
 Your vegetation index may look like this example shown below. It shows the Enhanced Vegetation Index for the two Sentinel 2 tiles 37MCS and 37MBS.
@@ -30,7 +30,7 @@ Your vegetation index may look like this example shown below. It shows the Enhan
 ## adapt it to your own script
 
 #load the study area
-studyarea <- readOGR("./study_area.gpkg") 
+studyarea <- terra::vect("./study_area.gpkg") 
 
 indices_to_process <- "NDVI" 
 
@@ -44,7 +44,7 @@ Index_layer <- RStoolbox::spectralIndices(tiles_stack, # see ?RStoolbox::spectra
                                           skipRefCheck = TRUE)
 
 # Create raster stack of index layers
-Index_layer <- stack(Index_layer) 
+Index_layer <- rast(Index_layer) 
 
 #plot 
 plot(Index_layer)
