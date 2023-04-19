@@ -9,11 +9,8 @@ header:
 This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too.
 <!--more-->
 
-Our first course session will talk place in presence. 
-Subsequent sessions will be in a hybrid format, meaning that parts of the students may attend the sessions in person 
-at the [Department of Environmental Informatics](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"} in Marburg,
-and the others virtually. The link to the virtual meeting room will be provided be the instructors in the first session and can also be found in Ilias (see below).
-
+All sessions will talk place in presence. 
+at the [Department of Environmental Informatics](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"} in Marburg.
 
 
 ## HTML learning environment
