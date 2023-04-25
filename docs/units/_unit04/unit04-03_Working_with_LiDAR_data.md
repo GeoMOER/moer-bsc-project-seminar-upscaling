@@ -24,26 +24,31 @@ This following code shows you a simple input/output command and lidR::lasclip wh
 # load the following libraries
 
 library(lidR)
-library(sp)
-library(rgdal)
+library(sf)
 library(terra) # the new lidR updates depend on terra functions
 library(gstat)
 
 # load in the example study area
-aoi <- readOGR("data/lidarArea.gpkg")
+aoi <- st_read("data/lidarArea.gpkg")
 
 # load in the example point cloud file 
 point_cloud <- readLAS("data/flm1.las") #point cloud for Lower Montane forest in Mt. Kilimanjaro
+
+#check class 
+class(point_cloud) #"LAS"
+
+# set crs to the point cloud
+st_crs(point_cloud) <- 32737 # WGS 84 , UTM37S
 
 # crop out study area
 flm1 <- clip_roi(point_cloud,aoi) #function 'lasclip' has been deprecated
 
 # have a look at Lidar data structure
-head(flm1)
+head(flm1@data)
        X       Y        Z    Intensity ReturnNumber NumberOfReturns ScanDirectionFlag EdgeOfFlightline Classification Synthetic_flag Keypoint_flag Withheld_flag ScanAngleRank UserData PointSourceID
 # 303983.1 9649715 1903.269         0            3               3                 0                0              2          FALSE         FALSE         FALSE            -5        0             0
 # 303983.1 9649715 1903.400         0            6               6                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
-> 
+
 # have a look at the range of intensity
 range(flm1@data$Intensity)
 # 0 34930
