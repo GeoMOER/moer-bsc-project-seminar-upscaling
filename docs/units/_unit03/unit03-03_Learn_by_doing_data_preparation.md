@@ -46,7 +46,7 @@ A new window appears in your R studio, now add the following parameters as you m
         * Atmospheric correction - default
 1. Spatiotemporal selection 
    1. Temporal range 
-      * Time interval – select 13 January 2022
+      * Time interval – select 13 January 2022 (use end date also as 13 Jan 2022)
       * Time period type – Full 
    1. Area of Interest 
       * Load vector file -insert shapefile for your region

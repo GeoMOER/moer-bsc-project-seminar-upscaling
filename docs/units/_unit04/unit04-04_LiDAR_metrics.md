@@ -68,8 +68,17 @@ We want to calculate what is the mean vegetation height of our forest plot?
 * Plot the mean vegetation height as overlay to the forest sentinel scene
 
 
+## Comments 
 
+You can leave comments below if you have questions or remarks about any of the text or code in this unit. Please copy the corresponding line into your comment to make it easier to answer your questions.
 
+<script src="https://utteranc.es/client.js" 
+        repo="GeoMOER/moer-mpg-upscaling"
+        issue-term="moer_mpg_upscaling_unit04_task2" 
+        theme="github-light" 
+        crossorigin="anonymous" 
+        async> 
+</script> 
 
 
 
