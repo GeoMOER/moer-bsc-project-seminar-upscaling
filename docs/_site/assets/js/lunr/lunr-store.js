@@ -1,6 +1,6 @@
 var store = [{
         "title": "Learning Environment",
-        "excerpt":"This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too. Our first course session will talk place in presence. Subsequent sessions will be in a hybrid format, meaning that parts of the students may attend the sessions...","categories": ["How-to Upscaling"],
+        "excerpt":"This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too. All sessions will talk place in presence. at the Department of Environmental Informatics in Marburg. HTML learning environment Your primary learning environment is this public homepage, which...","categories": ["How-to Upscaling"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html",
         "teaser": null
@@ -96,7 +96,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"Learn the essentials of Remote Sensing and get a hands on experience in working with remote sensing data.    Learning objectives      Recall the basics in remote sensing   Know how to acquire Sentinel 2 data   Extend your experiences in working with Sentinel 2 data   ","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Learn and recall the essentials of Remote Sensing. Learning objectives Recall the basics in remote sensing Know how to acquire Sentinel 2 data Extend your experiences in working with Sentinel 2 data Recall If you need some refreshment of your processing skills for working with spatial data in R, you...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-01_overview.html",
         "teaser": null
@@ -150,7 +150,7 @@ var store = [{
         "teaser": null
       },{
         "title": "AS | Assignment",
-        "excerpt":"   Read the Introduction to Hyperspectral in Unit 5.   ","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"     Do the exercises in this unit.   ","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-05_Assignment.html",
         "teaser": null

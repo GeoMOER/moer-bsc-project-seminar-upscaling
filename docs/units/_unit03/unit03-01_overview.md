@@ -15,6 +15,11 @@ Learn and recall the essentials of Remote Sensing.
 * Know how to acquire Sentinel 2 data
 * Extend your experiences in working with Sentinel 2 data 
 
+## Recall
+
+If you need some refreshment of your processing skills for working with spatial data in R, you can find some learning material [here](https://geomoer.github.io/moer-bsc-project-seminar-SDM/unit03/unit03-01_overview.html){:target="_blank"}.
+
+
 ## Comments 
 
 You can leave comments below if you have questions or remarks about any of the text or code in this unit. Please copy the corresponding line into your comment to make it easier to answer your questions.
