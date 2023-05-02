@@ -15,7 +15,7 @@ In this exercise we use hyperspectral rasters to calculate different vegetation 
 We will be using processed hyperspectral data and the hsdar R package to get two different vegetation indices.
 Since the data and processing takes time, we show here only a small example. 
 
-Please refere [here](http://138.232.16.156/article/view/v089i12) for the article on hsdar package.
+Please refere [here](https://www.jstatsoft.org/article/view/v089i12){:target="_blank"} for the article on hsdar package.
 
 ## Downloading the data 
 
