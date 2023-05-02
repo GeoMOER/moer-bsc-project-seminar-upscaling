@@ -19,7 +19,7 @@ As a start load your prepared Sentinel Data from the previous exercise.
 * Using `terra::global()` calculate the mean and sd of the chosen vegetation index. 
 
 ## Visualization
-Your vegetation index may look like this example shown below. It shows the Enhanced Vegetation Index for the two Sentinel 2 tiles 37MCS and 37MBS.
+Your vegetation index may look like this example shown below. It shows the Normalised Difference Vegetation Index (NDVI) for the two Sentinel 2 tiles 37MCS and 37MBS.
 
 <img src="ndvi_sentinel_2.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 <i>Image: Normalised Difference Vegetation Index (NDVI) calculated using Sentinel 2 (Tiles - 37MCS and 37MBS) for the date 09-11-2021.</i>
