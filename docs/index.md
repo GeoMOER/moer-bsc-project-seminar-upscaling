@@ -74,10 +74,8 @@ The course encompassed 12 sessions from 12.04.2023 to 12.07.2023.
 | 05 | 10.05.2023   | Set up your research project      		         | Defining project work, research questions and discussing deadlines |
 ||| **Upscaling Methodology**                                                    |
 | 06 | 17.05.2023   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-||| **Break**                              |
-|    | ~~24.05.2023~~ | Sport                        				 | Session canceled |
+|    | ~~24.05.2023~~ | Sport Dies                        				 | Session canceled |
 | 07 | 31.05.2023   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-||| **Break**                              |
 |    | ~~07.06.2023~~ | Project week of the department                        	 | Session canceled |
 | 08 |  14.06.2023  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Assisted working phase** |

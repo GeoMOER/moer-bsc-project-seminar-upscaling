@@ -173,6 +173,12 @@ var store = [{
         "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-03_Working_with_Hyperspectral_data.html",
         "teaser": null
       },{
+        "title": "AS | Assignment",
+        "excerpt":"     Do the exercises in this unit.   ","categories": ["05 Hyperspectral Remote Sensing"],
+        "tags": ["Unit","05"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-05_Assignment.html",
+        "teaser": null
+      },{
         "title": "Overview",
         "excerpt":"This unit is all about your final research project. Think about your research question and create a project outline as basis for your project. To finish this course it is mandatory to submit the final project. Learning objectives develop a research question plan and realize a research project from scratch,...","categories": ["06 Set up your research project"],
         "tags": ["Unit","06"],
