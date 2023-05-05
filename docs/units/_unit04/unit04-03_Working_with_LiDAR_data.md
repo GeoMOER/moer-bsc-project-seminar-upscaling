@@ -18,7 +18,7 @@ You can download the example point cloud data [here](http://85.214.102.111/kili_
 
 ## Input/Output, Clipping and Visualizing point clouds
 
-This following code shows you a simple input/output command and lidR::lasclip which is similar to raster::crop and a simple 3D visualization.
+This following code shows you a simple input/output command and lidR::clip, which is similar to raster::crop and a simple 3D visualization.
 
 ```r
 # load the following libraries

@@ -30,19 +30,19 @@ var store = [{
         "teaser": null
       },{
         "title": "Recall: Data Types",
-        "excerpt":"Learn how data is measured and organized from an R perspective.   For a quick introduction to data types in R check out our own material in the accompanying  Base R course, this video by DataCamp  or a more textual description from Quick-R.  ","categories": ["01 Getting started"],
+        "excerpt":"Learn how data is measured and organized from an R perspective.   For a quick introduction to data types in R, check out our own material in the accompanying  Base R course, this video by DataCamp  or a more textual description from Quick-R.  ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-03_data_types.html",
         "teaser": null
       },{
         "title": "Recall: Object Types",
-        "excerpt":"Learn how data types are structured within different object types in R.   For a quick introduction to object types (aka data structures) in R check out our own material in the accompanying  Base R course,  a brief description at RSpatial or a more detailed explanation by  Hadley Wickham.   ","categories": ["01 Getting started"],
+        "excerpt":"Learn how data types are structured within different object types in R.   For a quick introduction to object types (aka data structures) in R, check out our own material in the accompanying  Base R course,  a brief description at RSpatial or a more detailed explanation by  Hadley Wickham.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-04_object_types.html",
         "teaser": null
       },{
         "title": "Recall: Indexing",
-        "excerpt":"Learn how to find, address, and change elements in R objects.   For a quick introduction to indexing in R check out our own material in the accompanying  Base R course,  a brief description at RSpatial or some Youtube video.   ","categories": ["01 Getting started"],
+        "excerpt":"Learn how to find, address, and change elements in R objects.   For a quick introduction to indexing in R, check out our own material in the accompanying  Base R course,  a brief description at RSpatial or some YouTube videos.   ","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-05_indexing.html",
         "teaser": null
@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Example: R Markdown with html output",
-        "excerpt":"This page shows how a compiled R markdown file looks like (in fact, all code examples in this course were compiled with R markdown). This is a header This is an R Markdown document. Markdown is a simple formatting syntax for creating HTML, PDF, and MS Word documents. For more...","categories": ["01 Getting started"],
+        "excerpt":"This page shows how a compiled R Markdown file looks like (in fact, all code examples in this course were compiled with R Markdown). This is a header This is an R Markdown document. R Markdown is a simple formatting syntax for creating HTML, PDF, and MS Word documents. For...","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-08_Rmd_html.html",
         "teaser": null
@@ -72,13 +72,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Assignment: Hello R, Hello GitHub",
-        "excerpt":"This worksheet introduces you to R, R scripts and R markdown. Your submission will be pushed to your class repository at GitHub. After completion you should have gained some experience in running R commands within scripts, R markdown for running code and documentation within one file and Git/GitHub. Things you...","categories": ["01 Getting started"],
+        "excerpt":"This worksheet introduces you to R, R scripts and R Markdown. Your submission will be pushed to your class repository at GitHub. After completion, you should have gained some experience in running R commands within scripts, R Markdown for running code and documentation within one file and Git/GitHub. Things you...","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-11_assignment.html",
         "teaser": null
       },{
         "title": "Introduction to Kili SES",
-        "excerpt":"Get a brief introduction to the Kilimanjaro Socio-ecological Systems project funded by DFG.     Research Project  The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project here.   ","categories": ["02 Kilimanjaro SES"],
+        "excerpt":"Get a brief introduction to the Kilimanjaro Socio-Ecological System project funded by DFG.     Research Project  The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project here.   ","categories": ["02 Kilimanjaro SES"],
         "tags": ["Unit","02"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit02/unit02-01_Introduction_Kili_SES.html",
         "teaser": null
@@ -90,7 +90,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Subproject- Synthesis",
-        "excerpt":"Project description Synthesis – Kilimanjaro as an integrated Social-Ecological System. Learn more about the project here. What are we aiming for ? Tropical mountains are a hotspots of biodiversity, cultural and linguistic diveristy but are also face both anthropogenic and climate pressures.Such mountains usually have steep climatic gradients, high diversity...","categories": ["02 Kilimanjaro SES"],
+        "excerpt":"Project description Synthesis – Kilimanjaro as an integrated Social-Ecological System. Learn more about the project here. What are we aiming for ? Tropical mountains are a hotspot of biodiversity, cultural and linguistic diversity, but they face both anthropogenic and climate pressures. Such mountains usually have steep climatic gradients, high diversity...","categories": ["02 Kilimanjaro SES"],
         "tags": ["Unit","02"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit02/unit02-03_Introduction_SP7.html",
         "teaser": null
