@@ -5,7 +5,7 @@ header:
   caption: 'Image: [**NASA - Hyperion**](https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php){:target="_blank"}'
 ---
 
-In this exercise we use hyperspectral rasters to calculate different vegetation indices
+In this exercise, we use hyperspectral rasters to calculate different vegetation indices.
 <!--more-->
 
 
@@ -13,7 +13,7 @@ In this exercise we use hyperspectral rasters to calculate different vegetation 
 
 
 We will be using processed hyperspectral data and the hsdar R package to get two different vegetation indices.
-Since the data and processing takes time, we show here only a small example. 
+Since the data processing takes time, we show here only a small example. 
 
 Please refere [here](https://www.jstatsoft.org/article/view/v089i12){:target="_blank"} for the article on hsdar package.
 
@@ -50,7 +50,7 @@ writeRaster(flm1, "hy_flm1_clipped.tif")
 ```
 ## Speclibs
 
-In this part, we use our hyperspectral raster and band information on to create our study area's spectral library
+In this part, we use our hyperspectral raster and band information to create our study area's spectral library
 
 ```r
 
@@ -76,9 +76,9 @@ str(speclib_flm1)
 * Identify the difference between the different lines in the plot 
 * Plot the mean and median using the FUN parameter
 
-### Vegetataion indices
+### Vegetation indices
 
-Lets use the speclib to calculate vegetation indices
+Let's use the speclib to calculate vegetation indices
 
 ```r
 # create a list of desired vegetation indices
@@ -99,7 +99,7 @@ flm1_vi <- vegindex(speclib_flm1, index = vi)
 ## Task 2
 
 * What is the difference between the two indices
-* Use cellstats() to generate a data frame for mean and standard deviation of the two indices
+* Use cellstats() to generate a dataframe for mean and standard deviation of the two indices
 * Make a single dataframe such that you get the following structure (hint : use transpose function)
 
 ```r
