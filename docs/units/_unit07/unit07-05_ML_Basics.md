@@ -12,20 +12,20 @@ header:
 Source : Netra Bhandari
 
 Machine learning is a branch of artificial intelligence which makes use of data and algorithms to mimic the human way of learning, by slowly improving its accuracy!
-To put it in a simple way, machine learning is an important component of data science used for making classifications or predictions. Many industries are derive their decisions based on insights derived from such classifications/predictions.
+To put it in a simple way, machine learning is an important component of data science used for making classifications or predictions. Many industries are making their decisions based on insights derived from such classifications/predictions.
 
 ## How machine learning works?
 
-The learning system for a ML can be put in three steps simply :
+The learning system for a ML can be put in three steps simply:
 
-* Decision part - based on your input data (labelled or unlabelled), a ML alogrithm will try too find a pattern in the data and produce an estimate.
-* Error part - the above estimate will also come with an error function, which will help in determining the accuracy of the estimate.
-* Optimization part - based on the estimate and error, the model can be adjusted again to reduce the discrepancy between the shown estimate and the error. The algorithm will repeat evaluation and optimisation until it is able to reach the highest accuracy value. 
+* Decision part - based on your input data (labeled or unlabeled), a ML algorithm will try to find a pattern in the data and produce an estimate.
+* Error part - the above estimate will also come with an error function, which will help determine the accuracy of the estimate.
+* Optimization part - based on the estimate and error, the model can be adjusted again to reduce the discrepancy between the shown estimate and the error. The algorithm will repeat evaluation and optimization until it is able to reach the highest accuracy value. 
   
 ## Learn in detail 
 
-The following videos will give you a more graphical idea of Machine learning. 
-Then you will also learn about one the ML algorithms which we will use later - randomForest
+The following videos will give you a more graphical idea of machine learning. 
+Then you will also learn about one of the ML algorithms which we will use later - Random Forest.
 
 You can find all the videos [here](https://geomoer.github.io/moer-bsc-project-seminar-remote-sensing//unit06/unit06-01_machine_learning.html){:target="_blank"}.
 
