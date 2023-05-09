@@ -2,7 +2,7 @@
 title: Overview
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"
-  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan)'
+  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan){:target="_blank"}'
 ---
 
 This unit is all about your final research project. Think about your research question and create a project outline as basis for your project.
