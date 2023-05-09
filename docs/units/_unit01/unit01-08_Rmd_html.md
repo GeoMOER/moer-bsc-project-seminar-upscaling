@@ -7,12 +7,12 @@ header:
   caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
 ---
 
-This page shows how a compiled R markdown file looks like (in fact, all code examples in this course were compiled with R markdown).
+This page shows how a compiled R Markdown file looks like (in fact, all code examples in this course were compiled with R Markdown).
 
 ## This is a header
 
-This is an R Markdown document. Markdown is a simple formatting syntax for creating HTML, PDF, and MS Word documents. 
-For more details on using R Markdown see [rmarkdown.rstudio.com](http://rmarkdown.rstudio.com){:target="_blank"}.
+This is an R Markdown document. R Markdown is a simple formatting syntax for creating HTML, PDF, and MS Word documents. 
+For more details on using R Markdown, see [rmarkdown.rstudio.com](http://rmarkdown.rstudio.com){:target="_blank"}.
 
 When you click the **Knit** button in RStudio, a document will be generated which includes both content as well as the output of any embedded R code chunks *within* the document.
 You can embed an R code chunk like this:
@@ -42,8 +42,8 @@ You can also embed plots, for example:
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot (see below).
 
 
-## Markdown source
-The above content of this page is the result from an R markdown file, which looks like that.
+## R Markdown source
+The above content of this page is the result of an R Markdown file, which looks like this:
 
 
 ``````yaml
@@ -62,8 +62,8 @@ knitr::opts_chunk$set(fig.path='{{ site.baseurl }}/assets/images/rmd_images/rmd_
 
 ## This is a header
 
-This is an R Markdown document. Markdown is a simple formatting syntax for creating HTML, PDF, and MS Word documents. 
-For more details on using R Markdown see [rmarkdown.rstudio.com](http://rmarkdown.rstudio.com){:target="_blank"}.
+This is an R Markdown document. R Markdown is a simple formatting syntax for creating HTML, PDF, and MS Word documents. 
+For more details on using R Markdown, see [rmarkdown.rstudio.com](http://rmarkdown.rstudio.com){:target="_blank"}.
 
 When you click the **Knit** button in RStudio, a document will be generated which includes both content as well as the output of any embedded R code chunks *within* the document.
 You can embed an R code chunk like this:
@@ -84,7 +84,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ## More fancy layouts?
 
-If you want more styling options for your markdown documents, 
+If you want more styling options for your R Markdown documents, 
 check out [this page](https://geomoer.github.io/moer-base-r/unit99/sl03_css.html){:target="_blank"}.
 
 

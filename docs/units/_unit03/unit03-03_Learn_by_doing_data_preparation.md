@@ -9,15 +9,15 @@ toc: true
 ## Things you need for this exercise
 * A shapefile of the study area (see below)
 * The names of the required Sentinel 2 tiles - 37MCS and 37MBS 
-* Parameters to download Sentinel 2 data  (see below)
+* Parameters to download Sentinel-2 data  (see below)
 {: .notice--info}
 
 
 ## Data acquisition and first steps
 
 1. Download the shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}. 
-2. Download the Sentinel-2 scene for Kilimanjaro southern slope from 03 January 2022. Make sure you get the L2A dataset using the sen2r package.
-   (Parameters see below)	
+2. Download the Sentinel-2 scene for Kilimanjaro southern slope on 13 January 2022. Make sure you get the L2A dataset using the sen2r package.
+   (Parameters see below)
 3. Save the downloaded files in the raw data folder of your working environment.
 
 ```r
@@ -27,13 +27,13 @@ library(sen2r)
 #Open the GUI using the following function
 sen2r()
 ```
-A new window appears in your R studio, now add the following parameters as you move along the menu on the left hand side 
+A new window appears in your RStudio. Now add the following parameters as you move along the menu on the left hand side 
 
 1. Product selection
    1. Type of processing - Processed spatial files (surface reflectance, spectral indices, ...) in the custom format
    1. Products and sensors
      1. Surface reflectances: BOA (Bottom of Atmosphere)
-        * Accessory layers: SLC (Surface classification map)
+        * Accessory layers: SCL (Surface classification map)
         * SAFE levels needed: Sentinel 2A and Sentinel 2B
      2. SAFE options 
         * Download mode – Online

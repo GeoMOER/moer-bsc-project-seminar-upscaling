@@ -28,7 +28,7 @@ This course will use pre-collected data on species richness and many environment
 
 
 # What will be done in the course 
-In this course, we will use Airborne LiDAR and hyperspectral remote sensing data along with Sentinel data to upscale biodiversity measured at plot scales.
+In this course, we will use airborne LiDAR and hyperspectral remote sensing data along with Sentinel data to upscale biodiversity measured at plot scales.
 The data used in this project is provided by the [Kilimanjaro-SES project](https://kili-ses.senckenberg.de/).
 
 
@@ -38,7 +38,7 @@ At the end of this course you should be able to
   
 * Feel comfortable with the usage of R,
 * Know the basics of remote sensing theory and machine learning,
-* Handle LiDAR, Hyperspectral and Sentinel data,
+* Handle LiDAR, hyperspectral and Sentinel data,
 * Use upscaling methods,
 * Include and process different types of remote sensing data in a single workflow, and
 * Apply all of the above to a real-world example.
@@ -67,7 +67,7 @@ The course encompassed 12 sessions from 12.04.2023 to 12.07.2023.
 ||| **Getting started** |
 | 01 | 12.04.2023   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
 ||| **Remote sensing basics and data**  |
-| 02 | 19.04.2023   | Remote sensing basics and Sentinel-2 data  | Introduction to Kili-SES project, Remote sensing basics,Sentinel 2 data preparation and application|
+| 02 | 19.04.2023   | Remote sensing basics and Sentinel-2 data  | Introduction to Kili-SES project, Remote sensing basics, Sentinel 2 data preparation and application|
 | 03 | 26.04.2023   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
 | 04 | 03.05.2023   | Hyperspectral remote sensing       			     |Introduction to hyperspectral data, speclibs and deriving vegetation indices   |
 ||| **Start research project**  |
