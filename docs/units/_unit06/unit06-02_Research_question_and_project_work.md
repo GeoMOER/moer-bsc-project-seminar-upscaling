@@ -43,7 +43,7 @@ Some papers that can help you get started
 
 ## Working individually/groups
 
-Please organize your projects individually or in a group of atleast two  or four (at max.) people. Each group should have atleast one Physical geography student and one Stustainable development student.
+Please organize your projects individually or in a group of atleast two  or four (at max.) people. Each group should have atleast one Physical geography student and one Sustainable development student.
 In case of a group work, we expect one project and submissions of groups to be larger in the total amount of work compared to individual project.
 
 ## Project management and implementation
