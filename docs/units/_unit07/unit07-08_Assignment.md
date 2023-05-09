@@ -7,20 +7,20 @@ header:
 
 ## How to proceed 
 
-In this unit we have learnt how to upscale plant species richness data.
-Now its your turn
+In this unit, we have learnt how to upscale plant species richness data.
+Now it's your turn
 
 * Start gathering all the datasets 
-* Make them analaysis ready
-* Try out the shown workflow, see if it works for you
-* Start to modify the workflow based on your chosen research project
+* Make them analysis-ready
+* Try out the shown workflow and see if it works for you
+* Start modifying the workflow based on your chosen research project
 <img src="phd090718s.gif" width="1500" height="500" align="centre" vspace="10" hspace="20">
 Source: 'Piled Higher and Deeper' by Jorge Cham www.phdcomics.com
 
 ## Additional reading
-To understand how the upscaled data becomes useful for designing policies and decision making, and to understand what are the different caveats in global modelling, I recommend reading this interesting paper.
+To understand how the upscaled data becomes useful for designing policies and decision making, and to understand what are the different caveats in global modeling, I recommend reading this interesting paper.
 [Global modeling of nature’s contributions to people, Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372).
-The pdf version for the paper has been also added in ILLIAS. 
+The pdf version of the paper was also added to ILIAS. 
 
 ## Try to answer the following
 
@@ -33,6 +33,6 @@ Source : [Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372
 * Which parts of the world are shown as the most disadvantaged across all scenarios and why? 
 
 
-## Preparation for next session
+## Preparation for the next session
 
 * Select a video on machine learning from [here](https://geomoer.github.io/moer-bsc-project-seminar-remote-sensing//unit06/unit06-01_machine_learning.html){:target="_blank"}, and explain in your words to others about what you understood from it. 

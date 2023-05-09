@@ -9,9 +9,9 @@ header:
 <img src="predictions.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 Source : Netra Bhandari
 
-In this section of the upscaling workflow, we carry out our last step i.e., area wide predictions. For this we follow two steps 
-* Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to
-* and, using the previously designed model to upscale 
+In this section of the upscaling workflow, we carry out our last step, i.e., area-wide predictions. For this we follow two steps 
+* Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to, and
+* Using the previously designed model to upscale 
 
 The final results are shown as maps. Taking the processing time into consideration, we show here the upscaled plant richness for FLM category (forest lower montane). 
 
@@ -146,10 +146,10 @@ plot(AOA$AOA)
 <img src="aoa_flm.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 
 The result of the `aoa()` function has two layers: the dissimilarity index (DI) and the area of applicability (AOA).
-* The DI can range from 0 to Inf, where 0 indicates location has predictor properties that are identical to properties observed as in the training data. As the DI values increase the dissimilarity between observed and predicted values also increase. 
-* The AOA consists of two values: 0 indicating that a location is outside the area of applicability and 1 indicating that the model is inside the area of applicability. 
+* The DI can range from 0 to Inf, where 0 indicates location having predictor properties that are identical to properties observed in the training data. As the DI values increase, the dissimilarity between observed and predicted values also increase. 
+* The AOA consists of two values: 0 indicates that a location is outside of the area of applicability and 1 indicates that the model is inside of the area of applicability. 
 
-In our result we see that most areas are having low DI values along with AOA of 1. 
+In our result, we see that most areas are having low DI values along with AOA of 1. 
 
 ## Overlapping preditcions with AOA
 

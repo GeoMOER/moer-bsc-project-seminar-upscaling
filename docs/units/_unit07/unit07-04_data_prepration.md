@@ -139,7 +139,7 @@ write.csv(plot_extract, "./plot_extract.csv") #just save a backup
 ```
 
 ## Hyperspectal data
-* Get the necessary vegetation indices for each plot using Hyperspectral rasters provided to you.
+* Get the necessary vegetation indices for each plot using hyperspectral rasters provided to you.
 
 
 ```r
