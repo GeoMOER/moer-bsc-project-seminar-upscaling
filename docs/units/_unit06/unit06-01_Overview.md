@@ -6,7 +6,7 @@ header:
 ---
 
 This unit is all about your final research project. Think about your research question and create a project outline as basis for your project.
-To finish this course it is mandatory to submit the final project.
+To finish this course, it is mandatory to submit the final project.
 
 <!--more-->
 

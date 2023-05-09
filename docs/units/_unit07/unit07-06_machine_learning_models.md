@@ -9,11 +9,11 @@ header:
 
 <img src="ml.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 
-In this part of the course , we will use three models based on randomForest algorithms.
+In this part of the course, we will use three models based on Random Forest algorithms.
 The three models include: 
-* the default randomForest model using the caret package (short for Classification And REgression Training) developed by Max Kuhn (2008) using random K fold cross validation. 
-* randomForest with feature forward selection method using random K fold cross validation.
-* randomForest with default and spatial feature forward selection ; using `createSpacetimeFolds` cross validation method. 
+* the default Random Forest model using the caret package (short for Classification And REgression Training) developed by Max Kuhn (2008) using random K-fold cross-validation. 
+* Random Forest with feature forward selection method using random K-fold cross-validation.
+* Random Forest with default and spatial forward feature selection, using `createSpacetimeFolds` cross-validation method. 
 
 ```r
 rm(list=ls()) # removes all things from current environment
@@ -75,7 +75,7 @@ featuresTrain <- model_data[ trainIndex,]
 featuresTest  <- model_data[-trainIndex,] 
 
 ##############################################
-#default model - randomForest-Random k-fold CV
+#default model - Random Forest-Random k-fold CV
 ##############################################
 
 library(caret)
@@ -151,13 +151,13 @@ rf <- postResample(pred = featuresTest$pred, obs = featuresTest$SRallplants)
 
 ## Task 1
 
-* Design a model with `featureforwardselection` function from CAST package keeping the tunegrid parametrs same as above.
-* Generate the summary, check out if the ffs model improves R square and RMSE values. Plot out the variable importance
+* Design a model with `featureforwardselection` function from CAST package keeping the tunegrid parameters the same as above.
+* Generate the summary, check if the ffs model improves R-squared and RMSE values. Plot the variable importance.
 
 ```r
 ## Guiding snippet
 #############################################################
-# randomForest with feature forward selection-Random k-fold CV
+# Random Forest with feature forward selection-Random k-fold CV
 #############################################################
 library(CAST)
 
@@ -189,7 +189,7 @@ saveRDS(ffsmodel, "./model_ffs.RDS")
 ```r
 ## Guiding snippet
 #############################################################
-# randomForest with target oriented validation
+# Random Forest with target oriented validation
 #############################################################
 
 set.seed(10)
@@ -207,7 +207,7 @@ rf_st <- postResample(pred = featuresTest$pred_rf_st, obs = featuresTest$SRallpl
 
 saveRDS(model_LLO, "./model_rf_st_folds.RDS")
 #############################################################
-# randomForest with ffs and target oriented validation
+# Random Forest with ffs and target oriented validation
 #############################################################
 
 set.seed(10)
@@ -258,10 +258,10 @@ model_testing
 caret package's `train()` supports many other [models](http://topepo.github.io/caret/available-models.html).
 
 ## Model tuning: Task 3
-Model tuning refers to an exercise to find the optimal hyperparameters of a learning algorithm using a suitable dataset. For a ranfomForest algorithm, some of the important hyperparameters include - mtry (refers to number of variables randomly sampled as candidates for each split),
-ntree(referes to number of trees to grow), sample size (i.e. number of observations drawn for each tree), node size (refers to minimum number of observations for a terminal node) [Probst et al 2019](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.1301).
+Model tuning refers to an exercise to find the optimal hyperparameters of a learning algorithm using a suitable dataset. For a Random Forest algorithm, some of the important hyperparameters include - mtry (refers to number of variables randomly sampled as candidates for each split),
+ntree (refers to number of trees to grow), sample size (i.e. number of observations drawn for each tree), node size (refers to minimum number of observations for a terminal node) [Probst et al 2019](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.1301).
 
 Try the following and check model performance
 
-* Explore the function `trainControl()` using caret package - e.g. change the number of folds for k fold cross validation.
+* Explore the function `trainControl()` using caret package - e.g. change the number of folds for K-fold cross-validation.
 * Explore the function `tuneGrid()` using caret package - e.g. what happens to a default rf model with mtry = 3.

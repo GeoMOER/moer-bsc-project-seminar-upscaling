@@ -9,23 +9,23 @@ header:
 
 LiDAR or Light Detection and Ranging is an active remote sensing technique that uses laser to produce and emit pulses of light and then measures the time of return of this pulse reflected back from the surface.
 In general, a LiDAR system consits of a laser-emitter-reciever-scanner along with GPS (Global Positioning Unit) and an IMU (Inertial Measurement Unit). These three devices are mounted and carried on fixed wing aircraft (for Airborne Laser Scanning or ALS).
-Terrestrial Laser Scanning (TLS) system is the ground based counterpart of ALS while Satellite Laser Scanning is the spaceborne counterpart of ALS. 
+Terrestrial Laser Scanning (TLS) system is the ground-based counterpart of ALS while Satellite Laser Scanning is the spaceborne counterpart of ALS. 
 
-## How is LiDAR data collected 
+## How are LiDAR data collected 
 
 Let's watch a short animated video that will give you a comprehensive idea on how Lasers are used to measure data.
 <iframe width="810" height="458" src="https://www.youtube.com/embed/EYbhNSUnIdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Video source : [NEON](https://www.neonscience.org/data-collection/lidar){:target="_blank"}
 
-We will look at the data structure of LiDAR data in the next section but lets first talk about applications of LiDAR.
+We will look at the structure of LiDAR data in the next section, but let's first talk about applications of LiDAR.
 
 ## LiDAR Applications
 
-* It can be used in analysing landcover, Topography and Hydrology.
+* It can be used in analysing landcover, topography and hydrology.
 * It has numerous applications in ecology, forestry and conservation science.
-* Agriculture has used LiDAR for crop mapping, crop variability crop categorization etc.
+* Agriculture has used LiDAR for crop mapping, crop variability, crop categorization etc.
 * LiDAR has been to MARS!! NASA Phoenix Lander used LiDAR to map the topography of the red planet.
-* Further applications areass include atmospheric sciences, natural hazard management, oceanography, green energy, geology, etc. 
+* Further application areas include atmospheric sciences, natural hazard management, oceanography, green energy, geology, etc. 
 
 ## Additional reference for reading
 

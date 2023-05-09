@@ -8,20 +8,20 @@ header:
 
 ## Exercise: LiDAR products 
 
-In this exercise we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model).
+In this exercise, we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model).
 
 <img src="lidarTree-height.png" width="1104" height="359" align="centre" vspace="10" hspace="20">
 <font size="-1">source: https://www.earthdatascience.org/images/courses/earth-analytics/lidar-raster-data-r</font>
 
 ## Rasterizing the point cloud
 
-Since the point clouds are 3D , to get a DTM , DSM and CHM we need some sort of grid to rasterize this point cloud.
+Since the point clouds are 3D, to get DTM, DSM and CHM, we need some sort of grid to rasterize this point cloud.
 Of course lidR provides the functions for these tasks. Have a look at rasterize_terrain(), rasterize_canopy() or the more flexible pixel_metrics().
 
-<b> Note- </b> The function `grid_metrics()` has been now updated to three new functions `cloud_metrics()`, `pixel_metrics()`, and `crown_metrics()` and the function `grid_terrain()` have been updated to `rasterize_terrain()`. 
+<b> Note- </b> The function `grid_metrics()` was updated to three new functions `cloud_metrics()`, `pixel_metrics()`, and `crown_metrics()` and the function `grid_terrain()` was updated to `rasterize_terrain()`. 
 
 ## Task 1
-* load the flm1_clipped.las file that you save earlier.
+* Load the flm1_clipped.las file that you saved earlier.
 * Calculate DTM, DSM and CHM with 10m resolution.
 * Save your rasters as a tif file. 
 
@@ -57,15 +57,15 @@ plot_dtm3d(dtm_idw, bg = "white")
 
 ## Task 2 
 
-We want to calculate what is the mean vegetation height of our forest plot?
+We want to calculate what the mean vegetation height of our forest plot is.
 
-* Load the cropped Sentinel 2 scene from the previous session
+* Load the cropped Sentinel-2 scene from the previous session
 * Crop the scene for our forest plot
 * Calculate a DEM with the Sentinel tile as a grid template with pixel_metrics()
-* Normalize the pointcloud with normalize_height(). What happened?
+* Normalize the point cloud with normalize_height(). What happened?
 * Calculate the mean vegetation height for each pixel
 * Save the mean vegetation height as a tif file
-* Plot the mean vegetation height as overlay to the forest sentinel scene
+* Plot the mean vegetation height as overlay to the forest Sentinel scene
 
 
 ## Comments 

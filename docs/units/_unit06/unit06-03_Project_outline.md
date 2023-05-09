@@ -29,22 +29,22 @@ After identifying the research question, a critical step is to find or create ap
 
 Some data source suggestions are:
 
-## Sentinel 2 
+## Sentinel-2 
 
-Sentinel data will be needed to upscale your plot level data to the landscape scale. You have already learnt how to acquire Sentinel 2 data from unit 3.
+Sentinel data will be needed to upscale your plot level data to the landscape scale. You have already learnt how to acquire Sentinel-2 data from unit 3.
 
 ##  LiDAR and Hyperspectral data
 
-You can use them to relate your selected species data with structural and spectral remote sensing data. This data is available on strato.
+You can use them to relate your selected species data with structural and spectral remote sensing data. These data are available on strato.
 
 ## Published datasets of Kilimanjaro region
 
-[GFBio](https://www.gfbio.org/) and [Pangea](https://www.pangaea.de/) is an excellent source to search what studies have been done in the Kilimanjaro region and accees different datasets. 
+[GFBio](https://www.gfbio.org/) and [Pangea](https://www.pangaea.de/) are excellent sources to search what studies have been done in the Kilimanjaro region and to access different datasets. 
 Use 'KiLi: Kilimanjaro Research Group' as a search term to get an overview of all published datasets.
 
 ## Other sources
 
-If you wish to understand the influence of other environmental variables you can of course freely search other data sources like e.g. [OpenStreetMap](https://www.openstreetmap.org/), [SoilGrids](https://soilgrids.org/).
+If you wish to understand the influence of other environmental variables, you can of course freely search other data sources like e.g. [OpenStreetMap](https://www.openstreetmap.org/), [SoilGrids](https://soilgrids.org/).
 
 
 ## Assignment

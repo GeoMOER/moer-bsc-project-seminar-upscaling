@@ -5,7 +5,7 @@ header:
   caption: 'Image: [**Andreas Hemp**](https://kili-ses.senckenberg.de/en/publications/literature/){:target="_blank"}'
 ---
 
-Get a brief introduction to the Kilimanjaro Socio-ecological Systems project funded by DFG. 
+Get a brief introduction to the Kilimanjaro Social-Ecological System project funded by DFG. 
 <!--more-->
 
 

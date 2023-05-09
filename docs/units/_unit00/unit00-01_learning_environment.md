@@ -36,23 +36,23 @@ For details see the [Deliverables](/moer-mpg-upscaling/unit00/unit00-02_delivera
 
 We will use [Big Blue Button](https://www.uni-marburg.de/en/hrz/services/web-conferences/web-conferencing-with-bigbluebutton){:target="_blank"} as main virtual classroom 
 for our synchronous (hybrid) sessions.
-The link to our classroom can be found in [Ilias](https://ilias.uni-marburg.de/ilias.php?ref_id=3203174&cmdClass=ilrepositorygui&cmdNode=z7&baseClass=ilrepositorygui){:target="_blank"}.
-Additionally, there are student meeting rooms in our course environment in Ilias, which you can freely use on your own for discussing the assignments.
+The link to our classroom can be found in [ILIAS](https://ilias.uni-marburg.de/ilias.php?ref_id=3203174&cmdClass=ilrepositorygui&cmdNode=z7&baseClass=ilrepositorygui){:target="_blank"}.
+Additionally, there are student meeting rooms in our course environment in ILIAS, which you can freely use on your own for discussing the assignments.
 -->
 
-## Ilias
+## ILIAS
 
-Ilias is the course space offered by the University of Marburg. 
-We will use Ilias mainly for the administration of the course and for providing small static documents.
-The link to the Ilias space for this course can be found [here](https://ilias.uni-marburg.de/ilias.php?ref_id=3203174&cmdClass=ilrepositorygui&cmdNode=z7&baseClass=ilrepositorygui){:target="_blank"}.
+ILIAS is the course space offered by the University of Marburg. 
+We will use ILIAS mainly for the administration of the course and for providing small static documents.
+The link to the ILIAS space for this course can be found [here](https://ilias.uni-marburg.de/ilias.php?ref_id=3203174&cmdClass=ilrepositorygui&cmdNode=z7&baseClass=ilrepositorygui){:target="_blank"}.
 Note that you have to log in with your student account. 
-There is also a forum in Ilias, which you can use for getting in touch with your fellow students.
+There is also a forum in ILIAS, which you can use for getting in touch with your fellow students.
 
 
 ## GitHub Classroom
 
 You will use GitHub Classroom for uploading your assignments and for getting familiar with git.
-The link for joining our GitHub Classroom can be found in Ilias.
+The link for joining our GitHub Classroom can be found in ILIAS.
 Please add your full name or your student account name to your GitHub profile.
 
 ## Strato server
