@@ -26,7 +26,15 @@ You project can take data from the following data
 * Functional diversity (traits of species for e.g. body mass, beak size, leaf area index, etc.)
 * Any other important NCPs like carbon storage
 
-{% include pdf pdf="Understanding the Kilimanjaro Study area.pdf.pdf" %}
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <iframe src="Understanding_the_Kilimanjaro_Study_area.pdf" width="100%" height="500px">
+    </iframe>
+  </body>
+</html>
 
 Some papers that can help you get started
 
