@@ -4,7 +4,7 @@ toc: true
 toc_label: In this worksheet
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
-  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
+  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r){:target="_blank"}'
 ---
 
 This worksheet introduces you to R, R scripts and R Markdown. 

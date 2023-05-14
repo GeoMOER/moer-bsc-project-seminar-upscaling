@@ -2,7 +2,7 @@
 title: "Assignment"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
 ---
 
 ## How to proceed 
@@ -19,7 +19,7 @@ Source: 'Piled Higher and Deeper' by Jorge Cham www.phdcomics.com
 
 ## Additional reading
 To understand how the upscaled data becomes useful for designing policies and decision making, and to understand what are the different caveats in global modeling, I recommend reading this interesting paper.
-[Global modeling of nature’s contributions to people, Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372).
+[Global modeling of nature’s contributions to people, Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372){:target="_blank"}.
 The pdf version of the paper was also added to ILIAS. 
 
 ## Try to answer the following
@@ -27,7 +27,7 @@ The pdf version of the paper was also added to ILIAS.
 * What trends are seen in Fig 2. of the paper?
 
 <img src="366_255_f2.jpeg" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source: [Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372)
+Source: [Kramer et al 2019](https://www.science.org/doi/10.1126/science.aaw3372){:target="_blank"}
 
 * What are the future scenarios discussed and what are they based on?
 * Which parts of the world are shown as the most disadvantaged across all scenarios and why? 

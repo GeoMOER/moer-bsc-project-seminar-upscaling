@@ -12,7 +12,7 @@ There has been a decline of species richness, abundance, and biomass of selected
 
 <img src="ipbes_2019_sp_decline.png" width="678" height="720" align="centre" vspace="10" hspace="20">
 
-<em>Image</em>: [IPBES Global Assessment (2019)](https://ipbes.net/sites/default/files/inline/files/ipbes_global_assessment_report_summary_for_policymakers.pdf)
+<em>Image</em>: [IPBES Global Assessment (2019)](https://ipbes.net/sites/default/files/inline/files/ipbes_global_assessment_report_summary_for_policymakers.pdf){:target="_blank"}
 
 From the recent IPBES Global Assessment (2019), it was made clear that there is a lack of understanding of interactions between different drivers of change. Furthermore, there is less understanding of links between indirect drivers, direct drivers and biodiversity change. 
  

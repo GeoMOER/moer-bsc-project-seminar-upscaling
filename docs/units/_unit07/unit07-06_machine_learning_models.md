@@ -2,7 +2,7 @@
 title: "EX | Machine learning models"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
   toc: true
 ---
 
@@ -255,11 +255,11 @@ model_testing
 #
 ```
 ## Additional models
-caret package's `train()` supports many other [models](http://topepo.github.io/caret/available-models.html).
+caret package's `train()` supports many other [models](http://topepo.github.io/caret/available-models.html){:target="_blank"}.
 
 ## Model tuning: Task 3
 Model tuning refers to an exercise to find the optimal hyperparameters of a learning algorithm using a suitable dataset. For a Random Forest algorithm, some of the important hyperparameters include - mtry (refers to number of variables randomly sampled as candidates for each split),
-ntree (refers to number of trees to grow), sample size (i.e. number of observations drawn for each tree), node size (refers to minimum number of observations for a terminal node) [Probst et al 2019](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.1301).
+ntree (refers to number of trees to grow), sample size (i.e. number of observations drawn for each tree), node size (refers to minimum number of observations for a terminal node) [Probst et al 2019](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.1301){:target="_blank"}.
 
 Try the following and check model performance
 

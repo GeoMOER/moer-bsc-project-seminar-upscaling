@@ -88,7 +88,7 @@ EnMAP - the first German Hyperspectral sensor in space. Image: [DLR](https://www
 
 
 
-Read more about the newly launched satellite [here](https://www.enmap.org/) and watch an interesting video [here](https://youtu.be/LQZNtLp3RfM).
+Read more about the newly launched satellite [here](https://www.enmap.org/){:target="_blank"} and watch an interesting video [here](https://youtu.be/LQZNtLp3RfM){:target="_blank"}.
 
 #### EO-1 Hyperion
 

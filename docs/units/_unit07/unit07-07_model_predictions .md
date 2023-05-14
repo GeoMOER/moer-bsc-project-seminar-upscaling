@@ -2,7 +2,7 @@
 title: "EX | Upscaling"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
   toc: true
 ---
 
@@ -161,5 +161,5 @@ spplot(prediction_ffs_st,main="prediction for the AOA \n(spatial CV error applie
 ```
 <img src="final_map.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 ## Additional reading
-[Meyer and Pebesma 2021](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13650)
+[Meyer and Pebesma 2021](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13650){:target="_blank"}
 
