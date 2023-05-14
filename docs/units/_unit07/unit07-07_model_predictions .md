@@ -3,11 +3,11 @@ title: "EX | Upscaling"
 header:
   image: "/assets/images/teaser/unit7.jpg"
   caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
-  toc : true
+  toc: true
 ---
 
 <img src="predictions.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source : Netra Bhandari
+Source: Netra Bhandari
 
 In this section of the upscaling workflow, we carry out our last step, i.e., area-wide predictions. For this we follow two steps 
 * Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to, and

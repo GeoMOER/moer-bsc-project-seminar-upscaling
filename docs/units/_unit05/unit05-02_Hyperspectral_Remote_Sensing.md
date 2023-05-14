@@ -29,7 +29,7 @@ Such a spectrum aids in the assessment, identification and quantification of dif
 <img src="spectrum.png" width="1104" height="359" align="centre" vspace="10" hspace="20">
  
 Spectrum representation including (A) Multispectral example, with 5 wide bands; and (B) Hyperspectral example consisting of several narrow bands that, usually, extends to hundreds or thousands of them (image not drawn to scale).
-Image : [Adão et al 2017](https://www.mdpi.com/2072-4292/9/11/1110#){:target="_blank"}.
+Image: [Adão et al 2017](https://www.mdpi.com/2072-4292/9/11/1110#){:target="_blank"}.
 
 ## Understanding a spectrum
 
@@ -40,7 +40,7 @@ Let's look at the example below to understand a plant spectrum.
 
 <img src="plant_spectrum.png" width="1104" height="359" align="centre" vspace="10" hspace="20">
 Reflectance spectra of different types of green vegetation compared to a spectral signature for senescent leaves.
-Image : [Govender et al 2007](https://www.mdpi.com/2072-4292/9/11/1110#){:target="_blank"}.
+Image: [Govender et al 2007](https://www.mdpi.com/2072-4292/9/11/1110#){:target="_blank"}.
 
 
 ## Multispectral vs Hyperspectral
@@ -84,7 +84,7 @@ It aims to acquire high-quality hyperspectral image data with 230 spectral chann
 
 <img src="Enmap.jpg" width="570" height="313" align="centre" vspace="10" hspace="20">
 
-EnMAP - the first German Hyperspectral sensor in space. Image : [DLR](https://www.dlr.de/rd/desktopdefault.aspx/tabid-2440/3586_read-28911/){:target="_blank"}. 
+EnMAP - the first German Hyperspectral sensor in space. Image: [DLR](https://www.dlr.de/rd/desktopdefault.aspx/tabid-2440/3586_read-28911/){:target="_blank"}. 
 
 
 

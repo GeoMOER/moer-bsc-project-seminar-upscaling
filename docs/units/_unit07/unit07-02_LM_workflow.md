@@ -23,7 +23,7 @@ We can define the upscaling workflow in the following stages
 6. Applying the model on a set of remote sensing proxies of our predictors
 
 <img src="workflow.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source : Netra Bhandari
+Source: Netra Bhandari
  
 
 

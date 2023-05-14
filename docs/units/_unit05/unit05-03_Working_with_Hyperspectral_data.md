@@ -9,7 +9,7 @@ In this exercise, we use hyperspectral rasters to calculate different vegetation
 <!--more-->
 
 
-## Example : Calculating vegetation indices
+## Example: Calculating vegetation indices
 
 
 We will be using processed hyperspectral data and the hsdar R package to get two different vegetation indices.
@@ -100,7 +100,7 @@ flm1_vi <- vegindex(speclib_flm1, index = vi)
 
 * What is the difference between the two indices
 * Use cellstats() to generate a dataframe for mean and standard deviation of the two indices
-* Make a single dataframe such that you get the following structure (hint : use transpose function)
+* Make a single dataframe such that you get the following structure (hint: use transpose function)
 
 ```r
 PlotID mean_NDVI sd_NDVI mean_SAVI sd_SAVI

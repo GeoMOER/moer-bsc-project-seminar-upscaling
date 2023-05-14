@@ -18,7 +18,7 @@ In the data preparation task, you will:
 
 
 <img src="data_prep.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source : Netra Bhandari
+Source: Netra Bhandari
 
 
 ## Predictors for plant richness
