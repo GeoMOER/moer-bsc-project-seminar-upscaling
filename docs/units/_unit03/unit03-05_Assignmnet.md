@@ -3,6 +3,7 @@ title: "AS | Assignment"
 header:
   image: "/assets/images/teaser/ndvi.jpg"
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
+toc: true
 ---
 
 Read the following article by [Ziegler et al 2022](https://www.mdpi.com/2072-4292/14/3/786){:target="_blank"} (also available on ILIAS)

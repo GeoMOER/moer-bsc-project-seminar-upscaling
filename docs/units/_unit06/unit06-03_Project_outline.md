@@ -3,6 +3,7 @@ title: "Project outline"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"
   caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan){:target="_blank"}'
+toc: true
 ---
 Learn more about the requirements for creating a project outline and for the structure, content, and format of your research project.
 

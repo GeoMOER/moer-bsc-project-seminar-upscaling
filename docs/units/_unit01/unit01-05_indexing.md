@@ -3,6 +3,7 @@ title: "Recall: Indexing"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
   caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r){:target="_blank"}'
+toc: true
 ---
 
 Learn how to find, address, and change elements in R objects.

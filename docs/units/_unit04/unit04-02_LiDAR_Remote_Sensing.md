@@ -3,6 +3,7 @@ title: "LM | LiDAR Remote Sensing"
 header:
   image: "/assets/images/teaser/lidar_coffee.jpg"
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
+toc: true
 ---
 
 ## Dive into the world of 3D spatial data

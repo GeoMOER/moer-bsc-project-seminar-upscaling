@@ -3,6 +3,7 @@ title: "LM | Hyperspectral Remote Sensing"
 header:
   image: "/assets/images/teaser/hyp_crop.png"
   caption: 'Image: [**NASA - Hyperion**](https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php){:target="_blank"}'
+toc: true
 ---
 
 In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data.

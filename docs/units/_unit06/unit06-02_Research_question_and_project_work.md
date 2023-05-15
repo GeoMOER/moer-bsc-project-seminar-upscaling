@@ -3,6 +3,7 @@ title: "Research question and project"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"
   caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan){:target="_blank"}'
+toc: true
 ---
 
 Now it is your turn to decide for a self-chosen research question to work on in your final team project.

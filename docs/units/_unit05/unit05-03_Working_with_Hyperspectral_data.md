@@ -3,6 +3,7 @@ title: "EX | Working with hyperspectral data"
 header:
   image: "/assets/images/teaser/hyp_crop.png"
   caption: 'Image: [**NASA - Hyperion**](https://earthobservatory.nasa.gov/features/EO1Tenth/page3.php){:target="_blank"}'
+toc: true
 ---
 
 In this exercise, we use hyperspectral rasters to calculate different vegetation indices.
