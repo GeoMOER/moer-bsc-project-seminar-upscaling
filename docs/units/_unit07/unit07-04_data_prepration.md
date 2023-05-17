@@ -256,9 +256,9 @@ vi = "NDVI"
 library(future)
 future::plan(multisession, workers = 2L) #makes processing faster!
 
-vi_stats_2015 <- lapply(seq(length(hy_fls_2015)), function(i){
+vi_stats_2015 <- lapply(seq(length(list_ext_intersection_lidar_hs2)), function(i){
   
-  hy_2015 <- speclib(brick(hy_fls_2015[i]), wavelength_2015)
+  hy_2015 <- speclib(brick(list_ext_intersection_lidar_hs1[[i]]), wavelength_2015)
   hy_indices_2015 <- vegindex(hy_2015, index = vi)
   hy_indices_2015 <- hy_indices_2015@spectra@spectra_ra
   names(hy_indices_2015) <- vi_2015
