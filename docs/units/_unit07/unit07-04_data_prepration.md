@@ -82,7 +82,7 @@ dir.create(path = paste0(path,"/output_dir")) #make a new dir for saving your cl
 aoi_path <- paste0(path,"/output_dir")
 
 opt_output_files(las_ctg) <- paste0(aoi_path,"/{PlotID}") # lets call it it now aoi to avoid confusing with roi, you can also choose better names
-ctg_clip <- clip_roi(las_ctg,plots, radius = 100,) # this step will take time be patient!
+ctg_clip <- clip_roi(las_ctg,plots, radius = 100) # this step will take time be patient!
 
 #remove noise
 ctg_aoi <- readLAScatalog(list.files(aoi_path, full.names = T))
@@ -257,12 +257,12 @@ vi = "NDVI"
 library(future)
 future::plan(multisession, workers = 2L) #makes processing faster!
 
-vi_stats_2015 <- lapply(seq(length(list_ext_intersection_lidar_hs2)), function(i){
+vi_stats_2015 <- lapply(seq(length(list_ext_intersection_lidar_hs1)), function(i){
   
   hy_2015 <- speclib(brick(list_ext_intersection_lidar_hs1[[i]]), wavelength_2015)
   hy_indices_2015 <- vegindex(hy_2015, index = vi)
   hy_indices_2015 <- hy_indices_2015@spectra@spectra_ra
-  names(hy_indices_2015) <- vi_2015
+  names(hy_indices_2015) <- vi
   
   #writeRaster(hy_indices_2015, filename = paste0(file.path(wd, "output/veg_indices_raster",hy_names_2015[i], "_vegindex.tif")))
   
