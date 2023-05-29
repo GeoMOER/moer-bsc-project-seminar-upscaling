@@ -118,9 +118,10 @@ library(latticeExtra)
 #load in predictors
 predictors_rs_flm <- raster::stack("./predictors_rs_flm_masked.tif")
 
-mapview::mapview(raster(predictors_rs_flm),col.regions=brewer.pal(9, "YlGn"))
+mapview::mapview(predictors_rs_flm,col.regions=brewer.pal(9, "YlGn"))
 
 #load in your model
+model_ffs_st_folds <- readRDS("./model_ffs_st_folds.RDS")
 prediction_ffs_st <- raster::predict(predictors_rs_flm,model_ffs_st_folds, na.rm=T)
 writeRaster(prediction_ffs_st, "prediction_ffs_st_flm.tif")
 
@@ -138,7 +139,7 @@ library(parallel)
 cl <- makeCluster(4)
 registerDoParallel(cl)
 #note - make sure you have enough space in your R environment to calculate AOA
-AOA <- aoa(predictors_rs_flm,model_ffs_st_folds, cl = cl) # will take some time 
+AOA <- aoa(predictors_rs_flm,model_ffs_st_folds) # will take some time 
 plot(AOA$DI)
 plot(AOA$AOA)
 ```

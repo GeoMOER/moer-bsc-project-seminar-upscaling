@@ -25,7 +25,8 @@ library(CAST)
 setwd("D:/Kili_SES/course_bsc_upscaling_netra/upscaling_methodology")
 
 ## load your model data
-model_data <- read.csv("./model_data.csv", header = T, row.names = 1) #make sure that you dont have any missing values
+model_data <- na.omit(model_data) # omit missing values
+model_data <- read.csv("./model_data.csv", header = T, row.names = 1) #make sure that you don't have any missing values
 
 # lets rename our columns a bit 
 
@@ -230,10 +231,10 @@ Comparing our models
 ```r
 ## putting all summaries together for comparison
 
-model_summaries
 model_names <-  c("rf","ffs","rf_st_folds","ffs_st_folds")
 model_summaries <- as.data.frame(cbind(model_names,rbind(model$results[5,],
                                            ffsmodel$results[9,], model_LLO$results[9,], ffsmodel_LLO$results[6,])))
+model_summaries
 
 
 # model_names mtry     RMSE  Rsquared      MAE   RMSESD RsquaredSD    MAESD
