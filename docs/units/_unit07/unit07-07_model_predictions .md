@@ -2,12 +2,12 @@
 title: "EX | Upscaling"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
-  toc : true
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+toc: true
 ---
 
 <img src="predictions.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source : Netra Bhandari
+Source: Netra Bhandari
 
 In this section of the upscaling workflow, we carry out our last step, i.e., area-wide predictions. For this we follow two steps 
 * Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to, and
@@ -118,9 +118,10 @@ library(latticeExtra)
 #load in predictors
 predictors_rs_flm <- raster::stack("./predictors_rs_flm_masked.tif")
 
-mapview::mapview(raster(predictors_rs_flm),col.regions=brewer.pal(9, "YlGn"))
+mapview::mapview(predictors_rs_flm,col.regions=brewer.pal(9, "YlGn"))
 
 #load in your model
+model_ffs_st_folds <- readRDS("./model_ffs_st_folds.RDS")
 prediction_ffs_st <- raster::predict(predictors_rs_flm,model_ffs_st_folds, na.rm=T)
 writeRaster(prediction_ffs_st, "prediction_ffs_st_flm.tif")
 
@@ -138,7 +139,7 @@ library(parallel)
 cl <- makeCluster(4)
 registerDoParallel(cl)
 #note - make sure you have enough space in your R environment to calculate AOA
-AOA <- aoa(predictors_rs_flm,model_ffs_st_folds, cl = cl) # will take some time 
+AOA <- aoa(predictors_rs_flm,model_ffs_st_folds) # will take some time 
 plot(AOA$DI)
 plot(AOA$AOA)
 ```
@@ -161,5 +162,5 @@ spplot(prediction_ffs_st,main="prediction for the AOA \n(spatial CV error applie
 ```
 <img src="final_map.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 ## Additional reading
-[Meyer and Pebesma 2021](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13650)
+[Meyer and Pebesma 2021](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13650){:target="_blank"}
 

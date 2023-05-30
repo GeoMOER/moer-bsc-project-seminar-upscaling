@@ -1,10 +1,10 @@
 ---
 title: "Assignments and GitHub"
-toc: true
-toc_label: In this info
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
-  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
+  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r){:target="_blank"}'
+toc: true
+toc_label: In this info
 ---
 
 ## A note on individual learning log assignments with GitHub

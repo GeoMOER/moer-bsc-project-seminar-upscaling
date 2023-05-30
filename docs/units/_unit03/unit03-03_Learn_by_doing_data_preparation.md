@@ -8,7 +8,7 @@ toc: true
 
 ## Things you need for this exercise
 * A shapefile of the study area (see below)
-* The names of the required Sentinel 2 tiles - 37MCS and 37MBS 
+* The names of the required Sentinel-2 tiles - 37MCS and 37MBS 
 * Parameters to download Sentinel-2 data  (see below)
 {: .notice--info}
 

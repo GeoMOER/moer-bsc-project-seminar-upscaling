@@ -2,8 +2,8 @@
 title: "EX | Machine learning models"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
-  toc: true
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+toc: true
 ---
 
 
@@ -25,7 +25,8 @@ library(CAST)
 setwd("D:/Kili_SES/course_bsc_upscaling_netra/upscaling_methodology")
 
 ## load your model data
-model_data <- read.csv("./model_data.csv", header = T, row.names = 1) #make sure that you dont have any missing values
+model_data <- na.omit(model_data) # omit missing values
+model_data <- read.csv("./model_data.csv", header = T, row.names = 1) #make sure that you don't have any missing values
 
 # lets rename our columns a bit 
 
@@ -230,10 +231,10 @@ Comparing our models
 ```r
 ## putting all summaries together for comparison
 
-model_summaries
 model_names <-  c("rf","ffs","rf_st_folds","ffs_st_folds")
 model_summaries <- as.data.frame(cbind(model_names,rbind(model$results[5,],
                                            ffsmodel$results[9,], model_LLO$results[9,], ffsmodel_LLO$results[6,])))
+model_summaries
 
 
 # model_names mtry     RMSE  Rsquared      MAE   RMSESD RsquaredSD    MAESD
@@ -255,11 +256,11 @@ model_testing
 #
 ```
 ## Additional models
-caret package's `train()` supports many other [models](http://topepo.github.io/caret/available-models.html).
+caret package's `train()` supports many other [models](http://topepo.github.io/caret/available-models.html){:target="_blank"}.
 
 ## Model tuning: Task 3
 Model tuning refers to an exercise to find the optimal hyperparameters of a learning algorithm using a suitable dataset. For a Random Forest algorithm, some of the important hyperparameters include - mtry (refers to number of variables randomly sampled as candidates for each split),
-ntree (refers to number of trees to grow), sample size (i.e. number of observations drawn for each tree), node size (refers to minimum number of observations for a terminal node) [Probst et al 2019](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.1301).
+ntree (refers to number of trees to grow), sample size (i.e. number of observations drawn for each tree), node size (refers to minimum number of observations for a terminal node) [Probst et al 2019](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.1301){:target="_blank"}.
 
 Try the following and check model performance
 

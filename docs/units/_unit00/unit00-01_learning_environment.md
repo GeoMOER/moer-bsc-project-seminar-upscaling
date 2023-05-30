@@ -1,9 +1,9 @@
 ---
 title: Learning Environment
-toc: true
 header:
   image: '/assets/images/teaser/Kilikarte_CC_Tanzania_72dpi-1800x1386_7-1.jpg'
   caption: '[Environmental Informatics Marburg](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
+toc: true
 ---
 
 This course is intended as a blended learning module, although the provided introductions, explanations and examples might be useful for self-study only, too.

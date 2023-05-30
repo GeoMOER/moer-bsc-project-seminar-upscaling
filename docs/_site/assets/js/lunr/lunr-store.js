@@ -78,13 +78,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Introduction to Kili SES",
-        "excerpt":"Get a brief introduction to the Kilimanjaro Socio-Ecological System project funded by DFG.     Research Project  The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project here.   ","categories": ["02 Kilimanjaro SES"],
+        "excerpt":"Get a brief introduction to the Kilimanjaro Social-Ecological System project funded by DFG.     Research Project  The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project here.   ","categories": ["02 Kilimanjaro SES"],
         "tags": ["Unit","02"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit02/unit02-01_Introduction_Kili_SES.html",
         "teaser": null
       },{
         "title": "What are NCPs",
-        "excerpt":"Nature’s Contribution to People Global decline in biodiversity is increasingly becoming a concern for general public, scientists, policy makers and decision makers. There has been a decline of species richness, abundance, biomass of selected taxonomic groups and reduction in extent of selected natural ecosystems. Image: IPBES Global Assessment (2019) From...","categories": ["02 Kilimanjaro SES"],
+        "excerpt":"Nature’s Contribution to People Global decline in biodiversity is increasingly becoming a concern for the general public, scientists, policy makers, and decision makers. There has been a decline of species richness, abundance, and biomass of selected taxonomic groups and reduction in extent of selected natural ecosystems. Image: IPBES Global Assessment...","categories": ["02 Kilimanjaro SES"],
         "tags": ["Unit","02"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit02/unit02-02_What_are_NCPs.html",
         "teaser": null
@@ -96,37 +96,37 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"Learn and recall the essentials of Remote Sensing. Learning objectives Recall the basics in remote sensing Know how to acquire Sentinel 2 data Extend your experiences in working with Sentinel 2 data Recall If you need some refreshment of your processing skills for working with spatial data in R, you...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Learn and recall the essentials of Remote Sensing. Learning objectives Recall the basics in remote sensing Know how to acquire Sentinel-2 data Extend your experiences in working with Sentinel-2 data Recall If you need some refreshment of your processing skills for working with spatial data in R, you can find...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-01_overview.html",
         "teaser": null
       },{
         "title": "LM | Remote sensing basics",
-        "excerpt":"Learn the essentials of Remote Sensing and get a hands on experience in working with remote sensing data. Introduction to Remote Sensing The online resources for this unit can be found here. Introduction to Sentinel 2 The online resources for this unit can be found here. Questions 1) What is...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Learn the essentials of Remote Sensing and get hands-on experience in working with remote sensing data. Introduction to Remote Sensing The online resources for this unit can be found here. Introduction to Sentinel-2 The online resources for this unit can be found here. Questions 1) What is L1C data and...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-02_Remote_sensing_basics.html",
         "teaser": null
       },{
         "title": "EX | Sentinel-2 Preparation",
-        "excerpt":"Things you need for this exercise A shapefile of the study area (see below) The names of the required Sentinel 2 tiles - 37MCS and 37MBS Parameters to download Sentinel 2 data (see below) Data acquisition and first steps Download the shapefile for Kilimanjaro southern slope here. Download the Sentinel-2...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Things you need for this exercise A shapefile of the study area (see below) The names of the required Sentinel-2 tiles - 37MCS and 37MBS Parameters to download Sentinel-2 data (see below) Data acquisition and first steps Download the shapefile for Kilimanjaro southern slope here. Download the Sentinel-2 scene for...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-03_Learn_by_doing_data_preparation.html",
         "teaser": null
       },{
         "title": "EX | Sentinel-2 Application",
-        "excerpt":"In this exercise we aim to calculate the vegetation indices for our study area. As a start load your prepared Sentinel Data from the previous exercise. Vegetation indices Choose and calculate one vegetation index for the study area. Note - the data comes in two Sentinel tiles so you need...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"In this exercise, we aim to calculate the vegetation indices for our study area. As a start, load your prepared Sentinel Data from the previous exercise. Vegetation indices Choose and calculate one vegetation index for the study area. Note - the data comes in two Sentinel tiles, so you need...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-04_Learn_by_doing_application.html",
         "teaser": null
       },{
         "title": "AS | Assignment",
-        "excerpt":"Read the following article by Ziegler et al 2022 (also available on ILIAS) and answer the following questions What is the research question that the article is based on? How can LiDAR derived vegetation structure be used as a surrogate to species richness of different taxa? Based on the model...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Read the following article by Ziegler et al 2022 (also available on ILIAS) and answer the following questions What is the research question that the article is based on? How can LiDAR-derived vegetation structure be used as a surrogate to species richness of different taxa? Based on the model results,...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-05_Assignmnet.html",
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"LiDAR or Light Detection And Ranging, is a very promising remote sensing method that uses lasers to record distances which when combined with complimentary data can be used to generated 3D models of a surface. With its 3D approach we can measure canopy height and density along with many environmental...","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"LiDAR or Light Detection And Ranging is a very promising remote sensing method that uses lasers to record distances which when combined with complimentary data, can be used to generate 3D models of a surface. With its 3D approach, we can measure canopy height and density along with many environmental...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-01_overview.html",
         "teaser": null
@@ -144,7 +144,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Deriving LiDAR products",
-        "excerpt":"Exercise: LiDAR products In this exercise we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model). source: https://www.earthdatascience.org/images/courses/earth-analytics/lidar-raster-data-r Rasterizing the point cloud Since the point clouds are 3D , to get a DTM , DSM and CHM we...","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"Exercise: LiDAR products In this exercise, we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model). source: https://www.earthdatascience.org/images/courses/earth-analytics/lidar-raster-data-r Rasterizing the point cloud Since the point clouds are 3D, to get DTM, DSM and CHM, we need some sort...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-04_LiDAR_metrics.html",
         "teaser": null
@@ -156,7 +156,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"Latest advances in remote sensing has led the way to the development of hyperspectral sensors which has multiple applications in the field of forestry, geology, agriculture etc. Hyperspectral remote sensing combines the principles of remote sensing and spectroscopy to generate images consisting of several contiguous bands with relatively narrow bandwidths...","categories": ["05 Hyperspectral Remote Sensing"],
+        "excerpt":"Latest advances in remote sensing has led the way to the development of hyperspectral sensors, which has multiple applications in the field of forestry, geology, agriculture, etc. Hyperspectral remote sensing combines the principles of remote sensing and spectroscopy to generate images consisting of several contiguous bands with relatively narrow bandwidths...","categories": ["05 Hyperspectral Remote Sensing"],
         "tags": ["Unit","05"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-01_overview.html",
         "teaser": null
@@ -168,7 +168,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Working with hyperspectral data",
-        "excerpt":"In this exercise we use hyperspectral rasters to calculate different vegetation indices Example : Calculating vegetation indices We will be using processed hyperspectral data and the hsdar R package to get two different vegetation indices. Since the data and processing takes time, we show here only a small example. Please...","categories": ["05 Hyperspectral Remote Sensing"],
+        "excerpt":"In this exercise, we use hyperspectral rasters to calculate different vegetation indices. Example: Calculating vegetation indices We will be using processed hyperspectral data and the hsdar R package to get two different vegetation indices. Since the data processing takes time, we show here only a small example. Please refere here...","categories": ["05 Hyperspectral Remote Sensing"],
         "tags": ["Unit","05"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-03_Working_with_Hyperspectral_data.html",
         "teaser": null
@@ -180,7 +180,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"This unit is all about your final research project. Think about your research question and create a project outline as basis for your project. To finish this course it is mandatory to submit the final project. Learning objectives develop a research question plan and realize a research project from scratch,...","categories": ["06 Set up your research project"],
+        "excerpt":"This unit is all about your final research project. Think about your research question and create a project outline as basis for your project. To finish this course, it is mandatory to submit the final project. Learning objectives develop a research question plan and realize a research project from scratch,...","categories": ["06 Set up your research project"],
         "tags": ["Unit","06"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Overview.html",
         "teaser": null
@@ -204,19 +204,19 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"This unit is about learning the essentials of Upscaling using machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit we will explore such models and understand the different steps for upscaling. Learning objectives understanding the basics of...","categories": ["07 Upscaling workflow"],
+        "excerpt":"This unit is about learning the essentials of upscaling using machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. In this unit, we will explore such models and understand the different steps of upscaling. Learning objectives understand the basics of...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-01_Overview.html",
         "teaser": null
       },{
-        "title": "LM | Upascaling workflow",
-        "excerpt":"Upscaling workflow The key concept of upscaling is making area wide predictions with a given set of environmental variables that serve as the drivers of the response variable. Machine learning algorithms such as randomForest have proven to be very useful in making such area wide predictions. In our course ,...","categories": ["07 Upscaling workflow"],
+        "title": "LM | Upscaling workflow",
+        "excerpt":"Upscaling workflow The key concept of upscaling is making area-wide predictions from a given set of environmental variables that serve as the drivers of the response variable. Machine learning algorithms such as Random Forest have proven to be very useful in making such area-wide predictions. In our course, we will...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-02_LM_workflow.html",
         "teaser": null
       },{
         "title": "LM | Data preparation",
-        "excerpt":"Data preparation In this part you will use your previously acquired skills to prepare data for designing a suitable model for predicting plant species richness. To predict plant species richness, we need a set of predictors. An important note to keep in mind that we will use these predictors for...","categories": ["07 Upscaling workflow"],
+        "excerpt":"Data preparation In this part, you will use your previously acquired skills to prepare data for designing a suitable model for predicting plant species richness. To predict plant species richness, we need a set of predictors. An important note to keep in mind is that we will use these predictors...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-03_LM_data_preparation.html",
         "teaser": null
@@ -228,25 +228,25 @@ var store = [{
         "teaser": null
       },{
         "title": "LM | Machine learning models",
-        "excerpt":"What is machine learning? Source : Netra Bhandari Machine learning is a branch of artificial intelligence which makes use of data and algorithms to mimic the human way of learning, by slowly improving its accuracy! To put it in a simple way, machine learning is an important component of data...","categories": ["07 Upscaling workflow"],
+        "excerpt":"What is machine learning? Source: Netra Bhandari Machine learning is a branch of artificial intelligence which makes use of data and algorithms to mimic the human way of learning, by slowly improving its accuracy! To put it in a simple way, machine learning is an important component of data science...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-05_ML_Basics.html",
         "teaser": null
       },{
         "title": "EX | Machine learning models",
-        "excerpt":"In this part of the course , we will use three models based on randomForest algorithms. The three models include: the default randomForest model using the caret package (short for Classification And REgression Training) developed by Max Kuhn (2008) using random K fold cross validation. randomForest with feature forward selection...","categories": ["07 Upscaling workflow"],
+        "excerpt":"In this part of the course, we will use three models based on Random Forest algorithms. The three models include: the default Random Forest model using the caret package (short for Classification And REgression Training) developed by Max Kuhn (2008) using random K-fold cross-validation. Random Forest with feature forward selection...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-06_machine_learning_models.html",
         "teaser": null
       },{
         "title": "EX | Upscaling",
-        "excerpt":"Source : Netra Bhandari In this section of the upscaling workflow, we carry out our last step i.e., area wide predictions. For this we follow two steps Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to and, using the previously designed...","categories": ["07 Upscaling workflow"],
+        "excerpt":"Source: Netra Bhandari In this section of the upscaling workflow, we carry out our last step, i.e., area-wide predictions. For this we follow two steps Generating a set of remote sensing proxy predictors - cropped to the area you want to upscale to, and Using the previously designed model to...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-07_model_predictions.html",
         "teaser": null
       },{
         "title": "Assignment",
-        "excerpt":"How to proceed In this unit we have learnt how to upscale plant species richness data. Now its your turn Start gathering all the datasets Make them analaysis ready Try out the shown workflow, see if it works for you Start to modify the workflow based on your chosen research...","categories": ["07 Upscaling workflow"],
+        "excerpt":"How to proceed In this unit, we have learnt how to upscale plant species richness data. Now it’s your turn Start gathering all the datasets Make them analysis-ready Try out the shown workflow and see if it works for you Start modifying the workflow based on your chosen research project...","categories": ["07 Upscaling workflow"],
         "tags": ["Unit","07"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit07/unit07-08_Assignment.html",
         "teaser": null

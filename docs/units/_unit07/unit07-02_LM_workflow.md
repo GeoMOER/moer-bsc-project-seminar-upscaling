@@ -2,7 +2,8 @@
 title: "LM | Upscaling workflow"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+toc: true
 ---
 
 ## Upscaling workflow
@@ -23,7 +24,7 @@ We can define the upscaling workflow in the following stages
 6. Applying the model on a set of remote sensing proxies of our predictors
 
 <img src="workflow.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source : Netra Bhandari
+Source: Netra Bhandari
  
 
 

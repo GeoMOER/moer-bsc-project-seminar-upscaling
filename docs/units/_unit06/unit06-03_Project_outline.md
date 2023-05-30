@@ -2,7 +2,8 @@
 title: "Project outline"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"
-  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan)'
+  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan){:target="_blank"}'
+toc: true
 ---
 Learn more about the requirements for creating a project outline and for the structure, content, and format of your research project.
 
@@ -39,12 +40,12 @@ You can use them to relate your selected species data with structural and spectr
 
 ## Published datasets of Kilimanjaro region
 
-[GFBio](https://www.gfbio.org/) and [Pangea](https://www.pangaea.de/) is an excellent source to search what studies have been done in the Kilimanjaro region and accees different datasets. 
+[GFBio](https://www.gfbio.org/){:target="_blank"} and [Pangea](https://www.pangaea.de/){:target="_blank"} is an excellent source to search what studies have been done in the Kilimanjaro region and accees different datasets. 
 Use 'KiLi: Kilimanjaro Research Group' as a search term to get an overview of all published datasets.
 
 ## Other sources
 
-If you wish to understand the influence of other environmental variables you can of course freely search other data sources like e.g. [OpenStreetMap](https://www.openstreetmap.org/), [SoilGrids](https://soilgrids.org/).
+If you wish to understand the influence of other environmental variables you can of course freely search other data sources like e.g. [OpenStreetMap](https://www.openstreetmap.org/){:target="_blank"}, [SoilGrids](https://soilgrids.org/){:target="_blank"}.
 
 
 ## Assignment

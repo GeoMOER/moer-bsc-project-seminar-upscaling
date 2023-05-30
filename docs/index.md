@@ -6,7 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: 0.6
   overlay_image: "/assets/images/title/land_use_map_Kili.png"
-  caption: 'Image: [Andreas Hemp (2006)](https://doi.org/10.1111/j.1365-2028.2006.00679.x)'
+  caption: 'Image: [Andreas Hemp (2006)](https://doi.org/10.1111/j.1365-2028.2006.00679.x){:target="_blank"}'
   cta_label: Go to course units
   cta_url: "/units.html"
 excerpt: Use upscaling methods and multi-sensor data for predicting biodiversity.
@@ -29,7 +29,7 @@ This course will use pre-collected data on species richness and many environment
 
 # What will be done in the course 
 In this course, we will use airborne LiDAR and hyperspectral remote sensing data along with Sentinel data to upscale biodiversity measured at plot scales.
-The data used in this project is provided by the [Kilimanjaro-SES project](https://kili-ses.senckenberg.de/).
+The data used in this project is provided by the [Kilimanjaro-SES project](https://kili-ses.senckenberg.de/){:target="_blank"}.
 
 
 

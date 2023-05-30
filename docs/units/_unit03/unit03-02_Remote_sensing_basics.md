@@ -3,6 +3,7 @@ title: LM | Remote sensing basics
 header:
   image: "/assets/images/teaser/ndvi.jpg"
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
+toc: true
 ---
 
 Learn the essentials of Remote Sensing and get hands-on experience in working with remote sensing data.

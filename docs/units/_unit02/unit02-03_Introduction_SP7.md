@@ -3,6 +3,7 @@ title: Subproject- Synthesis
 header:
   image: "/assets/images/teaser/Kili_Hemp.jpg"
   caption: 'Image: [**Andreas Hemp**](https://kili-ses.senckenberg.de/en/publications/literature/){:target="_blank"}'
+toc: true
 ---
 
 ## Project description 

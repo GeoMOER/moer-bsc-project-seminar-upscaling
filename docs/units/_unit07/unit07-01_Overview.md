@@ -2,10 +2,11 @@
 title: Overview
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+toc: true
 ---
 
-This unit is about learning the essentials of Uupscaling using machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. 
+This unit is about learning the essentials of upscaling using machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. 
 In this unit, we will explore such models and understand the different steps of upscaling.
 
 <!--more-->

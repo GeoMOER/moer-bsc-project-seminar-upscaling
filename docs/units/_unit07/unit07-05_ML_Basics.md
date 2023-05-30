@@ -2,14 +2,15 @@
 title: "LM | Machine learning models"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+toc: true
 ---
 
 
 ## What is machine learning?
 
 <img src="ml.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-Source : Netra Bhandari
+Source: Netra Bhandari
 
 Machine learning is a branch of artificial intelligence which makes use of data and algorithms to mimic the human way of learning, by slowly improving its accuracy!
 To put it in a simple way, machine learning is an important component of data science used for making classifications or predictions. Many industries are making their decisions based on insights derived from such classifications/predictions.

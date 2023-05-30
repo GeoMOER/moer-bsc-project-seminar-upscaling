@@ -2,7 +2,8 @@
 title: R and RStudio
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
-  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
+  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r){:target="_blank"}'
+toc: true
 ---
 
 Start to learn the essentials for working with R and RStudio.

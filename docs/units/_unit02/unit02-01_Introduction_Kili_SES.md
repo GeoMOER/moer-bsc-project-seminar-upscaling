@@ -3,6 +3,7 @@ title: Introduction to Kili SES
 header:
   image: "/assets/images/teaser/Kili_Hemp.jpg"
   caption: 'Image: [**Andreas Hemp**](https://kili-ses.senckenberg.de/en/publications/literature/){:target="_blank"}'
+toc: true
 ---
 
 Get a brief introduction to the Kilimanjaro Social-Ecological System project funded by DFG. 

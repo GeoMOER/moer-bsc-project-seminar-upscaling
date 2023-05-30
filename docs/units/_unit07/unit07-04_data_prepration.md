@@ -2,8 +2,8 @@
 title: "EX | Data preparation"
 header:
   image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/)'
-  toc: true	
+  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+toc: true
 ---
 
 In order to model and upscale plant richness, we will need plot level information for each of our predictors. 
@@ -139,13 +139,13 @@ write.csv(plot_extract, "./plot_extract.csv") #just save a backup
 
 ```
 
-## Hyperspectal data
+## Hyperspectral data
 * Get the necessary vegetation indices for each plot using hyperspectral rasters provided to you.
 
 
 ```r
 ####################
-# 2. Hyperspectal
+# 2. Hyperspectral
 ####################
 
 # Getting the hyperspectral rasters
