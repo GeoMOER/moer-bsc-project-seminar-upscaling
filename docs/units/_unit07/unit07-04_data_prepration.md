@@ -38,6 +38,7 @@ shp_kili <- sf::st_read("./upscaling_data/vectors/VegAug1_KILI_SES.shp")
 
 shp_kili <- sf::st_transform(shp_kili,  32737) #epsg code for kili is 32737, you can also use UTM 37S
 
+#st_crs(shp_kili) <- 32737 # use this code in case no CRS is assigned to your shapefile
                                        
 ##########################
 # load the plots shapefile
