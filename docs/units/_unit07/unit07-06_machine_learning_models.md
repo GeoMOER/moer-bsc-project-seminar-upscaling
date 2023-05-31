@@ -25,8 +25,8 @@ library(CAST)
 setwd("D:/Kili_SES/course_bsc_upscaling_netra/upscaling_methodology")
 
 ## load your model data
-model_data <- na.omit(model_data) # omit missing values
 model_data <- read.csv("./model_data.csv", header = T, row.names = 1) #make sure that you don't have any missing values
+model_data <- na.omit(model_data) # omit missing values
 
 # lets rename our columns a bit 
 
