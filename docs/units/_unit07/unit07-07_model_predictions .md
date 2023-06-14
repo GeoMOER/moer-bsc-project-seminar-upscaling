@@ -32,7 +32,7 @@ predictors <- c("DEM","aspect","slope","mmt",
 #roi
 shp_kili <- sf::st_read("./upscaling_data/vectors/VegAug1_KILI_SES.shp")
 shp_kili <- sf::st_transform(shp_kili,  32737)
-shp_kili_flm <- terra::vect(shp_kili)
+shp_kili <- terra::vect(shp_kili)
 
 shp_kili_flm <- shp_kili[shp_kili$grid_code == 18,]
 shp_kili_flm <- sf::st_transform(shp_kili_flm,  32737) #epsg code for kili is 32737, you can also use UTM 37S
