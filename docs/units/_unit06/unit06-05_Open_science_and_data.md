@@ -6,7 +6,7 @@ header:
 toc: true
 ---
 
-After you have written your project outline and have received feedback on it, it will be your task to realize a full research project on the basis of your project outline and individual feedback.
+learn about open science ... <to do> 
 
 ## What is Open Science
 
