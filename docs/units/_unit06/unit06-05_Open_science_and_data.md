@@ -10,26 +10,26 @@ After you have written your project outline and have received feedback on it, it
 
 ## What is Open Science
 
+<img src="open_science_potsdam.jpg" width="1500" height="500" align="centre" vspace="10" hspace="20">
+[Image source](https://images.app.goo.gl/HpHJxQZ2Kbnmi3PeA)
 ## Open data
 
 ### FAIR data 
 
-F - Findable - easy discovery by both researchers as well as computers
-A - Accessible - easy availablity under well defined conditions
-I - Interoperable - easy integration and sharing across different platforms
-R - Reusable - optimize the reuse of research data
+-F - Findable - easy discovery by both researchers as well as computers
+-A - Accessible - easy availablity under well defined conditions
+-I - Interoperable - easy integration and sharing across different platforms
+-R - Reusable - optimize the reuse of research data
 
 Read in detail about the FAIR principles [here](https://www.go-fair.org/fair-principles/)
 
-## Sharing your knowledge
+## Collaborating and sharing your knowledge
+
+- github and gitlab
+- quartro
+- google collab
 
 
-## Remarks
+## open science framework
 
-To receive your final grade and the ECTS for the course it is mandatory to finish and submit your (team) project in time.
-
-#open science framework
-- plan 
--collect
--analyze
-- share
+[Open science framework](https://youtu.be/X07mBq2tnMg?si=_7PbiZl_87h1zH6E)  
