@@ -41,15 +41,15 @@ A very well documented guide for working with GEE can be found [here](https://de
 
 The EE data catalog provides a large variety of raster datasets, which you can browse as well as directly add in the code editor (see below).
 
-<img src="EE_data_catalog.jpg" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<img src="EE_data_catalog.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 <i>Image: [Interface for Earth Engine Data Catalog](https://developers.google.com/earth-engine/datasets/catalog)</i>
 
 
-<img src="catalog_example.tif" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<img src="catalog_example.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 <i>Image: [Example from the catalog dataset showing details for Sentinel-2](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED)</i>
 
-<img src="catalog_script.tif" width="1280" height="755" align="centre" vspace="10" hspace="20">
-<i>Image: [Example from the catalog dataset showing script to access for Sentinel-2](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED)</i>
+<img src="catalog_script.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<i>Image: [Example from the catalog dataset showing script to access Sentinel-2 data](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED)</i>
 
 
 ## JavaScripting with GEE
