@@ -47,8 +47,8 @@ So start early!!!
 
 ## Project work
 
-The page with the description of the project work can be found [here](https://geomoer.github.io/moer-mpg-upscaling/unit06/unit06-01_Overview.html){:target="_blank"}. The deadline to deliver the project outline is 16 June 2023, 23:00.
-The deadline to deliver the final project work is 2 August 2023, 23:00.
+The page with the description of the project work can be found [here](https://geomoer.github.io/moer-mpg-upscaling/unit06/unit06-01_Overview.html){:target="_blank"}. The deadline to deliver the project outline is t.b.d, 23:00.
+The deadline to deliver the final project work is t.b.d, 23:00.
 
 
 
