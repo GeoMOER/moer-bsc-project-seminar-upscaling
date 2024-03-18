@@ -54,9 +54,35 @@ The EE data catalog provides a large variety of raster datasets, which you can b
 
 ## JavaScripting with GEE
 To get started with GEE we need to first learn some basics of JavaScript. 
-Following are a few necessary functions we will need, but more and detailed guide can be found [here](https://developers.google.com/earth-engine/tutorials/tutorial_js_01).
+Following are a few necessary functions we will need, but explore [here](https://developers.google.com/earth-engine/tutorials/tutorial_js_01) for further functions.
  
+* Variables: to store data values.
+```js
+var city = "California"
+```
+* Lists: Stores multiple values in a single variable.
+```js
+var cities = ['California', 'Marburg']
+```	
+* Objects: they store key-value pairs, where each value can be referred to by its key.
+
+```js
+var cityData = { 'city': 'San Francisco', 'coordinates': [-122.4194, 37.7749], 'population': 873965 };
+print(cityData);
+```
+* Writing a function: give input to do some computation and get a particular output
+
+```js
+var greetings = function(name) { return 'Hello ' + name; }; print(greetings('World')); print(greetings('People'));
+```
 
 * Data Handling
- * Loading Datasets:  ee.Image() and ee.ImageCollection().
+ * Loading datasets:  ee.Image() and ee.ImageCollection()
  * Filtering Data:  filter(), filterDate(), and filterBounds() 
+ * Loading area of study: ee.Geometry.Point(),ee.Geometry.Polygon(),ee.Feature(),ee.FeatureCollection()
+
+* Image Processing: 
+
+==page under construction==
+
+ 
