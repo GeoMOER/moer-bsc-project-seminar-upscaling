@@ -1,5 +1,5 @@
 ---
-title: LM | Google earth engine basics
+title: LM | Google Earth Engine basics
 header:
   image: "/assets/images/teaser/ndvi.jpg"
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
