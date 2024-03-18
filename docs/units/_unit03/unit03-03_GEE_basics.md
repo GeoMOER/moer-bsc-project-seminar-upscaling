@@ -40,7 +40,7 @@ A very well document guide for working with GEE can be found [here](https://deve
 ## JavaScripting with GEE
 
 To get started with GEE we need to first learn some basics of JavaScript. 
-Following are a few necessary functions we will need, but more and detailed guide can be found (here)[https://developers.google.com/earth-engine/tutorials/tutorial_js_01].
+Following are a few necessary functions we will need, but more and detailed guide can be found [here](https://developers.google.com/earth-engine/tutorials/tutorial_js_01).
  
 
 
