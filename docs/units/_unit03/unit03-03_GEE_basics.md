@@ -6,7 +6,7 @@ header:
 toc: true
 ---
 
-Learn the essentials of Google Earth Engine, java scripting and Earth Engine Data Catalog.
+Learn the essentials of Google Earth Engine, Earth Engine Data Catalog and java scripting
 <!--more-->
 
 
@@ -30,17 +30,33 @@ Imagine you have a supercomputer that can access a huge library of satellite ima
 
 ## Introduction to the GEE code editor
 
-Once you have signed up for an account with GGE, you can now start playing around with satellite data using the [GEE code editor](https://code.earthengine.google.com/).
+Once you have signed up for an account with GGE, you can now start playing around with satellite data using the [GEE code editor](https://code.earthengine.google.com/). The code editor is a web-based integrated development environment (IDE) for writing and executing JavaScript code for Earth Engine.
+A very well documented guide for working with GEE can be found [here](https://developers.google.com/earth-engine/guides) 
 
 <img src="Code_editor_diagram.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 <i>Image: Diagram of components of the Earth Engine Code Editor at code.earthengine.google.com</i>
 
-A very well document guide for working with GEE can be found [here](https://developers.google.com/earth-engine/guides) 
+
+## Earth Engine Data Catalog
+
+The EE data catalog provides a large variety of raster datasets, which you can browse as well as directly add in the code editor (see below).
+
+<img src="EE_data_catalog.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<i>Image: Interface for Earth Engine Data Catalog https://developers.google.com/earth-engine/datasets/catalog</i>
+
+
+<img src="catalog_example.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<i>Image: Example from the catalog dataset showing details for Sentinel-2 https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED</i>
+
+<img src="catalog_script.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<i>Image: Example from the catalog dataset showing script to access for Sentinel-2 https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED</i>
+
 
 ## JavaScripting with GEE
-
 To get started with GEE we need to first learn some basics of JavaScript. 
 Following are a few necessary functions we will need, but more and detailed guide can be found [here](https://developers.google.com/earth-engine/tutorials/tutorial_js_01).
  
 
-
+* Data Handling
+ * Loading Datasets: Teach how to load satellite imagery and other data using ee.Image() and ee.ImageCollection().
+ * Filtering Data: Show how to filter datasets by date, region, or metadata using filter(), filterDate(), and filterBounds() methods.
