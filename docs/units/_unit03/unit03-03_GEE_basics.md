@@ -58,31 +58,53 @@ Following are a few necessary functions we will need, but explore [here](https:/
  
 * Variables: to store data values.
 ```js
-var city = "California"
+var city = "Moshi"
 ```
 * Lists: Stores multiple values in a single variable.
 ```js
-var cities = ['California', 'Marburg']
+var cities = ['Moshi', 'Marburg']
 ```	
 * Objects: they store key-value pairs, where each value can be referred to by its key.
-
 ```js
-var cityData = { 'city': 'San Francisco', 'coordinates': [-122.4194, 37.7749], 'population': 873965 };
+var cityData = { 'city': 'Moshi', 'coordinates': [3.3430, 37.3507], 'population_2017': 201150  };
 print(cityData);
 ```
 * Writing a function: give input to do some computation and get a particular output
-
 ```js
 var greetings = function(name) { return 'Hello ' + name; }; print(greetings('World')); print(greetings('People'));
 ```
-
+ * Loading area of study: ee.Geometry.Point(),ee.Geometry.Polygon(),ee.Feature(),ee.FeatureCollection()
+```js
+var cityLocation = ee.Geometry.Point(cityData.coordinates);
+```
+* Mapping
+```js
+// Add the point as a layer to the map
+Map.addLayer(cityLocation, {color: 'blue'}, 'Moshi Location');
+//Center the map on the city location
+Map.centerObject(cityLocation, 9); // '9' is the zoom level, you can adjust it as needed
+```
 * Data Handling
  * Loading datasets:  ee.Image() and ee.ImageCollection()
- * Filtering Data:  filter(), filterDate(), and filterBounds() 
- * Loading area of study: ee.Geometry.Point(),ee.Geometry.Polygon(),ee.Feature(),ee.FeatureCollection()
+```js
+var dataset = ee.Image('USGS/SRTMGL1_003'); // elevation raster
+var sentinel_collection = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED');
+```
+ * Filtering Data: filter(), filterDate(), and filterBounds() 
+```js
+var filteredCollection = sentinel_collection
+    .filterDate('2020-01-01', '2020-12-31')
+    .filterBounds(ee.Geometry.Point(cityData.coordinates))
+    .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 10));
+```
+ * Image Processing: select(), median(), 
+```js
+var selectedBands = filteredCollection.select(['B4', 'B3', 'B2']);
+Map.addLayer(selectedBands.median(), {min: 0, max: 3000, bands: ['B4', 'B3', 'B2']}, 'RGB Composite'); var medianComposite = sentinelCollection.median();
 
-* Image Processing: 
+// Display the composite
+Map.addLayer(medianComposite, {bands: ['B4', 'B3', 'B2'], max: 3000};
+```
 
-==page under construction==
 
  
