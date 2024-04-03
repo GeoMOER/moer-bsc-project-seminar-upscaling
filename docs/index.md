@@ -48,9 +48,9 @@ At the end of this course you should be able to
 
 # Setting
 
-This course will take place in a hybrid setting (exept for the first session) with a digital classroom and additional students being present in person in the physical classroom (**F 14 | 00A19**).
-Details on this synchronous hybrid classroom format will be provided in the first session, which will take place **in presence only on Wednesday 12.04.2023 at 09:15 am**.
-The link to the digital classroom of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"}
+This course will take place in a presence only setting in the physical classroom (**F 14 | 00A19**).
+Details on the course will be provided in the first session, which will take place **in presence only on Wednesday 17.04.2024 at 09:15 am**.
+The link to the course resourceas of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"}
  (only accessible for members of the course who are logged-in into Ilias). 
 Please also seriously check and follow the [Information on the Coronavirus](https://www.uni-marburg.de/de/universitaet/administration/sicherheit/coronavirus){:target="_blank"} of the University of Marburg.
 {: .notice--info}
@@ -60,30 +60,31 @@ Please also seriously check and follow the [Information on the Coronavirus](http
 
 # Syllabus
 
-The course encompassed 12 sessions from 12.04.2023 to 12.07.2023.
+The course encompassed 12 sessions from 17.04.2024 to 17.07.2024.
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | 12.04.2023   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
+| 01 | 17.04.2024   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
 ||| **Remote sensing basics and data**  |
-| 02 | 19.04.2023   | Remote sensing basics and Sentinel-2 data  | Introduction to Kili-SES project, Remote sensing basics, Sentinel 2 data preparation and application|
-| 03 | 26.04.2023   | LiDAR remote sensing          	                     | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 04 | 03.05.2023   | Hyperspectral remote sensing       			     |Introduction to hyperspectral data, speclibs and deriving vegetation indices   |
+| 02 | 24.04.2024   | Remote sensing basics and Sentinel-2 data                 | Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel 2 data preparation and application|
+|    | ~~01.05.2024~~|Holiday|						        |Session cancelled|				
+| 03 | 08.05.2024   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+|    | ~~15.05.2024~~|Sports dies|						|Session cancelled|
+| 04 | 22.05.2024   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
 ||| **Start research project**  |
-| 05 | 10.05.2023   | Set up your research project      		         | Defining project work, research questions and discussing deadlines |
+| 05 | 29.05.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
 ||| **Upscaling Methodology**                                                    |
-| 06 | 17.05.2023   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-|    | ~~24.05.2023~~ | Sport Dies                        				 | Session canceled |
-| 07 | 31.05.2023   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-|    | ~~07.06.2023~~ | Project week of the department                        	 | Session canceled |
-| 08 |  14.06.2023  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+	
+| 06 | 05.06.2024   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 07 | 12.06.2024   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+| 08 | 19.06.2024  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Assisted working phase** |
-| 09 | 21.06.2023   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
-| 10 | 28.06.2023   | Work on projects | Time for working on projects            |
-| 11 | 05.07.2023   | Work on projects | Time for working on projects            |
+| 09 | 26.06.2024   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
+| 10 | 03.07.2024   | Work on projects | Time for working on projects            |
+| 11 | 10.07.2024   | Work on projects | Time for working on projects            |
 ||| **Wrap up** |
-| 12 | 12.07.2023   | Wrap up, Evaluation, and Feedback                          | Time for questions and feedback, goodbye |
+| 12 | 17.07.2024   | Wrap up, Evaluation, and Feedback                          | Time for questions and feedback, goodbye |
 
 
 # Deliverables
