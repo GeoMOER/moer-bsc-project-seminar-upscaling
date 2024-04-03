@@ -110,7 +110,6 @@ Map.addLayer(medianComposite, {bands: ['B4', 'B3', 'B2'], max: 3000};
 // Buffer the point to create an area for export
 // The buffer size is in meters, adjust the size as needed
 var bufferedRegion = cityLocation.buffer(5000); // Buffer of 5000 meters, for example
-
 // Export script
 Export.image.toDrive({
     image: medianComposite, // Replace with the image you want to export
