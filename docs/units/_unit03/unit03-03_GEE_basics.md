@@ -97,11 +97,10 @@ var filteredCollection = sentinel_collection
     .filterBounds(ee.Geometry.Point(cityData.coordinates))
     .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 10));
 ```
- * Image Processing: select(), median(), 
+ * Image Processing: select(), median()
 ```js
 var selectedBands = filteredCollection.select(['B4', 'B3', 'B2']);
 Map.addLayer(selectedBands.median(), {min: 0, max: 3000, bands: ['B4', 'B3', 'B2']}, 'RGB Composite'); var medianComposite = sentinelCollection.median();
-
 // Display the composite
 Map.addLayer(medianComposite, {bands: ['B4', 'B3', 'B2'], max: 3000};
 ```
