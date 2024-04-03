@@ -100,10 +100,27 @@ var filteredCollection = sentinel_collection
  * Image Processing: select(), median()
 ```js
 var selectedBands = filteredCollection.select(['B4', 'B3', 'B2']);
-Map.addLayer(selectedBands.median(), {min: 0, max: 3000, bands: ['B4', 'B3', 'B2']}, 'RGB Composite'); var medianComposite = sentinelCollection.median();
+Map.addLayer(selectedBands.median(), {min: 0, max: 3000, bands: ['B4', 'B3', 'B2']}, 'RGB Composite'); 
+var medianComposite = sentinelCollection.median();
 // Display the composite
 Map.addLayer(medianComposite, {bands: ['B4', 'B3', 'B2'], max: 3000};
 ```
+* Exporting images
+```js
+// Buffer the point to create an area for export
+// The buffer size is in meters, adjust the size as needed
+var bufferedRegion = cityLocation.buffer(5000); // Buffer of 5000 meters, for example
 
+// Export script
+Export.image.toDrive({
+    image: medianComposite, // Replace with the image you want to export
+    description: 'Sentinel2_CityLocation_Export',
+    scale: 10, // Sentinel-2 typical resolution for RGB bands
+    region: bufferedRegion, // Use the buffered region
+    fileFormat: 'GeoTIFF',
+    folder: 'GEE_Exports', // Optional
+    maxPixels: 1e9 // Adjust if needed
+});
+```
 
  
