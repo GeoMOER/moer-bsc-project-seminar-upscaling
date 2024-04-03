@@ -68,9 +68,9 @@ The course encompassed 12 sessions from 17.04.2024 to 17.07.2024.
 | 01 | 17.04.2024   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
 ||| **Remote sensing basics and data**  |
 | 02 | 24.04.2024   | Remote sensing basics and Sentinel-2 data                 | Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel 2 data preparation and application|
-|    | ~~01.05.2024~~|Holiday|						        |Session cancelled|				
+|    | ~~01.05.2024~~|Holiday						        |Session cancelled|				
 | 03 | 08.05.2024   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-|    | ~~15.05.2024~~|Sports dies|						|Session cancelled|
+|    | ~~15.05.2024~~|Sports dies						|Session cancelled|
 | 04 | 22.05.2024   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
 ||| **Start research project**  |
 | 05 | 29.05.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
