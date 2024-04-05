@@ -16,12 +16,12 @@ toc: true
 
 ## Data acquisition and first steps
 
-1. Download the shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}.
+1. Download the buffered shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}.We use the buffered area to avoid the error regarding "multiple geometries".
 	* Once downloaded, open GEE code editor and head to "Assets", click on "New" and upload your shapefile with a suitable name (e.g. "study_area_kili") 
 	* Please ensure the file formats - ".shp", ".shx", ".dbf", ".prj" or "zip". The file format ".qmd" is not supported. 
 	* Once the shapefile is uploaded and available as an asset, you can proceed with the coding exercise.
 
-2. Plot an RGB of Sentinel-2 scene for Kilimanjaro southern slope for 13 January 2022. 
+1. Plot an RGB of Sentinel-2 scene for Kilimanjaro southern slope for 13 January 2022. 
    
 ```js
 // Define the study area
@@ -43,8 +43,7 @@ Map.addLayer(studyArea, {color: 'red'}, 'Study Area');
 // Center the map on the study area
 Map.centerObject(studyArea, 10); // Adjust zoom level as needed
 ```
-
-3. Save the downloaded files in the google drive folder.
+1. Save the downloaded files in the google drive folder.
 
 ```js
 // Export the full-band image, specifying scale and region
@@ -59,12 +58,12 @@ Export.image.toDrive({
   fileFormat: 'GeoTIFF'
 });
 ```
-* When you hit run you will see the "Task" button highlighted in yellow on the right side of the editor. Click on it and then click on "RUN". 
-* Tip - if you have multiple images follow the instructions given [here](https://benny.istan.to/blog/20220319-batch-task-execution-in-google-earth-engine-code-editor){:target="_blank"}
+ * When you hit run you will see the "Task" button highlighted in yellow on the right side of the editor. Click on it and then click on "RUN". 
+ * Tip - if you have multiple images follow the instructions given [here](https://benny.istan.to/blog/20220319-batch-task-execution-in-google-earth-engine-code-editor){:target="_blank"}
 
 <img src="task_gee.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 
-* Next you will be prompted to save the image. Enter the following :
+ * Next you will be prompted to save the image. Enter the following :
 	* Task name -  Sentinel2_FullBand_Image
 	* Coordinate reference system - EPSG32737
 	* Scale - 10

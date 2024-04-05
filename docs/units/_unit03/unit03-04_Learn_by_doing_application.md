@@ -62,8 +62,8 @@ Map.addLayer(clippedNDVI, ndviVis, 'NDVI');
 ## Visualization
 Your vegetation index may look like this example shown below. It shows the Normalised Difference Vegetation Index (NDVI) for the two Sentinel-2 tiles 37MCS and 37MBS.
 
-<img src="ndvi_sentinel_2.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-<i>Image: Normalised Difference Vegetation Index (NDVI) calculated using Sentinel-2 (Tiles - 37MCS and 37MBS) for the date 09-11-2021.</i>
+<img src="updated_s2.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<i>Image: Normalised Difference Vegetation Index (NDVI) calculated using Sentinel-2 for the date 13-01-2022.</i>
 
 
 ```r
@@ -76,7 +76,8 @@ library(RStoolbox)
 s2_df = list.files(path = getwd(), pattern = "jan_2022.+.tif")# gives you a list of the images
 
 mergedRaster <- merge(rast(s2_df[1]), rast(s2_df[2]), rast(s2_df[3]), rast(s2_df[4])) #merges the four chunks
-plot(mergedRaster) 
+plot(mergedRaster) #make a note of the individual band nomenaclature 
+names(mergedRaster) 
 
 
 indices_to_process <- "NDVI" #try some other indices too such as c("NDVI, "EVI")
