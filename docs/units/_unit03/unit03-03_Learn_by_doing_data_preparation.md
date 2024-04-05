@@ -7,87 +7,66 @@ toc: true
 ---
 
 ## Things you need for this exercise
-* A shapefile of the study area (see below)
-* The names of the required Sentinel-2 tiles - 37MCS and 37MBS 
+* A shapefile of the study area, buffered to 8000m (see below)
+* The name of Sentinel image collection - "COPERNICUS/S2_SR_HARMONIZED" (read [here](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED)) 
 * Parameters to download Sentinel-2 data  (see below)
+* A folder in your google drive to store the downloaded image
 {: .notice--info}
 
 
 ## Data acquisition and first steps
 
-1. Download the shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}. 
-2. Download the Sentinel-2 scene for Kilimanjaro southern slope on 13 January 2022. Make sure you get the L2A dataset using the sen2r package.
-   (Parameters see below)
-3. Save the downloaded files in the raw data folder of your working environment.
+1. Download the shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}.
+	* Once downloaded, open GEE code editor and head to "Assets", click on "New" and upload your shapefile with a suitable name (e.g. "study_area_kili") 
+	* Please ensure the file formats - ".shp", ".shx", ".dbf", ".prj" or "zip". The file format ".qmd" is not supported. 
+	* Once the shapefile is uploaded and available as an asset, you can proceed with the coding exercise.
 
-```r
-#load the library
-library(sen2r)
-
-#Open the GUI using the following function
-sen2r()
+2. Plot an RGB of Sentinel-2 scene for Kilimanjaro southern slope for 13 January 2023. 
+   
+```js
+// Define the study area
+var studyArea = ee.FeatureCollection('projects/ee-netra805kili/assets/buffered_8000m_veg_aug1_kili_ses')
+// Import Sentinel-2 data and filter by date and study area
+var startDate = '2022-01-13';
+var endDate = '2022-01-14'; // One day after the start date
+var sentinel2 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+                  .filterDate(startDate, endDate)
+                  .filterBounds(studyArea);
+// Clip the images to the study area
+var clippedImage = sentinel2.median().clip(studyArea);
+// Visualization parameters for RGB
+var visParams = {bands: ['B4', 'B3', 'B2'], min: 0, max: 3000};
+// Add the RGB layer to the map
+Map.addLayer(clippedImage, visParams, 'RGB of Study Area');
+// Optionally, add the study area outline to the map
+Map.addLayer(studyArea, {color: 'red'}, 'Study Area');
+// Center the map on the study area
+Map.centerObject(studyArea, 10); // Adjust zoom level as needed
 ```
-A new window appears in your RStudio. Now add the following parameters as you move along the menu on the left hand side 
 
-1. Product selection
-   1. Type of processing - Processed spatial files (surface reflectance, spectral indices, ...) in the custom format
-   1. Products and sensors
-     1. Surface reflectances: BOA (Bottom of Atmosphere)
-        * Accessory layers: SCL (Surface classification map)
-        * SAFE levels needed: Sentinel 2A and Sentinel 2B
-     2. SAFE options 
-        * Download mode – Online
-        * Input servers – ESA Hub
-        * Max. SAFE cloud cover 10%
-        * ESA Hub Options – Order from LTA
-        * Login to SciHub – Add your registration details for SciHub
-        * Overwrite SAFE existing products – No
-        * Delete raw SAFE files after processing - No
-        * Atmospheric correction - default
-1. Spatiotemporal selection 
-   1. Temporal range 
-      * Time interval – select 13 January 2022 (use end date also as 13 Jan 2022)
-      * Time period type – Full 
-   1. Area of Interest 
-      * Load vector file -insert shapefile for your region
-      * Tiles selected – 37MBS, 37MCS
-      * Extent name – sen2r
-      * Orbits selected – default
-1. Processing options 
-   1. Output files 
-      * Directory for output processed products: Select the folder where you want to store the data.
-      * Group products in subdirectories – Yes
-      * Create thumbnails – Yes
-      * Overwrite existing products – No 
-      * Output file format – GeoTIFF
-      * Output compression – High (Deflate)
-   1. Output extent 
-      * Clip outputs on the selected extent? No
-      * Mask data outside the selected polygons? No
-      * Save single tiles? Yes
-      * Output directory for single tiles - Select the folder where you want to store the data.
-   1. Cloud mask
-      * Mask cloud-covered pixels? No
-      * Processing order 
-      * Processing order step by step
-      * Parallel computation yes 
-      * Cores 5
-1. Spectral Indices - Keep default 
-1. RGB images selection - Keep default
-1. Save options as – Save your parameters in the same folder as used for data storage above
-1. Create Log – Save your log in the same folder as used for data storage above
-1. Launch processing
+3. Save the downloaded files in the google drive folder.
+
+```js
+// Export the full-band image, specifying scale and region
+Export.image.toDrive({
+  image: clippedImage,
+  description: 'Sentinel2_FullBand_Image',
+  folder: 'GEE_Folder', // specify your drive folder name
+  fileNamePrefix: 'Sentinel2_FullBand',
+  region: studyArea,
+  scale: 10, // Adjust the scale according to your needs
+  maxPixels: 1e9, // Adjust if more pixels are needed
+  fileFormat: 'GeoTIFF'
+});
+```
+* When you hit run you will see the "Task" button highlighted in yellow on the right side of the editor. Click on it and then click on "RUN". 
+* Tip - if you have multiple images follow the instructions given [here](https://benny.istan.to/blog/20220319-batch-task-execution-in-google-earth-engine-code-editor)
+
+<img src="task_gee.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+
+<img src="gee_download.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+
+<img src="gee_task_running.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 
 
-## Data preparation 1: Raster Stack
-
-* Create a raster stack of the bands with 10 m resolution. 
-* Which bands are these and what colors do they represent?
-* Print out the names of these bands.
-
-
-## Have a look
-
-* Plot a True Color Composite
-* Plot a False Color Composite
 
