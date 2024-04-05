@@ -21,7 +21,7 @@ toc: true
 	* Please ensure the file formats - ".shp", ".shx", ".dbf", ".prj" or "zip". The file format ".qmd" is not supported. 
 	* Once the shapefile is uploaded and available as an asset, you can proceed with the coding exercise.
 
-2. Plot an RGB of Sentinel-2 scene for Kilimanjaro southern slope for 13 January 2023. 
+2. Plot an RGB of Sentinel-2 scene for Kilimanjaro southern slope for 13 January 2022. 
    
 ```js
 // Define the study area
