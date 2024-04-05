@@ -64,9 +64,12 @@ Export.image.toDrive({
 
 <img src="task_gee.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 
-<img src="gee_download.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-
-<img src="gee_task_running.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-
+* Next you will be prompted to save the image. Enter the following :
+	* Task name -  Sentinel2_FullBand_Image
+	* Coordinate reference system - EPSG32737
+	* Scale - 10
+	* Driver folder - write your folder name where you want to store it
+	* Filename - Sentinel2_FullBand
+	* File format - GEO_TIFF
 
 
