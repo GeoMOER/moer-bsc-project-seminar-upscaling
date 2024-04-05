@@ -60,7 +60,7 @@ Export.image.toDrive({
 });
 ```
 * When you hit run you will see the "Task" button highlighted in yellow on the right side of the editor. Click on it and then click on "RUN". 
-* Tip - if you have multiple images follow the instructions given [here](https://benny.istan.to/blog/20220319-batch-task-execution-in-google-earth-engine-code-editor)
+* Tip - if you have multiple images follow the instructions given [here](https://benny.istan.to/blog/20220319-batch-task-execution-in-google-earth-engine-code-editor){:target="_blank"}
 
 <img src="task_gee.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 
