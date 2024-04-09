@@ -64,5 +64,5 @@ Note that you will be provided with the username and password during the course.
 
 ## Google earth engine account
 With the retirement of sen2r package in R, this year we have switched to Google earth engine to work with remote sensing data (in particular Sentinel-2). Hence we will use the GEE code editor to get this data. 
-Visit https://signup.earthengine.google.com/ and sign-up with your Google account. You can use your existing gmail account to sign-up. It usually takes 1-2 days for approval. Hence do this step as soon as possible.
+Visit (GEE)[https://signup.earthengine.google.com/]{:target="_blank"} and sign-up with your Google account. You can use your existing gmail account to sign-up. It usually takes 1-2 days for approval. Hence do this step as soon as possible.
 
