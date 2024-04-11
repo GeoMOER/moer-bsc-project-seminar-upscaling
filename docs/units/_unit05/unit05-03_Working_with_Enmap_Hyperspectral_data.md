@@ -43,6 +43,5 @@ Image: Login to EOWEB Users portal
 1. Once you are in the EOWEB portal, you can now select a study area , filter the dataset by date and time, and collection- EnMAP(see below). 
 
 <img src="eoweb_download.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-Image: Login to EOWEB Users portal
-
+Image: EOWEB data archive.
 
