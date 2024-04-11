@@ -26,6 +26,8 @@ In this exercise , we demonstrate how in future you can easily request and downl
 <img src="enmap_userportal.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: Instrument Planning Portal Home Page
 
+### User portal 
+
 1. Go to "User Portal" and then "Enter". The purpose of this form is to provide Users access to all portals. 
 1. User Role assignment - In the User Portal the user should scroll down to Role Assignment and assign as role Cat-1, for the Announcement of Opportunity (AO) , which is required for Proposal
 submission and future observation requests or as role Catalogue User (Cat1-Distributor) for receiving access to the EnMAP Data archive. Other users are not available for external users of EnMAP. 
