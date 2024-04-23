@@ -7,7 +7,7 @@ toc: true
 ---
 
 # Tasks from this session
-1. Find other interesting vegetation indices. Plot them using either R or GEE.
+1. Find other interesting vegetation indices. Plot them using both R and GEE.
 2. Next you need to clip the buffered study area to the study area provided [here](http://85.214.102.111/kili_data/){:target="_blank"}. 
 Tip - feel free to use chatgpt :)
 
