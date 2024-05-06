@@ -26,22 +26,21 @@ Follow the steps mentioned below to install the EnMAP-Box plugin in your QGIS.
 Incase you haven't worked with QGIS before, you can download it [here](https://www.qgis.org/en/site/forusers/download.html){:target="_blank"}
 and use the training material from [here](https://docs.qgis.org/3.34/en/docs/training_manual/index.html){:target="_blank"}
 
-1. Installing En-MAP-Box
-
+- Installing EnMap-Box
 Open QGIS and on the top locate "Plugins" followed by "Manage and install plugins". In the subsequent dialog box, search for "EnMap box" and install the right option one as shown below.
 
 <img src="enamp_box_plugin.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-Image: Netra Bhandari
+Image: EnMap-Box plugin. Source: Netra Bhandari
 
-Next, in the processing tools menu look for the EnMAP-Box, or search for the icon of EnMAP on the toolbar.
+- Next, in the processing tools menu look for the EnMAP-Box, or search for the icon of EnMAP on the toolbar.
 
 <img src="enamp_box_plugin_icon.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-Image: Netra Bhandari
+Image: EnMap-Box plugin. Source: Netra Bhandari
 
-1. You will be prompted with a new window. 
+- You will be prompted with a new window. 
 Incase you are asked to install dependend packages please follow the guidelines mentioned [here](https://enmap-box.readthedocs.io/en/latest/usr_section/usr_installation.html){:target="_blank"}
 
 <img src="enamp_box_gui.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
-Image: Netra Bhandari
+Image: EnMap-Box GUI. Source: Netra Bhandari
 
 
