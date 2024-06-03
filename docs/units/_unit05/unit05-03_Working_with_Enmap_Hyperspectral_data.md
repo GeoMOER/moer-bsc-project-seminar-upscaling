@@ -40,16 +40,16 @@ Image: Login to EOWEB Users portal
 
 ### Downloading EnMAP data 
 
-1. Once you are in the EOWEB portal, you can now select a study area , filter the dataset by date and time, and collection- EnMAP(see below). 
+- Once you are in the EOWEB portal, you can now select a study area , filter the dataset by date and time, and collection- EnMAP(see below). 
 
 <img src="eoweb_download.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: EOWEB data archive.
 
-2. Selected images can now be added to cart and followup with "Proceed to checkout". This is followed by agreeing to the terms and conditions and submitting the order. 
+- Selected images can now be added to cart and followup with "Proceed to checkout". This is followed by agreeing to the terms and conditions and submitting the order. 
 
 <img src="enmap_cart.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: EnMAP cart.
 
-3. Next you will recieve a summary of your order and in 1-2 working days your data will be released to your email for download. Please read the email carefully to understand the download instructions (not shown here).
+- Next you will recieve a summary of your order and in 1-2 working days your data will be released to your email for download. Please read the email carefully to understand the download instructions (not shown here).
 
 Please note- for the ease of analysis, the data will be provided to you in the strato server. 
