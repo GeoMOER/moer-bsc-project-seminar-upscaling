@@ -41,10 +41,10 @@ Image: EnMap-Box GUI. Source: Netra Bhandari
 
 - EnMap box features
 
-The EnMap box comes with a variety of tools and applications. Take your time to through the EnMap Box. To learn further please refer to this [user manual.](https://enmap-box.readthedocs.io/en/latest/usr_section/usr_manual/usr_manual.html){:target="_blank"}.
+The EnMap box comes with a variety of tools and applications. Take your time to through the EnMap Box. To learn further please refer to this [user manual](https://enmap-box.readthedocs.io/en/latest/usr_section/usr_manual/usr_manual.html){:target="_blank"}.
 For this unit we largely focus on the following:
-- Map view
-- Spectral library view
+	- Map view
+	- Spectral library view
 
 ## Task 1
 
@@ -53,12 +53,12 @@ The EnMap-Box comes with a loaded example dataset. In the EnMap-Box window go to
 You will be prompted by a dialogue box "Download testdata from 
 https://github.com/EnMAP-Box/enmap-box-exampledata/releases/download/v1.1/exampledata.zip?" . Click on "Yes". This loads in the example data on your computer.
 
-Once executed, in your data source there will be the following layers - 
+Once executed, in your data source there will be the following layers: 
 
-- Raster - "aerial potsdam" (showing an aerial view, a 4 band raster) , "enmap_potsdam" (showing a hyperspectral view, a 224 band raster)
-- Vector - "EnMap Spectral Response Function", "landcover_potsdam_point", "landcover_potsdam_polygon" and "vegetation_fraction"
+	- Raster - "aerial potsdam" (showing an aerial view, a 4 band raster) , "enmap_potsdam" (showing a hyperspectral view, a 224 band raster)
+	- Vector - "EnMap Spectral Response Function", "landcover_potsdam_point", "landcover_potsdam_polygon" and "vegetation_fraction"
 
-Let's load a new map view, and check the layer properties. To get a true color composite you can set your RGB bands as Band 047 (RED), Band 032 (GREEN), and Band 14 (BLUE).
+- Let's load a new map view, and check the layer properties. To get a true color composite you can set your RGB bands as Band 047 (RED), Band 032 (GREEN), and Band 14 (BLUE).
 
 - Next we look at pixel based information.
 
@@ -69,7 +69,7 @@ Now take some time to explore the different tools provided in the spectral libra
 <img src="enmap_box_pixelinfo.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: EnMap-Box pixel and spectral information. Source: Netra Bhandari
 
-- Next we will load a polygon data (vector). 
+Next we will load a polygon data (vector). 
 
 Select, drag and drop the "landcover_potsdam_polygon" layer in the mapview. 
 Lets get the spectral profile for vegetation. 
