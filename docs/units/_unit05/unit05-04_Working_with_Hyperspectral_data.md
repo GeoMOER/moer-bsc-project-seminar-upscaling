@@ -68,7 +68,7 @@ For this click on 'Identify a cursor location" on the tool bar shown with and ar
 To look at the spectral profile click on "identify pixel profiles and show them in a spectral library". 
 Now take some time to explore the different tools provided in the spectral library viewer.
  
-<img src="enmap_box_pixelinfo.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<img src="enmap_box_pixelinfo_1.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: EnMap-Box pixel and spectral information. Source: Netra Bhandari
 
 Next we will load a polygon data (vector). 
@@ -77,12 +77,12 @@ Select, drag and drop the "landcover_potsdam_polygon" layer in the mapview.
 Lets get the spectral profile for vegetation. 
 
 
-<img src="veg_speclib.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<img src="veg_speclib_1.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: EnMap-Box vegetation spectral library. Source: Netra Bhandari
 
 Since the spectral library is a vector layer, it has an attribute table, which we can edit. This vector layer can then also be added to the mapview and can be exported as well.
 
-<img src="veg_speclib_att_table.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
+<img src="veg_speclib_att_table_1.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
 Image: EnMap-Box vegetation spectral library attrbute table. Source: Netra Bhandari
 
 Based on the above instructions, load and understand the spectral profile of the following surfaces.
