@@ -9,6 +9,8 @@ toc: true
 In this exercise, we will understand how to use EnMap data in QGIS using the plugin EnMap-Box.
 <!--more-->
 
+For a smoother workflow in this exercise, ensure you have the latest QGIS install (version 3.34+) and we will work with the latest version EnMAP Box as well. 
+{: .notice--info}
 
 ## Getting started with EnMap-Box
 
@@ -95,10 +97,15 @@ Compare the spectral profiles between an aerial imagery vs an EnMap imagery.
 
 ## Task 2
 
-A few EnMap scenes are provided to you [here](http://85.214.102.111/kili_data/){:target="_blank"}. Along with this , a shapefile with different classes is given as well. 
+A few EnMap scenes are provided to you [here](http://85.214.102.111/kili_data/){:target="_blank"}. You can load files ending with "spectral_image_swir" or "spectral_image_vnir".
+Along with this , a shapefile with 3 classes is given as well.
+
+To add a EnMAP product , use the following
+Project ->  Add prodcut -> Select approporiate product (for this exercise select EnMAP L1B). Now select your metadata file and give appropriate names to swir and nir layers e.g. "swir_kili.vrt", or "vnir_kili.vrt". 
+{: .notice--info}
 
 - What is the spectral resolution of this image?
 - Get the spectral profiles (take a screenshot of the spectra ) for each class and also save it as geopackage and ENVI formats.
 
 Please note this unit is for demonstration purpose. We will not use hyperspectral data in the upscaling process due to lack of sufficient EnMap scenes for Kilimanjaro.  
-  
+{: .notice--info}
