@@ -52,5 +52,5 @@ If you wish to understand the influence of other environmental variables you can
 Write your outline, therefore
 1. identify your research topic, 
 2. follow the steps mentioned above, and
-3. upload your pdf until 16 June 2023 23:59 on ILIAS.
+3. upload your pdf until 20 June 2024 23:59 on ILIAS.
 {: .notice--info}
