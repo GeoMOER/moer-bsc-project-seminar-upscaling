@@ -26,13 +26,12 @@ library(sf)
 #load in all the available remote sensing proxy variables used in the model
 setwd("D:/Kili_SES/course_bsc_upscaling_netra/upscaling_methodology")
 
-predictors <- c("DEM","aspect","slope","mmt",
-                "ph_mean_0_20cm","ph_mean_20_50cm","NDVI_mean","ph_sd_0_20cm","ph_sd_20_50cm")
+predictors <- c("DEM","aspect","slope","mean_mmt", "ph_mean_0_20cm","NDVI")
 
 #roi
 shp_kili <- sf::st_read("./upscaling_data/vectors/VegAug1_KILI_SES.shp")
-shp_kili <- sf::st_transform(shp_kili,  32737)
-shp_kili <- terra::vect(shp_kili)
+#shp_kili <- sf::st_transform(shp_kili,  32737)
+#shp_kili <- terra::vect(shp_kili)
 
 shp_kili_flm <- shp_kili[shp_kili$grid_code == 18,]
 shp_kili_flm <- sf::st_transform(shp_kili_flm,  32737) #epsg code for kili is 32737, you can also use UTM 37S
@@ -42,7 +41,7 @@ ext <- ext(shp_kili_flm)
 # ndvi
 ndvi <- terra::rast("./upscaling_data/rasters/ndvi.tif") #same as generated in unit 3
 ndvi_kili <- terra::crop(ndvi,ext)
-names(ndvi_kili) <- "NDVI_mean" #lets maintain the same terminology as the models
+names(ndvi_kili) <- "NDVI" #lets maintain the same terminology as the models
 
 ## dem 
 dem <- terra::rast("./upscaling_data/rasters/kiliDEM_UTM37S.tif")
@@ -64,9 +63,11 @@ slope_kili <- resample(slope_kili,ndvi_kili)
 
 #pH
 ph <- terra::rast("./upscaling_data/rasters/ph_kili.tif")
+ph <- ph$pH_predicted_mean_0_20_cm
+names(ph) <- c("ph_mean_0_20cm")
 ph <- terra::crop(ph,ext)
 ph <- resample(ph,ndvi_kili)
-names(ph) <- c("ph_mean_0_20cm","ph_mean_20_50cm","ph_sd_0_20cm","ph_sd_20_50cm")
+
 #mmt
 library(raster)
 library(geodata)
@@ -81,26 +82,25 @@ plot(mmt_kili)
 
 mean_mmt <-app(mmt_kili, fun=mean)
 mean_mmt
-names(mean_mmt) <- "mmt"
+names(mean_mmt) <- "mean_mmt"
 plot(mean_mmt)
 
 #stack all rasters
-predictors_rs <- c(dem_kili,aspect_kili,slope_kili,mean_mmt, ph$ph_mean_0_20cm,ph$ph_mean_20_50cm,ndvi_kili,
-                   ph$ph_sd_0_20cm, ph$ph_sd_20_50cm)
+predictors_rs <- c(dem_kili,aspect_kili,slope_kili,mean_mmt, ph ,ndvi_kili)
 
 names(predictors_rs) #recheck names
 ext(predictors_rs) 
 
 # mask all predictors to match the extent of flm area
-masked_predictors <- terra::mask(predictors_rs, shp_kili_flm)
-plot(masked_predictors)
-ext(masked_predictors)
+predictors_rs_flm <- terra::mask(predictors_rs, shp_kili_flm)
+plot(predictors_rs_flm)
+ext(predictors_rs_flm)
 ext(shp_kili_flm)
 
 terra::writeRaster(masked_predictors,"./predictors_rs_flm_masked.tif")
 
 ```
-<img src="predictors_rs_flm.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+<img src="predictors_rs_flm_new.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
 
 ## Upscaling 
 ```r
@@ -121,16 +121,18 @@ predictors_rs_flm <- raster::stack("./predictors_rs_flm_masked.tif")
 mapview::mapview(predictors_rs_flm,col.regions=brewer.pal(9, "YlGn"))
 
 #load in your model
-model_ffs_st_folds <- readRDS("./model_ffs_st_folds.RDS")
-prediction_ffs_st <- raster::predict(predictors_rs_flm,model_ffs_st_folds, na.rm=T)
-writeRaster(prediction_ffs_st, "prediction_ffs_st_flm.tif")
+## here let us do prediction with the best chosen model, note - depending on your data and model results this can change
 
-mapview::mapview(prediction_ffs_st,col.regions=brewer.pal(9, "YlGn"))
+model_rf_st_folds <- readRDS("./model_rf_st_folds.RDS")
+prediction_rf_st_folds <- raster::predict(predictors_rs_flm,model_rf_st_folds, na.rm=T)
+writeRaster(prediction_rf_st_folds, "prediction_rf_st_folds_flm.tif")
+
+mapview::mapview(prediction_rf_st_folds,col.regions=brewer.pal(9, "YlGn"))
 
 #Note - you can also use predict function using terra package
 ```
 {% include media url="/assets/misc/ffs_st_prediction.html" %}
-[Full-screen version of the map]({{ site.baseurl }}/assets/misc/ffs_st_prediction.html){:target="_blank"}
+[Full-screen version of the map]({{ site.baseurl }}/assets/misc/predictors_rs_flm_map.html){:target="_blank"}
 
 # Testing the area of applicability
 ```r
@@ -139,12 +141,12 @@ library(parallel)
 cl <- makeCluster(4)
 registerDoParallel(cl)
 #note - make sure you have enough space in your R environment to calculate AOA
-AOA <- aoa(predictors_rs_flm,model_ffs_st_folds) # will take some time 
+AOA <- aoa(predictors_rs_flm,model_rf_st_folds) # will take some time 
 plot(AOA$DI)
 plot(AOA$AOA)
 ```
-<img src="di_flm.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
-<img src="aoa_flm.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+<img src="AOA_DI_plot_new.png" width="2400" height="900" align="centre" vspace="10" hspace="20">
+<img src="AOA_aoa_plot_new.png" width="2400" height="900" align="centre" vspace="10" hspace="20">
 
 The result of the `aoa()` function has two layers: the dissimilarity index (DI) and the area of applicability (AOA).
 * The DI can range from 0 to Inf, where 0 indicates location having predictor properties that are identical to properties observed in the training data. As the DI values increase, the dissimilarity between observed and predicted values also increase. 
@@ -156,7 +158,7 @@ In our result, we see that most areas are having low DI values along with AOA of
 
 ```r
 library(latticeExtra)
-spplot(prediction_ffs_st,main="prediction for the AOA \n(spatial CV error applied)")+
+spplot(prediction_rf_st_folds,main="prediction for the AOA \n(spatial CV error applied)")+
   spplot(AOA$AOA,col.regions=c("grey","transparent"))
 
 ```
