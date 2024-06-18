@@ -54,7 +54,9 @@ featurePlot(x = model_data[, predictors],
             
 # notice the pattern of Species richness for each predictor 
 ```
-<img src="feature_plot.png" width="2000" height="1000" align="centre" vspace="10" hspace="20">
+
+<img src="feature_plot.png" width="1500" height="1000" align="centre" vspace="10" hspace="20">
+
 
 ```r
 #############################
@@ -98,9 +100,9 @@ Metric can be R square, Mean Absolute Error (MAE) etc. If you are performing a c
 ## Understanding set.seed()
 set.seed() ensures that when you split data or build models with random processes, you get the same results every time. This is useful because it allows you to reproduce your exact results, making debugging easier.
 
-Within the Same R Version: set.seed() will produce identical sequences of random numbers, ensuring reproducibility.
-Across Different R Versions: While set.seed() aims to produce consistent results, changes in R's internal random number generation may cause slight variations between versions.
-The R version used in this exercise from the lecturer was R version 4.4.0 (2024-04-24 ucrt).
+- Within the Same R Version: set.seed() will produce identical sequences of random numbers, ensuring reproducibility.
+- Across Different R Versions: While set.seed() aims to produce consistent results, changes in R's internal random number generation may cause slight variations between versions.
+- The R version used in this exercise from the lecturer was R version 4.4.0 (2024-04-24 ucrt).
 {: .notice--info}
 
 ## Understanding parallelization
@@ -168,10 +170,10 @@ print(model)
 ```
 
 ## Explanation of Results
--Optimal mtry: The model tested mtry values from 1 to 10.
--mtry = 5 was selected as the optimal value because it resulted in the lowest RMSE (13.75), indicating the smallest average prediction error.
--The corresponding R-squared for mtry = 5 was 0.562, suggesting that about 56% of the variance in the target variable was explained by the model.
--The MAE for mtry = 5 was 11.15, indicating the average magnitude of the prediction errors.
+- Optimal mtry: The model tested mtry values from 1 to 10.
+- mtry = 5 was selected as the optimal value because it resulted in the lowest RMSE (13.75), indicating the smallest average prediction error.
+- The corresponding R-squared for mtry = 5 was 0.562, suggesting that about 56% of the variance in the target variable was explained by the model.
+- The MAE for mtry = 5 was 11.15, indicating the average magnitude of the prediction errors.
 
 
 ## Variable Importance in Random Forest
@@ -179,7 +181,9 @@ The varImp(model) function from the caret package provides a measure of the impo
 This helps us understand which variables are most influential in making predictions.
 - Variable Importance: This table shows how much each predictor variable contributes to the accuracy of the model. Higher values indicate greater importance.
 - Scale: The importance is often scaled so that the most important variable has a value of 100, making it easier to compare the relative importance of the other variables.
+
 ```r
+
 varImp(model)
 
 rf variable importance
@@ -193,12 +197,14 @@ rf variable importance
 # aspect            0.00
 
 plot(varImp(model))
+
 ```
+
 In our model, slope is the most important variable with a scaled importance of 100, meaning it has the greatest impact on predictions.
 DEM and mean_mmt are also highly important. On the other hand, aspect has an importance of 0, indicating it doesn't significantly contribute to the model. 
 This information helps us understand which features are most relevant for our predictions and can guide us in focusing on the most impactful variables for further analysis or data collection
 
-<img src="varimp_rf.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+<img src="varimp_rf.png" width="1500" height="1000" align="centre" vspace="10" hspace="20">
 
 ## Testing your model
 ```r
@@ -267,7 +273,7 @@ The colors indicate the number of features used in each model run: red for 2 fea
  We observe that models with more features (blue) tend to have lower RMSE, indicating better performance. 
 The error bars represent the variability in RMSE, with narrower bars indicating more stable models.
 
-<img src="ffs_plot.png" width="1500" height="500" align="centre" vspace="10" hspace="20">
+<img src="ffs_plot.png" width="1500" height="1000" align="centre" vspace="10" hspace="20">
 
 ## Task 2
 * Now additionally use your rf and ffs models with `CreateSpacetimeFolds` and repeat the model evaluation as mentioned in task 1. 
