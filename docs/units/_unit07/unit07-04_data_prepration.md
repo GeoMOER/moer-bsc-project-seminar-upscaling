@@ -164,8 +164,11 @@ plot(plots, add = T)
 avg_ndvi = terra::extract(ndvi, plots, fun = "mean", na.rm = T) # 75 rows
 plot_ndvi = terra::extract(ndvi, plots) # 4644 rows
 
-## now we can use either of the two however, in this course we stick to the mean NDVI due to time issues in modelling this data.
-## If you want for your final projects you can use the plot_ndvi for training the model, just be aware it will take more time and more computational performance space.
+## now we can use either of the two however, in this course we stick to the mean NDVI due to time needed in modelling large amounts of data.
+## If you want for your final projects you can use the plot_ndvi for training the model, just be aware it will take more time and more computational power.
+
+avg_ndvi <- avg_ndvi %>%
+  left_join(plots %>% st_drop_geometry() %>% select(Id, PlotID), by = c("ID" = "Id")) %>% select(-ID)
 
 ```
 
@@ -228,10 +231,10 @@ names(plantsSR)[1] <- "PlotID"
 
 model_data <- purrr::reduce(list(predictors,plantsSR), dplyr::left_join, by = 'PlotID')
 head(model_data, n = 2)
-#    PlotID mean_dtm mean_aspect mean_slope mean_mmt pH_predicted_mean_0_20_cm ID      NDVI cat
-# 1 1   cof1 1282.427    150.4274   6.653354 19.44326                  5.735425  1 0.8201967 cof
-# 2 2   cof2 1323.978    209.4474   2.701757 19.75905                  5.978076  2 0.7621889 cof
-      SRallplants
+#    PlotID   mean_dtm    mean_aspect  mean_slope mean_mmt pH_predicted_mean_0_20_cm NDVI    cat
+# 1 1   cof1 1282.427    150.4274   6.653354 19.44326                  5.735425   0.8201967 cof
+# 2 2   cof2 1323.978    209.4474   2.701757 19.75905                  5.978076   0.7621889 cof
+#      SRallplants
 # 1          59
 # 2          44
 write.csv(model_data, "./model_data.csv")
