@@ -50,12 +50,12 @@ predictors <- c("DEM","aspect","slope","mean_mmt", "ph_mean_0_20cm","NDVI")
 
 featurePlot(x = model_data[, predictors], 
             y = model_data$SRallplants, type = c("p", "smooth"),
-            plot = "scatter", layout = c(3,2))
+            plot = "scatter", layout = c(2,3))
             
 # notice the pattern of Species richness for each predictor 
 ```
 
-<img src="feature_plot.png" width="1700" height="1000" align="centre" vspace="10" hspace="20">
+<img src="feature_plot.png" width="1500" height="1500" align="centre" vspace="10" hspace="20">
 
 
 ```r
