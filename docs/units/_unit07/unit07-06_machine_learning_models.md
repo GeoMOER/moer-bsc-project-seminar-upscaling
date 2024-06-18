@@ -55,7 +55,7 @@ featurePlot(x = model_data[, predictors],
 # notice the pattern of Species richness for each predictor 
 ```
 
-<img src="feature_plot.png" width="1500" height="1500" align="centre" vspace="10" hspace="20">
+<img src="feature_plot.png" width="700" height="700" align="centre" vspace="10" hspace="20">
 
 
 ```r
