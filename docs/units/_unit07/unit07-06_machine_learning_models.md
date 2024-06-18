@@ -55,7 +55,7 @@ featurePlot(x = model_data[, predictors],
 # notice the pattern of Species richness for each predictor 
 ```
 
-<img src="feature_plot.png" width="1500" height="1000" align="centre" vspace="10" hspace="20">
+<img src="feature_plot.png" width="1700" height="1000" align="centre" vspace="10" hspace="20">
 
 
 ```r
@@ -273,7 +273,7 @@ The colors indicate the number of features used in each model run: red for 2 fea
  We observe that models with more features (blue) tend to have lower RMSE, indicating better performance. 
 The error bars represent the variability in RMSE, with narrower bars indicating more stable models.
 
-<img src="ffs_plot.png" width="1500" height="1000" align="centre" vspace="10" hspace="20">
+<img src="ffs_new.png" width="1500" height="1000" align="centre" vspace="10" hspace="20">
 
 ## Task 2
 * Now additionally use your rf and ffs models with `CreateSpacetimeFolds` and repeat the model evaluation as mentioned in task 1. 
