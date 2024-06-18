@@ -73,18 +73,18 @@ The course encompassed 12 sessions from 17.04.2024 to 17.07.2024.
 |    | ~~15.05.2024~~|Sports dies						|Session cancelled|
 | 04 | 22.05.2024   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
 ||| **Start research project**  |
-| 05 | 29.05.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
+    | ~~29.05.2024~~|Project week 						 |Session cancelled|
+| 05 | 05.06.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
 ||| **Upscaling Methodology**                                                    |
 	
-| 06 | 05.06.2024   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 07 | 12.06.2024   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-| 08 | 19.06.2024  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+| 06 | 12.06.2024   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 07 | 19.06.2024   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+| 08 | 26.06.2024  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Assisted working phase** |
-| 09 | 26.06.2024   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
-| 10 | 03.07.2024   | Work on projects | Time for working on projects            |
-| 11 | 10.07.2024   | Work on projects | Time for working on projects            |
+| 09 | 03.06.2024   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
+| 10 | 10.07.2024   | Work on projects | Time for working on projects            |
 ||| **Wrap up** |
-| 12 | 17.07.2024   | Wrap up, Evaluation, and Feedback                          | Time for questions and feedback, goodbye |
+| 11 | 17.07.2024   | Wrap up, Evaluation, and Feedback                          | Time for questions and feedback, goodbye |
 
 
 # Deliverables
