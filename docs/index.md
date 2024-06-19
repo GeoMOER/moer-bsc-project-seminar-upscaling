@@ -69,22 +69,21 @@ The course encompassed 12 sessions from 17.04.2024 to 17.07.2024.
 ||| **Remote sensing basics and data**  |
 | 02 | 24.04.2024   | Remote sensing basics and Sentinel-2 data                 | Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel 2 data preparation and application|
 |    | ~~01.05.2024~~|Holiday						        |Session cancelled|				
-| 03 | 08.05.2024   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 03 | 08.05.2024   | Remote sensing basics and Sentinel-2 data                 | Session continued |
 |    | ~~15.05.2024~~|Sports dies						|Session cancelled|
-| 04 | 22.05.2024   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
-||| **Start research project**  |
+| 04 | 22.05.2024   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
     | ~~29.05.2024~~|Project week 						 |Session cancelled|
-| 05 | 05.06.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
-||| **Upscaling Methodology**                                                    |
-	
-| 06 | 12.06.2024   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 07 | 19.06.2024   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-| 08 | 26.06.2024  | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+| 05 | 05.06.2024   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
+||| **Start research project**  |
+| 06 | 12.06.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
+||| **Upscaling Methodology**                                                    |	
+| 07 | 19.06.2024   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 07 | 26.06.2024   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+| 08 | 03.07.2024   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Assisted working phase** |
-| 09 | 03.06.2024   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
-| 10 | 10.07.2024   | Work on projects | Time for working on projects            |
+| 09 | 10.06.2024   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
 ||| **Wrap up** |
-| 11 | 17.07.2024   | Wrap up, Evaluation, and Feedback                          | Time for questions and feedback, goodbye |
+| 10 | 17.07.2024   | Work on your projects, Wrap up, Evaluation, and Feedback   | Time for questions and feedback, goodbye |
 
 
 # Deliverables
