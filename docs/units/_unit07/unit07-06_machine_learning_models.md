@@ -55,7 +55,7 @@ featurePlot(x = model_data[, predictors],
 # notice the pattern of Species richness for each predictor 
 ```
 
-<img src="feature_plot_new_2.png"  width="652" height="617" align="centre" vspace="10" hspace="20">
+<img src="feature_plot_new.png"  width="683" height="639" align="centre" vspace="10" hspace="20">
 
 
 ```r
@@ -72,6 +72,47 @@ trainIndex <- caret::createDataPartition(model_data$SRallplants, p = .7, # you c
 
 featuresTrain <- model_data[ trainIndex,]
 featuresTest  <- model_data[-trainIndex,] 
+
+## updated code, 
+## Additionally you can try and understand a stratified splitting
+## here the splitting ensures that each habitat is represented in the test data as in the training data
+## please note that the accuracy values in the models below will differ if you use a stratified split
+
+create_stratified_split <- function(data, stratify_by, response, train_ratio = 0.7) {
+  unique_strata <- unique(data[[stratify_by]])
+  
+  train_indices <- numeric()
+  test_indices <- numeric()
+  
+  for (stratum in unique_strata) {
+    stratum_indices <- which(data[[stratify_by]] == stratum)
+    stratum_data <- data[stratum_indices, ]
+    
+    # Ensure there are enough unique values for splitting
+    if (nrow(stratum_data) > 1) {
+      set.seed(10)  # For reproducibility
+      train_idx <- sample(seq_len(nrow(stratum_data)), size = round(train_ratio * nrow(stratum_data)))
+    } else {
+      # If not enough values, include all in both train and test (as an edge case)
+      train_idx <- seq_len(nrow(stratum_data))
+    }
+    
+    train_indices <- c(train_indices, stratum_indices[train_idx])
+    test_indices <- c(test_indices, stratum_indices[-train_idx])
+  }
+  
+  list(train = train_indices, test = test_indices)
+}
+
+# Assuming model_data is your dataset
+set.seed(10)  # For reproducibility
+# Create stratified split
+split_indices <- create_stratified_split(model_data, stratify_by = "habitat", response = "SRallplants", train_ratio = 0.7)
+
+# Create training and testing datasets
+featuresTrain <- model_data[split_indices$train, ]
+featuresTest <- model_data[split_indices$test, ]
+
 
 ##############################################
 #default model - Random Forest-Random k-fold CV
@@ -106,10 +147,10 @@ set.seed() ensures that when you split data or build models with random processe
 {: .notice--info}
 
 ## Understanding parallelization
-Parallelization splits a task into smaller parts that can be processed simultaneously across multiple CPU cores, speeding up computations. I
-t is used to efficiently handle large datasets and complex calculations in model training.
+Parallelization splits a task into smaller parts that can be processed simultaneously across multiple CPU cores, speeding up computations. It is used to efficiently handle large datasets and complex calculations in model training.
 
 ```r
+# this part contains data splitted with a normal 70 to 30 ratio
 library(caret)
 
 #we will use 'train()' function from the caret library to train our model
