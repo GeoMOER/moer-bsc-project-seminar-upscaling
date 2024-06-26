@@ -113,11 +113,6 @@ split_indices <- create_stratified_split(model_data, stratify_by = "habitat", re
 featuresTrain <- model_data[split_indices$train, ]
 featuresTest <- model_data[split_indices$test, ]
 
-
-##############################################
-#default model - Random Forest-Random k-fold CV
-##############################################
-
 ```
 Now lets understand the model arguments once again.
 
@@ -150,6 +145,9 @@ set.seed() ensures that when you split data or build models with random processe
 Parallelization splits a task into smaller parts that can be processed simultaneously across multiple CPU cores, speeding up computations. It is used to efficiently handle large datasets and complex calculations in model training.
 
 ```r
+##############################################
+#default model - Random Forest-Random k-fold CV
+##############################################
 # this part contains data splitted with a normal 70 to 30 ratio
 library(caret)
 
